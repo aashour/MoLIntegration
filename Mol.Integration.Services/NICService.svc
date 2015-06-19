@@ -1,0 +1,4 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" 
+    Service="Mol.Integration.Lib.Service.NICService, Mol.Integration.Lib" 
+    Factory="Thinktecture.ServiceModel.Extensions.Description.FlatWsdlServiceHostFactory"
+     %>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6A400EE-9E20-4F22-B173-270AC9429C5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mol.Integration.Lib</RootNamespace>
+    <AssemblyName>Mol.Integration.Lib</AssemblyName>
+    <ProjectTypeGuids>{3D9AD99F-2412-4246-B90B-4EAA41C64699};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <StartArguments>/client:"WcfTestClient.exe"</StartArguments>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <XsdCodeGenEnabled>True</XsdCodeGenEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Channels" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authorization\AuthorizationManager.cs" />
+    <Compile Include="Authorization\AuthorizationPolicy.cs" />
+    <Compile Include="Authorization\CustomIdentity.cs" />
+    <Compile Include="Authorization\CustomMembershipAuthorization.cs" />
+    <Compile Include="Authorization\CustomPrincipal.cs" />
+    <Compile Include="Binding\AutoSecuredHttpSecurityCapabilities.cs" />
+    <Compile Include="Binding\AutoSecuredHttpTransportElement.cs" />
+    <Compile Include="Binding\ClearUsernameBinding.cs" />
+    <Compile Include="Binding\ClearUsernameBindingElement.cs" />
+    <Compile Include="Binding\MessageVersionConverter.cs" />
+    <Compile Include="Binding\UserNameClientCredentialsElement.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\Dates.cs" />
+    <Compile Include="Common\ServiceUtilities.cs" />
+    <Compile Include="Contract\Data\DateStructure.cs" />
+    <Compile Include="Contract\Data\DependentsData.cs" />
+    <Compile Include="Contract\Data\LookupStructure.cs" />
+    <Compile Include="Contract\Data\NameStructure.cs" />
+    <Compile Include="Contract\Data\ResidencyStructure.cs" />
+    <Compile Include="Contract\Data\SponsorStructure.cs" />
+    <Compile Include="Contract\Data\StatusStructure.cs" />
+    <Compile Include="Contract\Data\TravelStructure.cs" />
+    <Compile Include="Contract\Data\VisaStructure.cs" />
+    <Compile Include="Contract\Fault\NICFaultContract.cs" />
+    <Compile Include="Contract\Service\INICService.cs" />
+    <Compile Include="Data\IntegrationServiceRepo.cs" />
+    <Compile Include="Data\IntegrationServices.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntegrationServices.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\IntegrationServices.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntegrationServices.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\IntegrationServices.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IntegrationServices.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\MOL_Consumer.cs">
+      <DependentUpon>IntegrationServices.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\MOL_IntegrationService.cs">
+      <DependentUpon>IntegrationServices.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\MOL_IntegrationServiceConsumer.cs">
+      <DependentUpon>IntegrationServices.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxies\NicProxy.cs" />
+    <Compile Include="Service\NICService.cs" />
+    <Compile Include="Authentication\UserNamePasswordValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Data\IntegrationServices.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>IntegrationServices.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Data\IntegrationServices.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IntegrationServices.edmx</DependentUpon>
+      <LastGenOutput>IntegrationServices.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Data\IntegrationServices.edmx.diagram">
+      <DependentUpon>IntegrationServices.edmx</DependentUpon>
+    </None>
+    <None Include="Data\IntegrationServices.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>IntegrationServices.edmx</DependentUpon>
+      <LastGenOutput>IntegrationServices.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VSToolsPath Condition="'$(VSToolsPath)' == '' and '$(VisualStudioVersion)' != '' and '$(VisualStudioVersion)' != '11.0'">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio</VSToolsPath>
+    <WcfServiceModelTargetPath>$(VSToolsPath)\WCF</WcfServiceModelTargetPath>
+  </PropertyGroup>
+  <Import Project="$(WcfServiceModelTargetPath)\Microsoft.VisualStudio.ServiceModel.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{3D9AD99F-2412-4246-B90B-4EAA41C64699}">
+        <WcfProjectProperties>
+          <AutoStart>True</AutoStart>
+        </WcfProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

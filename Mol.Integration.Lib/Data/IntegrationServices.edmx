@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Mol.Integration.Lib.Data.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="MOL_Consumer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="smallint" Nullable="false" />
+          <Property Name="ConsumerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="InsertDate" Type="datetime" Nullable="false" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MOL_IntegrationService">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="smallint" Nullable="false" />
+          <Property Name="ServiceName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="MethodName" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MOL_IntegrationServiceConsumer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="IntegrationServiceId" Type="smallint" Nullable="false" />
+          <Property Name="ConsumerId" Type="smallint" Nullable="false" />
+          <Property Name="Revoke" Type="bit" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_MOL_IntegrationServiceConsumer_MOL_Consumer">
+          <End Role="MOL_Consumer" Type="Self.MOL_Consumer" Multiplicity="1" />
+          <End Role="MOL_IntegrationServiceConsumer" Type="Self.MOL_IntegrationServiceConsumer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MOL_Consumer">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MOL_IntegrationServiceConsumer">
+              <PropertyRef Name="ConsumerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MOL_IntegrationServiceConsumer_MOL_IntegrationService">
+          <End Role="MOL_IntegrationService" Type="Self.MOL_IntegrationService" Multiplicity="1" />
+          <End Role="MOL_IntegrationServiceConsumer" Type="Self.MOL_IntegrationServiceConsumer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MOL_IntegrationService">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MOL_IntegrationServiceConsumer">
+              <PropertyRef Name="IntegrationServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MolIntegrationLibDataStoreContainer">
+          <EntitySet Name="MOL_Consumer" EntityType="Self.MOL_Consumer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MOL_IntegrationService" EntityType="Self.MOL_IntegrationService" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MOL_IntegrationServiceConsumer" EntityType="Self.MOL_IntegrationServiceConsumer" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_MOL_IntegrationServiceConsumer_MOL_Consumer" Association="Self.FK_MOL_IntegrationServiceConsumer_MOL_Consumer">
+            <End Role="MOL_Consumer" EntitySet="MOL_Consumer" />
+            <End Role="MOL_IntegrationServiceConsumer" EntitySet="MOL_IntegrationServiceConsumer" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MOL_IntegrationServiceConsumer_MOL_IntegrationService" Association="Self.FK_MOL_IntegrationServiceConsumer_MOL_IntegrationService">
+            <End Role="MOL_IntegrationService" EntitySet="MOL_IntegrationService" />
+            <End Role="MOL_IntegrationServiceConsumer" EntitySet="MOL_IntegrationServiceConsumer" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Mol.Integration.Lib.Data" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="MOL_Consumer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" />
+          <Property Name="ConsumerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="InsertDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Deleted" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="MOL_IntegrationServiceConsumer" Relationship="Self.FK_MOL_IntegrationServiceConsumer_MOL_Consumer" FromRole="MOL_Consumer" ToRole="MOL_IntegrationServiceConsumer" />
+        </EntityType>
+        <EntityType Name="MOL_IntegrationService">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int16" Nullable="false" />
+          <Property Name="ServiceName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MethodName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="MOL_IntegrationServiceConsumer" Relationship="Self.FK_MOL_IntegrationServiceConsumer_MOL_IntegrationService" FromRole="MOL_IntegrationService" ToRole="MOL_IntegrationServiceConsumer" />
+        </EntityType>
+        <EntityType Name="MOL_IntegrationServiceConsumer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="IntegrationServiceId" Type="Int16" Nullable="false" />
+          <Property Name="ConsumerId" Type="Int16" Nullable="false" />
+          <NavigationProperty Name="MOL_Consumer" Relationship="Self.FK_MOL_IntegrationServiceConsumer_MOL_Consumer" FromRole="MOL_IntegrationServiceConsumer" ToRole="MOL_Consumer" />
+          <NavigationProperty Name="MOL_IntegrationService" Relationship="Self.FK_MOL_IntegrationServiceConsumer_MOL_IntegrationService" FromRole="MOL_IntegrationServiceConsumer" ToRole="MOL_IntegrationService" />
+          <Property Name="Revoke" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_MOL_IntegrationServiceConsumer_MOL_Consumer">
+          <End Role="MOL_Consumer" Type="Self.MOL_Consumer" Multiplicity="1" />
+          <End Role="MOL_IntegrationServiceConsumer" Type="Self.MOL_IntegrationServiceConsumer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MOL_Consumer">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MOL_IntegrationServiceConsumer">
+              <PropertyRef Name="ConsumerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MOL_IntegrationServiceConsumer_MOL_IntegrationService">
+          <End Role="MOL_IntegrationService" Type="Self.MOL_IntegrationService" Multiplicity="1" />
+          <End Role="MOL_IntegrationServiceConsumer" Type="Self.MOL_IntegrationServiceConsumer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MOL_IntegrationService">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="MOL_IntegrationServiceConsumer">
+              <PropertyRef Name="IntegrationServiceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MOL_Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MOL_Consumer" EntityType="Self.MOL_Consumer" />
+          <EntitySet Name="MOL_IntegrationService" EntityType="Self.MOL_IntegrationService" />
+          <EntitySet Name="MOL_IntegrationServiceConsumer" EntityType="Self.MOL_IntegrationServiceConsumer" />
+          <AssociationSet Name="FK_MOL_IntegrationServiceConsumer_MOL_Consumer" Association="Self.FK_MOL_IntegrationServiceConsumer_MOL_Consumer">
+            <End Role="MOL_Consumer" EntitySet="MOL_Consumer" />
+            <End Role="MOL_IntegrationServiceConsumer" EntitySet="MOL_IntegrationServiceConsumer" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MOL_IntegrationServiceConsumer_MOL_IntegrationService" Association="Self.FK_MOL_IntegrationServiceConsumer_MOL_IntegrationService">
+            <End Role="MOL_IntegrationService" EntitySet="MOL_IntegrationService" />
+            <End Role="MOL_IntegrationServiceConsumer" EntitySet="MOL_IntegrationServiceConsumer" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MolIntegrationLibDataStoreContainer" CdmEntityContainer="MOL_Entities">
+          <EntitySetMapping Name="MOL_Consumer">
+            <EntityTypeMapping TypeName="Mol.Integration.Lib.Data.MOL_Consumer">
+              <MappingFragment StoreEntitySet="MOL_Consumer">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ConsumerName" ColumnName="ConsumerName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="InsertDate" ColumnName="InsertDate" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MOL_IntegrationService">
+            <EntityTypeMapping TypeName="Mol.Integration.Lib.Data.MOL_IntegrationService">
+              <MappingFragment StoreEntitySet="MOL_IntegrationService">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ServiceName" ColumnName="ServiceName" />
+                <ScalarProperty Name="MethodName" ColumnName="MethodName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MOL_IntegrationServiceConsumer">
+            <EntityTypeMapping TypeName="Mol.Integration.Lib.Data.MOL_IntegrationServiceConsumer">
+              <MappingFragment StoreEntitySet="MOL_IntegrationServiceConsumer">
+                <ScalarProperty Name="Revoke" ColumnName="Revoke" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="IntegrationServiceId" ColumnName="IntegrationServiceId" />
+                <ScalarProperty Name="ConsumerId" ColumnName="ConsumerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
