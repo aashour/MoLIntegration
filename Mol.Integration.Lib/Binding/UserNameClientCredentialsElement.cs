@@ -22,9 +22,10 @@ namespace Mol.Integration.Lib.Binding
         /// <summary>
         /// Username (required)
         /// </summary>
-        [DisplayName("UserName"), Category("General"), Browsable(true)]
+        [Description(""), Category("(General)")]
         [ConfigurationProperty("UserName", DefaultValue = "")]
-        public string UserName  
+        [StringValidator(MinLength = 1)]
+        public string UserName
         {
             get { return (string)base["userName"]; }
             set { base["userName"] = value; }
@@ -41,6 +42,15 @@ namespace Mol.Integration.Lib.Binding
             set { base["password"] = value; }
         }
 
+
+        public override void CopyFrom(ServiceModelExtensionElement from)
+        {
+            base.CopyFrom(from);
+            UserNameClientCredentialsElement source = (UserNameClientCredentialsElement)from;
+            this.UserName = source.UserName;
+            this.Password = source.Password;
+
+        }
         protected override ConfigurationPropertyCollection Properties
         {
             get
