@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Mol.Integration.Lib.Authorization
 {
-    public class CustomIdentity : IIdentity
+    public sealed class CustomIdentity : IIdentity
     {
 
         private string m_name;

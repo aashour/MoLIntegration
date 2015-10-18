@@ -82,13 +82,13 @@ namespace Mol.Integration.Lib.Service
                 {
                     password = Constants.NIC_Password,
                     username = Constants.NIC_UserName
-                };                
+                };
 
                 ServiceUtilities<IMOL_SERVICEChannel>.Use(client => response = client.GetAlienVisitorInfo(new GetAlienVisitorInfoRequest(header, IdNo, auth)));
 
                 if (null != response)
                 {
-                    result = AlienVisitorInfoResultToDependentsData(response.GetAlienVisitorInfoResult);
+                    result = response.GetAlienVisitorInfoResult.ToDependentsData();
                 }
             }
             catch (FaultException<SamisWSFault> fault)
@@ -179,11 +179,6 @@ namespace Mol.Integration.Lib.Service
                 HandleError(err, ex, null);
             }
             return result;
-        }
-
-        public string Test(string Name)
-        {
-            return string.Format("you name is {0}", Name);
         }
 
         private void HandleError(NICFaultContract err, Exception ex, FaultException<SamisWSFault> fault)
@@ -328,7 +323,6 @@ namespace Mol.Integration.Lib.Service
                 },
             };
         }
-
 
     }
 }

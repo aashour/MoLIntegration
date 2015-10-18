@@ -29,10 +29,6 @@ namespace Mol.Integration.Lib.Contract.Service
         [FaultContract(typeof(NICFaultContract))]
         [OperationContract]
         bool AuthenticateUserByMobile(double IdNo, string smsCode);
-
-        [FaultContract(typeof(NICFaultContract))]
-        [OperationContract]
-        string Test(string Name);
     }
 
 }

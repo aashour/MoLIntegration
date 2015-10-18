@@ -10,7 +10,7 @@ using Mol.Integration.Lib.Data;
 
 namespace Mol.Integration.Lib.Authorization
 {
-    public class CustomPrincipal : IPrincipal
+    public sealed class CustomPrincipal : IPrincipal
     {
         private IIdentity _identity;
         //private string[] _roles;
