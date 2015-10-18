@@ -5,10 +5,11 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using Mol.Integration.Lib.Contract.Data;
+using Mol.Integration.Lib.Common;
 
-namespace Mol.Integration.Lib.Contracts.Data
+namespace Mol.Integration.Lib.Contract.Data
 {
-    [DataContract(Name = "DependentsData")]
+    [DataContract(Namespace = Constants.Namespace)]
     public class DependentsData
     {
         [DataMember(Name = "Gender")]

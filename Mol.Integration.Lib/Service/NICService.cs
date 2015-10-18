@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Security.Permissions;
 using System.ServiceModel;
 using System.Text;
+using Mol.Integration.IntegrationProxy.NicWebService;
 using Mol.Integration.Lib.Common;
 using Mol.Integration.Lib.Contract.Data;
 using Mol.Integration.Lib.Contract.Fault;
 using Mol.Integration.Lib.Contract.Service;
-using Mol.Integration.Lib.Contracts.Data;
-using Mol.Integration.Lib.Proxies;
 
 namespace Mol.Integration.Lib.Service
 {
@@ -20,6 +20,8 @@ namespace Mol.Integration.Lib.Service
             UpdateLaborVisaResponse response = null;
             try
             {
+                ServicePointManager.ServerCertificateValidationCallback += 
+                    (sender, certificate, chain, sslPolicyErrors) => { return true; };
                 ServiceUtilities<IMOL_SERVICEChannel>.Use(
                     client => response = client.UpdateLaborVisa(
                         new UpdateLaborVisaRequest(
@@ -80,7 +82,7 @@ namespace Mol.Integration.Lib.Service
                 {
                     password = Constants.NIC_Password,
                     username = Constants.NIC_UserName
-                };
+                };                
 
                 ServiceUtilities<IMOL_SERVICEChannel>.Use(client => response = client.GetAlienVisitorInfo(new GetAlienVisitorInfoRequest(header, IdNo, auth)));
 
@@ -115,6 +117,8 @@ namespace Mol.Integration.Lib.Service
             try
             {
                 GetAlienPrisonStatusResponse response = null;
+                ServicePointManager.ServerCertificateValidationCallback += (sender, certificate, chain, sslPolicyErrors) => { return true; };
+
                 ServiceUtilities<IMOL_SERVICEChannel>.Use(client => response = client.GetAlienPrisonStatus(new GetAlienPrisonStatusRequest(new NICHeader()
                         {
                             username = Constants.NIC_UserName,
@@ -148,6 +152,7 @@ namespace Mol.Integration.Lib.Service
             {
 
                 AuthenticateUserByMobileResponse response = null;
+                ServicePointManager.ServerCertificateValidationCallback += (sender, certificate, chain, sslPolicyErrors) => { return true; };
                 ServiceUtilities<IMOL_SERVICEChannel>.Use(client => response = client.AuthenticateUserByMobile(new AuthenticateUserByMobileRequest(
                      new NICHeader()
                      {
@@ -196,8 +201,8 @@ namespace Mol.Integration.Lib.Service
                 entryDateHegira = int.Parse(Dates.GregToHijri(Dates.HijriToGreg(data.EntryDateHegira).Value, "MM/dd/yyyy").Value.ToString("yyyyMMdd"));
 
             DateTime visaExpiryDateGreg = new DateTime();
-            if (!string.IsNullOrEmpty(data.VisaExpiryDateGreg))
-                DateTime.TryParse(data.VisaExpiryDateGreg, out visaExpiryDateGreg);
+            //if (!string.IsNullOrEmpty(data.VisaExpiryDateGreg))
+            //    DateTime.TryParse(data.VisaExpiryDateGreg, out visaExpiryDateGreg);
 
             return new DependentsData()
             {

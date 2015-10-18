@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://mol.gov.sa/services/" elementFormDefault="qualified" targetNamespace="http://mol.gov.sa/services/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contracts.Data" />
+  <xs:element name="CancelVisa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="requestNumber" type="xs:double" />
+        <xs:element minOccurs="0" name="borderNumber" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CancelVisaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CancelVisaResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryDependentsByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdNo" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="QueryDependentsByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contracts.Data" minOccurs="0" name="QueryDependentsByIDResult" nillable="true" type="q1:DependentsData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLabrorPrisonStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdNo" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLabrorPrisonStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLabrorPrisonStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateUserByMobile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IdNo" type="xs:double" />
+        <xs:element minOccurs="0" name="smsCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateUserByMobileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticateUserByMobileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Test">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

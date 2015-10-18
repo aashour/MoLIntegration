@@ -122,5 +122,20 @@ namespace Mol.Integration.Lib.Common
                 return 7000986278;
             }
         }
+
+
+        const string LOGGINGENABLED_KEY = "IS_LoggingEnabled";
+
+        public static bool LoggingEnabled
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(ConfigurationManager.AppSettings[LOGGINGENABLED_KEY]))
+                    return bool.Parse(ConfigurationManager.AppSettings[LOGGINGENABLED_KEY]);
+                return false;
+            }
+        }
+
+        public const string Namespace = "http://mol.gov.sa/services/";
     }
 }

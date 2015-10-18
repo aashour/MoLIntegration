@@ -32,6 +32,18 @@
           <Property Name="ConsumerId" Type="smallint" Nullable="false" />
           <Property Name="Revoke" Type="bit" Nullable="false" />
         </EntityType>
+        <EntityType Name="MOL_IntegrationServiceLogging">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="MessageBody" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Contract" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Operation" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Authorized" Type="bit" Nullable="false" />
+          <Property Name="TransactionDate" Type="datetime" Nullable="false" />
+        </EntityType>
         <Association Name="FK_MOL_IntegrationServiceConsumer_MOL_Consumer">
           <End Role="MOL_Consumer" Type="Self.MOL_Consumer" Multiplicity="1" />
           <End Role="MOL_IntegrationServiceConsumer" Type="Self.MOL_IntegrationServiceConsumer" Multiplicity="*" />
@@ -60,6 +72,7 @@
           <EntitySet Name="MOL_Consumer" EntityType="Self.MOL_Consumer" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MOL_IntegrationService" EntityType="Self.MOL_IntegrationService" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MOL_IntegrationServiceConsumer" EntityType="Self.MOL_IntegrationServiceConsumer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MOL_IntegrationServiceLogging" EntityType="Self.MOL_IntegrationServiceLogging" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_MOL_IntegrationServiceConsumer_MOL_Consumer" Association="Self.FK_MOL_IntegrationServiceConsumer_MOL_Consumer">
             <End Role="MOL_Consumer" EntitySet="MOL_Consumer" />
             <End Role="MOL_IntegrationServiceConsumer" EntitySet="MOL_IntegrationServiceConsumer" />
@@ -140,7 +153,20 @@
             <End Role="MOL_IntegrationService" EntitySet="MOL_IntegrationService" />
             <End Role="MOL_IntegrationServiceConsumer" EntitySet="MOL_IntegrationServiceConsumer" />
           </AssociationSet>
+          <EntitySet Name="MOL_IntegrationServiceLogging" EntityType="Mol.Integration.Lib.Data.MOL_IntegrationServiceLogging" />
         </EntityContainer>
+        <EntityType Name="MOL_IntegrationServiceLogging">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MessageBody" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Contract" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Operation" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TransactionDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Authorized" Type="Boolean" Nullable="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -174,6 +200,19 @@
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IntegrationServiceId" ColumnName="IntegrationServiceId" />
                 <ScalarProperty Name="ConsumerId" ColumnName="ConsumerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MOL_IntegrationServiceLogging">
+            <EntityTypeMapping TypeName="Mol.Integration.Lib.Data.MOL_IntegrationServiceLogging">
+              <MappingFragment StoreEntitySet="MOL_IntegrationServiceLogging">
+                <ScalarProperty Name="Authorized" ColumnName="Authorized" />
+                <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+                <ScalarProperty Name="Operation" ColumnName="Operation" />
+                <ScalarProperty Name="Contract" ColumnName="Contract" />
+                <ScalarProperty Name="MessageBody" ColumnName="MessageBody" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

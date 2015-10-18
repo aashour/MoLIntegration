@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="DateStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="GregorianDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GregorianDateSpecified" type="xs:boolean" />
+      <xs:element minOccurs="0" name="HijriDate" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DateStructure" nillable="true" type="tns:DateStructure" />
+  <xs:complexType name="LookupStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LookupStructure" nillable="true" type="tns:LookupStructure" />
+  <xs:complexType name="NameStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecondName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ThirdName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TranslatedName" nillable="true" type="tns:NameStructure" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NameStructure" nillable="true" type="tns:NameStructure" />
+  <xs:complexType name="ResidencyStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExpiryDate" nillable="true" type="tns:DateStructure" />
+      <xs:element minOccurs="0" name="IdNo" type="xs:double" />
+      <xs:element minOccurs="0" name="IdType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssueDate" nillable="true" type="tns:DateStructure" />
+      <xs:element minOccurs="0" name="IssuePlace" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResidencyStructure" nillable="true" type="tns:ResidencyStructure" />
+  <xs:complexType name="SponsorStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IdNo" type="xs:double" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Occupation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="tns:LookupStructure" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SponsorStructure" nillable="true" type="tns:SponsorStructure" />
+  <xs:complexType name="StatusStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FingerPrintStatus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PersonStatus" nillable="true" type="tns:LookupStructure" />
+      <xs:element minOccurs="0" name="PrisonerStatus" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StatusStructure" nillable="true" type="tns:StatusStructure" />
+  <xs:complexType name="TravelStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EntryDate" nillable="true" type="tns:DateStructure" />
+      <xs:element minOccurs="0" name="LastEntryDate" nillable="true" type="tns:DateStructure" />
+      <xs:element minOccurs="0" name="LastExitDate" nillable="true" type="tns:DateStructure" />
+      <xs:element minOccurs="0" name="PassportExpiryDate" nillable="true" type="tns:DateStructure" />
+      <xs:element minOccurs="0" name="TravelStatus" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TravelStructure" nillable="true" type="tns:TravelStructure" />
+  <xs:complexType name="VisaStructure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FinalExitVisaIssued" type="xs:boolean" />
+      <xs:element minOccurs="0" name="VisaExpiryDate" nillable="true" type="tns:DateStructure" />
+      <xs:element minOccurs="0" name="VisaType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VisaStructure" nillable="true" type="tns:VisaStructure" />
+</xs:schema>

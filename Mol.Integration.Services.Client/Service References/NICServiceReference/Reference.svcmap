@@ -21,8 +21,15 @@
     <MetadataSource Address="http://172.26.20.52:9510/NICService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="NICService.disco" MetadataType="Disco" ID="296951ea-de4b-45ff-8c09-7e63f28a513a" SourceId="1" SourceUrl="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?disco" />
+    <MetadataFile FileName="NICService.xsd" MetadataType="Schema" ID="8ffe5a1d-3f8a-46e7-9bed-52d1fc25c103" SourceId="1" SourceUrl="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd2" />
+    <MetadataFile FileName="NICService1.xsd" MetadataType="Schema" ID="77f3b1de-8175-455f-9e71-3f9351f32a59" SourceId="1" SourceUrl="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NICService2.xsd" MetadataType="Schema" ID="ac330f57-aa18-4382-a68c-ba6c091c315e" SourceId="1" SourceUrl="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NICService1.wsdl" MetadataType="Wsdl" ID="a72ebfc0-e30b-4ef6-abc3-741e482994d7" SourceId="1" SourceUrl="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="NICService3.xsd" MetadataType="Schema" ID="0c3e0e65-ba58-4baa-b678-4841e62302ca" SourceId="1" SourceUrl="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd5" />
+    <MetadataFile FileName="NICService4.xsd" MetadataType="Schema" ID="77ab4887-092d-4661-946d-74ef960606c7" SourceId="1" SourceUrl="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd4" />
+    <MetadataFile FileName="NICService5.xsd" MetadataType="Schema" ID="c1d6d15c-8a13-43dc-b06a-559bf15f499b" SourceId="1" SourceUrl="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd3" />
     <MetadataFile FileName="NICService.wsdl" MetadataType="Wsdl" ID="6f56c296-9c44-4cf8-a910-af7993dfbce0" SourceId="1" SourceUrl="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?wsdl" />
+    <MetadataFile FileName="NICService.disco" MetadataType="Disco" ID="296951ea-de4b-45ff-8c09-7e63f28a513a" SourceId="1" SourceUrl="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

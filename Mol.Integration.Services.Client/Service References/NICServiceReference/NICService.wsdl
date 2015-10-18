@@ -1,271 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="NICService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
-  <wsp:Policy wsu:Id="basicHttpEndpoint_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <wsp:Policy>
-            <sp:TransportToken>
-              <wsp:Policy>
-                <sp:HttpsToken RequireClientCertificate="false" />
-              </wsp:Policy>
-            </sp:TransportToken>
-            <sp:AlgorithmSuite>
-              <wsp:Policy>
-                <sp:Basic256 />
-              </wsp:Policy>
-            </sp:AlgorithmSuite>
-            <sp:Layout>
-              <wsp:Policy>
-                <sp:Lax />
-              </wsp:Policy>
-            </sp:Layout>
-            <sp:IncludeTimestamp />
-          </wsp:Policy>
-        </sp:TransportBinding>
-        <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <wsp:Policy>
-            <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
-              <wsp:Policy>
-                <sp:WssUsernameToken10 />
-              </wsp:Policy>
-            </sp:UsernameToken>
-          </wsp:Policy>
-        </sp:SignedSupportingTokens>
-        <sp:Wss10 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <wsp:Policy />
-        </sp:Wss10>
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://mol.gov.sa/services/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://mol.gov.sa/services" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="NICService" targetNamespace="http://mol.gov.sa/services/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://mol.gov.sa/services" location="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?wsdl=wsdl0" />
   <wsdl:types>
-    <xsd:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
-      <xsd:element name="CancelVisa">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element minOccurs="0" name="requestNumber" type="xsd:double" />
-            <xsd:element minOccurs="0" name="borderNumber" type="xsd:double" />
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="CancelVisaResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element minOccurs="0" name="CancelVisaResult" type="xsd:boolean" />
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="QueryDependentsByID">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element minOccurs="0" name="IdNo" type="xsd:double" />
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="QueryDependentsByIDResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element xmlns:q1="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contracts.Data" minOccurs="0" name="QueryDependentsByIDResult" nillable="true" type="q1:DependentsData" />
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="GetLabrorPrisonStatus">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element minOccurs="0" name="IdNo" type="xsd:double" />
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="GetLabrorPrisonStatusResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element minOccurs="0" name="GetLabrorPrisonStatusResult" type="xsd:boolean" />
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AuthenticateUserByMobile">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element minOccurs="0" name="IdNo" type="xsd:double" />
-            <xsd:element minOccurs="0" name="smsCode" nillable="true" type="xsd:string" />
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="AuthenticateUserByMobileResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element minOccurs="0" name="AuthenticateUserByMobileResult" type="xsd:boolean" />
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="Test">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
-      <xsd:element name="TestResponse">
-        <xsd:complexType>
-          <xsd:sequence>
-            <xsd:element minOccurs="0" name="TestResult" nillable="true" type="xsd:string" />
-          </xsd:sequence>
-        </xsd:complexType>
-      </xsd:element>
+    <xsd:schema targetNamespace="http://mol.gov.sa/services/Imports">
+      <xsd:import schemaLocation="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd0" namespace="http://mol.gov.sa/services/" />
+      <xsd:import schemaLocation="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" />
+      <xsd:import schemaLocation="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contracts.Data" />
+      <xsd:import schemaLocation="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" />
     </xsd:schema>
-    <xsd:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contracts.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contracts.Data">
-      <xsd:complexType name="DependentsData">
-        <xsd:sequence>
-          <xsd:element xmlns:q2="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="BirthDate" nillable="true" type="q2:DateStructure" />
-          <xsd:element minOccurs="0" name="Gender" nillable="true" type="xsd:string" />
-          <xsd:element xmlns:q3="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="MaritalStatus" nillable="true" type="q3:LookupStructure" />
-          <xsd:element xmlns:q4="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="Name" nillable="true" type="q4:NameStructure" />
-          <xsd:element xmlns:q5="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="Nationality" nillable="true" type="q5:LookupStructure" />
-          <xsd:element xmlns:q6="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="Occupation" nillable="true" type="q6:LookupStructure" />
-          <xsd:element xmlns:q7="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="Relationship" nillable="true" type="q7:LookupStructure" />
-          <xsd:element xmlns:q8="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="Religion" nillable="true" type="q8:LookupStructure" />
-          <xsd:element xmlns:q9="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="Residency" nillable="true" type="q9:ResidencyStructure" />
-          <xsd:element xmlns:q10="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="Sponsor" nillable="true" type="q10:SponsorStructure" />
-          <xsd:element xmlns:q11="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="Status" nillable="true" type="q11:StatusStructure" />
-          <xsd:element xmlns:q12="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="Travel" nillable="true" type="q12:TravelStructure" />
-          <xsd:element xmlns:q13="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" minOccurs="0" name="Visa" nillable="true" type="q13:VisaStructure" />
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:element name="DependentsData" nillable="true" type="tns:DependentsData" />
-    </xsd:schema>
-    <xsd:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Data">
-      <xsd:complexType name="DateStructure">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="GregorianDate" type="xsd:dateTime" />
-          <xsd:element minOccurs="0" name="GregorianDateSpecified" type="xsd:boolean" />
-          <xsd:element minOccurs="0" name="HijriDate" nillable="true" type="xsd:string" />
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:element name="DateStructure" nillable="true" type="tns:DateStructure" />
-      <xsd:complexType name="LookupStructure">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="Code" type="xsd:int" />
-          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:element name="LookupStructure" nillable="true" type="tns:LookupStructure" />
-      <xsd:complexType name="NameStructure">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="FirstName" nillable="true" type="xsd:string" />
-          <xsd:element minOccurs="0" name="FullName" nillable="true" type="xsd:string" />
-          <xsd:element minOccurs="0" name="LastName" nillable="true" type="xsd:string" />
-          <xsd:element minOccurs="0" name="SecondName" nillable="true" type="xsd:string" />
-          <xsd:element minOccurs="0" name="ThirdName" nillable="true" type="xsd:string" />
-          <xsd:element minOccurs="0" name="TranslatedName" nillable="true" type="tns:NameStructure" />
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:element name="NameStructure" nillable="true" type="tns:NameStructure" />
-      <xsd:complexType name="ResidencyStructure">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="ExpiryDate" nillable="true" type="tns:DateStructure" />
-          <xsd:element minOccurs="0" name="IdNo" type="xsd:double" />
-          <xsd:element minOccurs="0" name="IdType" nillable="true" type="xsd:string" />
-          <xsd:element minOccurs="0" name="IssueDate" nillable="true" type="tns:DateStructure" />
-          <xsd:element minOccurs="0" name="IssuePlace" nillable="true" type="xsd:string" />
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:element name="ResidencyStructure" nillable="true" type="tns:ResidencyStructure" />
-      <xsd:complexType name="SponsorStructure">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="IdNo" type="xsd:double" />
-          <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
-          <xsd:element minOccurs="0" name="Occupation" nillable="true" type="xsd:string" />
-          <xsd:element minOccurs="0" name="Status" nillable="true" type="xsd:string" />
-          <xsd:element minOccurs="0" name="Type" nillable="true" type="tns:LookupStructure" />
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:element name="SponsorStructure" nillable="true" type="tns:SponsorStructure" />
-      <xsd:complexType name="StatusStructure">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="FingerPrintStatus" type="xsd:boolean" />
-          <xsd:element minOccurs="0" name="PersonStatus" nillable="true" type="tns:LookupStructure" />
-          <xsd:element minOccurs="0" name="PrisonerStatus" type="xsd:boolean" />
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:element name="StatusStructure" nillable="true" type="tns:StatusStructure" />
-      <xsd:complexType name="TravelStructure">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="EntryDate" nillable="true" type="tns:DateStructure" />
-          <xsd:element minOccurs="0" name="LastEntryDate" nillable="true" type="tns:DateStructure" />
-          <xsd:element minOccurs="0" name="LastExitDate" nillable="true" type="tns:DateStructure" />
-          <xsd:element minOccurs="0" name="PassportExpiryDate" nillable="true" type="tns:DateStructure" />
-          <xsd:element minOccurs="0" name="TravelStatus" nillable="true" type="xsd:string" />
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:element name="TravelStructure" nillable="true" type="tns:TravelStructure" />
-      <xsd:complexType name="VisaStructure">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="FinalExitVisaIssued" type="xsd:boolean" />
-          <xsd:element minOccurs="0" name="VisaExpiryDate" nillable="true" type="tns:DateStructure" />
-          <xsd:element minOccurs="0" name="VisaType" nillable="true" type="xsd:string" />
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:element name="VisaStructure" nillable="true" type="tns:VisaStructure" />
-    </xsd:schema>
-    <xsd:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault">
-      <xsd:complexType name="NICFaultContract">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="ErrorCode" nillable="true" type="xsd:string" />
-          <xsd:element minOccurs="0" name="ErrorMessage" nillable="true" type="xsd:string" />
-          <xsd:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Insert" nillable="true" type="q14:ArrayOfstring" />
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:element name="NICFaultContract" nillable="true" type="tns:NICFaultContract" />
-    </xsd:schema>
-    <xsd:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-      <xsd:complexType name="ArrayOfstring">
-        <xsd:sequence>
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xsd:string" />
-        </xsd:sequence>
-      </xsd:complexType>
-      <xsd:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring" />
-    </xsd:schema>
-    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-      <xs:element name="anyType" nillable="true" type="xs:anyType" />
-      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
-      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
-      <xs:element name="boolean" nillable="true" type="xs:boolean" />
-      <xs:element name="byte" nillable="true" type="xs:byte" />
-      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
-      <xs:element name="decimal" nillable="true" type="xs:decimal" />
-      <xs:element name="double" nillable="true" type="xs:double" />
-      <xs:element name="float" nillable="true" type="xs:float" />
-      <xs:element name="int" nillable="true" type="xs:int" />
-      <xs:element name="long" nillable="true" type="xs:long" />
-      <xs:element name="QName" nillable="true" type="xs:QName" />
-      <xs:element name="short" nillable="true" type="xs:short" />
-      <xs:element name="string" nillable="true" type="xs:string" />
-      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
-      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
-      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
-      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
-      <xs:element name="char" nillable="true" type="tns:char" />
-      <xs:simpleType name="char">
-        <xs:restriction base="xs:int" />
-      </xs:simpleType>
-      <xs:element name="duration" nillable="true" type="tns:duration" />
-      <xs:simpleType name="duration">
-        <xs:restriction base="xs:duration">
-          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
-          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
-          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
-        </xs:restriction>
-      </xs:simpleType>
-      <xs:element name="guid" nillable="true" type="tns:guid" />
-      <xs:simpleType name="guid">
-        <xs:restriction base="xs:string">
-          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
-        </xs:restriction>
-      </xs:simpleType>
-      <xs:attribute name="FactoryType" type="xs:QName" />
-      <xs:attribute name="Id" type="xs:ID" />
-      <xs:attribute name="Ref" type="xs:IDREF" />
-    </xs:schema>
   </wsdl:types>
   <wsdl:message name="INICService_CancelVisa_InputMessage">
     <wsdl:part name="parameters" element="tns:CancelVisa" />
@@ -274,7 +18,7 @@
     <wsdl:part name="parameters" element="tns:CancelVisaResponse" />
   </wsdl:message>
   <wsdl:message name="INICService_CancelVisa_NICFaultContractFault_FaultMessage">
-    <wsdl:part xmlns:q15="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" name="detail" element="q15:NICFaultContract" />
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" name="detail" element="q1:NICFaultContract" />
   </wsdl:message>
   <wsdl:message name="INICService_QueryDependentsByID_InputMessage">
     <wsdl:part name="parameters" element="tns:QueryDependentsByID" />
@@ -283,7 +27,7 @@
     <wsdl:part name="parameters" element="tns:QueryDependentsByIDResponse" />
   </wsdl:message>
   <wsdl:message name="INICService_QueryDependentsByID_NICFaultContractFault_FaultMessage">
-    <wsdl:part xmlns:q16="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" name="detail" element="q16:NICFaultContract" />
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" name="detail" element="q2:NICFaultContract" />
   </wsdl:message>
   <wsdl:message name="INICService_GetLabrorPrisonStatus_InputMessage">
     <wsdl:part name="parameters" element="tns:GetLabrorPrisonStatus" />
@@ -292,7 +36,7 @@
     <wsdl:part name="parameters" element="tns:GetLabrorPrisonStatusResponse" />
   </wsdl:message>
   <wsdl:message name="INICService_GetLabrorPrisonStatus_NICFaultContractFault_FaultMessage">
-    <wsdl:part xmlns:q17="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" name="detail" element="q17:NICFaultContract" />
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" name="detail" element="q3:NICFaultContract" />
   </wsdl:message>
   <wsdl:message name="INICService_AuthenticateUserByMobile_InputMessage">
     <wsdl:part name="parameters" element="tns:AuthenticateUserByMobile" />
@@ -301,7 +45,7 @@
     <wsdl:part name="parameters" element="tns:AuthenticateUserByMobileResponse" />
   </wsdl:message>
   <wsdl:message name="INICService_AuthenticateUserByMobile_NICFaultContractFault_FaultMessage">
-    <wsdl:part xmlns:q18="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" name="detail" element="q18:NICFaultContract" />
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" name="detail" element="q4:NICFaultContract" />
   </wsdl:message>
   <wsdl:message name="INICService_Test_InputMessage">
     <wsdl:part name="parameters" element="tns:Test" />
@@ -310,102 +54,51 @@
     <wsdl:part name="parameters" element="tns:TestResponse" />
   </wsdl:message>
   <wsdl:message name="INICService_Test_NICFaultContractFault_FaultMessage">
-    <wsdl:part xmlns:q19="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" name="detail" element="q19:NICFaultContract" />
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/Mol.Integration.Lib.Contract.Fault" name="detail" element="q5:NICFaultContract" />
   </wsdl:message>
   <wsdl:portType name="INICService">
     <wsdl:operation name="CancelVisa">
-      <wsdl:input wsaw:Action="http://tempuri.org/INICService/CancelVisa" message="tns:INICService_CancelVisa_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/INICService/CancelVisaResponse" message="tns:INICService_CancelVisa_OutputMessage" />
-      <wsdl:fault wsaw:Action="http://tempuri.org/INICService/CancelVisaNICFaultContractFault" name="NICFaultContractFault" message="tns:INICService_CancelVisa_NICFaultContractFault_FaultMessage" />
+      <wsdl:input wsaw:Action="http://mol.gov.sa/services/INICService/CancelVisa" message="tns:INICService_CancelVisa_InputMessage" />
+      <wsdl:output wsaw:Action="http://mol.gov.sa/services/INICService/CancelVisaResponse" message="tns:INICService_CancelVisa_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://mol.gov.sa/services/INICService/CancelVisaNICFaultContractFault" name="NICFaultContractFault" message="tns:INICService_CancelVisa_NICFaultContractFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="QueryDependentsByID">
-      <wsdl:input wsaw:Action="http://tempuri.org/INICService/QueryDependentsByID" message="tns:INICService_QueryDependentsByID_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/INICService/QueryDependentsByIDResponse" message="tns:INICService_QueryDependentsByID_OutputMessage" />
-      <wsdl:fault wsaw:Action="http://tempuri.org/INICService/QueryDependentsByIDNICFaultContractFault" name="NICFaultContractFault" message="tns:INICService_QueryDependentsByID_NICFaultContractFault_FaultMessage" />
+      <wsdl:input wsaw:Action="http://mol.gov.sa/services/INICService/QueryDependentsByID" message="tns:INICService_QueryDependentsByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://mol.gov.sa/services/INICService/QueryDependentsByIDResponse" message="tns:INICService_QueryDependentsByID_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://mol.gov.sa/services/INICService/QueryDependentsByIDNICFaultContractFault" name="NICFaultContractFault" message="tns:INICService_QueryDependentsByID_NICFaultContractFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetLabrorPrisonStatus">
-      <wsdl:input wsaw:Action="http://tempuri.org/INICService/GetLabrorPrisonStatus" message="tns:INICService_GetLabrorPrisonStatus_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/INICService/GetLabrorPrisonStatusResponse" message="tns:INICService_GetLabrorPrisonStatus_OutputMessage" />
-      <wsdl:fault wsaw:Action="http://tempuri.org/INICService/GetLabrorPrisonStatusNICFaultContractFault" name="NICFaultContractFault" message="tns:INICService_GetLabrorPrisonStatus_NICFaultContractFault_FaultMessage" />
+      <wsdl:input wsaw:Action="http://mol.gov.sa/services/INICService/GetLabrorPrisonStatus" message="tns:INICService_GetLabrorPrisonStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://mol.gov.sa/services/INICService/GetLabrorPrisonStatusResponse" message="tns:INICService_GetLabrorPrisonStatus_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://mol.gov.sa/services/INICService/GetLabrorPrisonStatusNICFaultContractFault" name="NICFaultContractFault" message="tns:INICService_GetLabrorPrisonStatus_NICFaultContractFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="AuthenticateUserByMobile">
-      <wsdl:input wsaw:Action="http://tempuri.org/INICService/AuthenticateUserByMobile" message="tns:INICService_AuthenticateUserByMobile_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/INICService/AuthenticateUserByMobileResponse" message="tns:INICService_AuthenticateUserByMobile_OutputMessage" />
-      <wsdl:fault wsaw:Action="http://tempuri.org/INICService/AuthenticateUserByMobileNICFaultContractFault" name="NICFaultContractFault" message="tns:INICService_AuthenticateUserByMobile_NICFaultContractFault_FaultMessage" />
+      <wsdl:input wsaw:Action="http://mol.gov.sa/services/INICService/AuthenticateUserByMobile" message="tns:INICService_AuthenticateUserByMobile_InputMessage" />
+      <wsdl:output wsaw:Action="http://mol.gov.sa/services/INICService/AuthenticateUserByMobileResponse" message="tns:INICService_AuthenticateUserByMobile_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://mol.gov.sa/services/INICService/AuthenticateUserByMobileNICFaultContractFault" name="NICFaultContractFault" message="tns:INICService_AuthenticateUserByMobile_NICFaultContractFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="Test">
-      <wsdl:input wsaw:Action="http://tempuri.org/INICService/Test" message="tns:INICService_Test_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/INICService/TestResponse" message="tns:INICService_Test_OutputMessage" />
-      <wsdl:fault wsaw:Action="http://tempuri.org/INICService/TestNICFaultContractFault" name="NICFaultContractFault" message="tns:INICService_Test_NICFaultContractFault_FaultMessage" />
+      <wsdl:input wsaw:Action="http://mol.gov.sa/services/INICService/Test" message="tns:INICService_Test_InputMessage" />
+      <wsdl:output wsaw:Action="http://mol.gov.sa/services/INICService/TestResponse" message="tns:INICService_Test_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://mol.gov.sa/services/INICService/TestNICFaultContractFault" name="NICFaultContractFault" message="tns:INICService_Test_NICFaultContractFault_FaultMessage" />
     </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="basicHttpEndpoint" type="tns:INICService">
-    <wsp:PolicyReference URI="#basicHttpEndpoint_policy" />
-    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="CancelVisa">
-      <soap:operation soapAction="http://tempuri.org/INICService/CancelVisa" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-      <wsdl:fault name="NICFaultContractFault">
-        <soap:fault use="literal" name="NICFaultContractFault" namespace="" />
-      </wsdl:fault>
-    </wsdl:operation>
-    <wsdl:operation name="QueryDependentsByID">
-      <soap:operation soapAction="http://tempuri.org/INICService/QueryDependentsByID" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-      <wsdl:fault name="NICFaultContractFault">
-        <soap:fault use="literal" name="NICFaultContractFault" namespace="" />
-      </wsdl:fault>
-    </wsdl:operation>
-    <wsdl:operation name="GetLabrorPrisonStatus">
-      <soap:operation soapAction="http://tempuri.org/INICService/GetLabrorPrisonStatus" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-      <wsdl:fault name="NICFaultContractFault">
-        <soap:fault use="literal" name="NICFaultContractFault" namespace="" />
-      </wsdl:fault>
-    </wsdl:operation>
-    <wsdl:operation name="AuthenticateUserByMobile">
-      <soap:operation soapAction="http://tempuri.org/INICService/AuthenticateUserByMobile" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-      <wsdl:fault name="NICFaultContractFault">
-        <soap:fault use="literal" name="NICFaultContractFault" namespace="" />
-      </wsdl:fault>
-    </wsdl:operation>
-    <wsdl:operation name="Test">
-      <soap:operation soapAction="http://tempuri.org/INICService/Test" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-      <wsdl:fault name="NICFaultContractFault">
-        <soap:fault use="literal" name="NICFaultContractFault" namespace="" />
-      </wsdl:fault>
-    </wsdl:operation>
-  </wsdl:binding>
   <wsdl:service name="NICService">
-    <wsdl:port name="basicHttpEndpoint" binding="tns:basicHttpEndpoint">
-      <soap:address location="https://biztalk-srv3.mol-pdom.gov:6559/NICService.svc" />
+    <wsdl:port name="wsHttpBinding" binding="i0:wsHttpBinding">
+      <soap12:address location="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <X509Data>
+              <X509Certificate>MIID6DCCAtCgAwIBAgIBFzANBgkqhkiG9w0BAQsFADCBpjELMAkGA1UEBhMCU0ExDzANBgNVBAgTBlJpeWFkaDEPMA0GA1UEBxMGUml5YWRoMTkwNwYDVQQKEzBHZW5lcmFsIE9yZ2FuaXphdGlvbiBmb3IgU29jaWFsIEluc3VyYW5jZSAoR09TSSkxKDAmBgNVBAsTH0luZm9ybWF0aW9uIFNlY3VyaXR5IERlcGFydG1lbnQxEDAOBgNVBAMTB0dPU0kgQ0EwHhcNMTUwNjAxMDQ0MjU4WhcNMTYwNTMxMDQ0MjU4WjBiMQswCQYDVQQGEwJTQTEPMA0GA1UECBMGcml5YWRoMQ8wDQYDVQQHEwZyaXlhZGgxDDAKBgNVBAoTA21vbDEMMAoGA1UECxMDbW9sMRUwEwYDVQQDEwxiaXp0YWxrLXNydjMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCP8UZKJosihJxmdltKuuTrPujKkKVzs+rS958YH934Ul43+5rQ45P3BLof1GarhdhHbiBb1GntG+iJNRfjuNImoSWZaQlAXC5tSMLbOvEpD/mF2wNasJUCIPwV7mQW/8GfvatC/MkXxqmXiKF/yLU6nhamvm1431kjjqLjSECLE5Zb9Len9GLH+KKE4DDdAWYhsjZgEZg7tbDj2c7EevKLrbMhUhCdpfGMcduYdiyQ+KjaJ/UEKPt3eu4VUk/o7r/f3GnLDRHVXcjcvGy2Dmxbp/znkYDNWLxqHtJGOtFMk/wRXAbY3zingwXvKHJhBcWSC0mwYErfP80ixKjoC3pzAgMBAAGjZDBiMAsGA1UdDwQEAwIFoDAdBgNVHQ4EFgQUR2yLMqP9/Ld2riCH0pl/h+lmhBgwHwYDVR0jBBgwFoAUBjoKTDiywHityW761Cy8q8Oq4bUwEwYDVR0lBAwwCgYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggEBAC+bP1ucEGqJNSHw6ri0KSsCp/vL1nZCci+EuSKlDhYxIRNtHv+IiP5JixL9nSZmXkamVj6odNgqUwPlYLLetRgM1iVEYXioU/LjKvtyncVdKm6w+L6LoxVlTWSyEWAt442/XsfcQOt+niviJ5gWkuTGlbHD0l2v3gUrDZ5RRVUy6deJfag1BbGKKnjIh1egSOLXKfEtoxvJ/6i7kLOmlZMn0Kx4LeIOKysZfQWzM+eZnD3ZoVo93ii3UK8Y+xETQ5tlmbzHr2jxYFiVaGgKxSVTUKq7KDxD2Y4I2YuLpOZCui7dFECNl5Ae1pWGpD9sqPN9DmBiohpC092lWZ5BiAo=</X509Certificate>
+            </X509Data>
+          </KeyInfo>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="clearUsernameBinding" binding="i0:clearUsernameBinding">
+      <soap12:address location="http://biztalk-srv3.mol-pdom.gov:9510/NICService.svc/clear" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

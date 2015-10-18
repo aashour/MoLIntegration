@@ -4,10 +4,11 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
+using Mol.Integration.Lib.Common;
 
 namespace Mol.Integration.Lib.Contract.Data
 {
-    [DataContract(Name = "StatusStructure")]
+    [DataContract(Namespace = Constants.Namespace)]
     public class StatusStructure
     {
         [DataMember(Name = "PersonStatus")]

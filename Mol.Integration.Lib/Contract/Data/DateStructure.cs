@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
+using Mol.Integration.Lib.Common;
 
 namespace Mol.Integration.Lib.Contract.Data
 {
-    [DataContract]
+    [DataContract(Namespace = Constants.Namespace)]
     public class DateStructure
     {
 

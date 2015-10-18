@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Mol.Integration.Services.Client</RootNamespace>
     <AssemblyName>Mol.Integration.Services.Client</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -55,9 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\NICServiceReference\Mol.Integration.Services.Client.NICServiceReference.DependentsData.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
+    <None Include="LocalApp.config" />
+    <None Include="Properties\DataSources\Mol.Integration.Lib.Contracts.Data.DependentsData.datasource" />
     <None Include="Service References\NICServiceReference\NICService.wsdl" />
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +74,25 @@
     <None Include="Service References\NICServiceReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Service References\NICServiceReference\NICService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NICServiceReference\NICService1.wsdl" />
+    <None Include="Service References\NICServiceReference\NICService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NICServiceReference\NICService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NICServiceReference\NICService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NICServiceReference\NICService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\NICServiceReference\NICService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\NICServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.ServiceModel;
 using System.ServiceModel.Security;
 using System.Text;
+using Mol.Integration.Lib.Contract.Data;
 using Mol.Integration.Services.Client.NICServiceReference;
 
 namespace Mol.Integration.Services.Client
@@ -29,7 +31,7 @@ namespace Mol.Integration.Services.Client
                             //c.ClientCredentials.UserName.Password = "123";
                             //c.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = X509CertificateValidationMode.None;
                             name = c.QueryDependentsByID(2337528299);
-                            Console.WriteLine("Name:{0}", name.Name.FullName);
+                            Console.WriteLine("Name:{0}", (name.Name.FullName));
                             break;
                         case "2":
                             Console.WriteLine("Creating the client by creating endpoint and binding through coding:\n");

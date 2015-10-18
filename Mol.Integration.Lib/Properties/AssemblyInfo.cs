@@ -22,6 +22,8 @@ using System.Runtime.InteropServices;
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("433cf599-4e75-45e6-96a0-5fc3425c4328")]
 
+[assembly: AssemblyKeyFile(@"C:\Users\Ahmed\Documents\Visual Studio 2013\Projects\Mol.Integration\References\Mol.Integration.snk")]
+
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version

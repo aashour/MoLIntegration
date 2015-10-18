@@ -44,5 +44,24 @@ namespace Mol.Integration.Lib.Data
             }
             return result;
         }
+
+        public long InsertLog(string userName, bool authorized, string operation, string service, string message)
+        {
+            using (MOL_Entities entites = new MOL_Entities())
+            {
+                MOL_IntegrationServiceLogging transaction = new MOL_IntegrationServiceLogging
+                {
+                    TransactionDate = DateTime.Now,
+                    Authorized = authorized,
+                    Operation = operation,
+                    Contract = service,
+                    MessageBody = message,
+                    UserName = userName
+                };
+                entites.MOL_IntegrationServiceLogging.Add(transaction);
+                entites.SaveChanges();
+                return transaction.Id;
+            }
+        }
     }
 }

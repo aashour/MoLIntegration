@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.ServiceModel;
 using System.Text;
 
@@ -16,6 +17,9 @@ namespace Mol.Integration.Lib.Common
             bool success = false;
             try
             {
+                //ServicePointManager.ServerCertificateValidationCallback += (sender, certificate, chain, sslPolicyErrors) => { return true; };
+                //ServicePointManager.ServerCertificateValidationCallback = new System.Net.Security.RemoteCertificateValidationCallback(delegate { return true; });
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls;
                 action(client);
                 ((IClientChannel)client).Close();
                 factory.Close();

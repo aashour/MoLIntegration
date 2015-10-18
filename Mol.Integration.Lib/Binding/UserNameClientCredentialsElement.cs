@@ -21,8 +21,7 @@ namespace Mol.Integration.Lib.Binding
 
         /// <summary>
         /// Username (required)
-        /// </summary>
-        [DisplayName("UserName"), Category("General"), Browsable(true)]
+        /// </summary>        
         [ConfigurationProperty("UserName", DefaultValue = "")]
         public string UserName  
         {
@@ -30,7 +29,7 @@ namespace Mol.Integration.Lib.Binding
             set { base["userName"] = value; }
         }
 
-        /// <summary>
+        /// <summary> 
         /// Password (optional)
         /// </summary>
         [ConfigurationProperty("Password", DefaultValue = "")]

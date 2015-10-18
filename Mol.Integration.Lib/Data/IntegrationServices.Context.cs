@@ -28,5 +28,6 @@ namespace Mol.Integration.Lib.Data
         public virtual DbSet<MOL_Consumer> MOL_Consumer { get; set; }
         public virtual DbSet<MOL_IntegrationService> MOL_IntegrationService { get; set; }
         public virtual DbSet<MOL_IntegrationServiceConsumer> MOL_IntegrationServiceConsumer { get; set; }
+        public virtual DbSet<MOL_IntegrationServiceLogging> MOL_IntegrationServiceLogging { get; set; }
     }
 }

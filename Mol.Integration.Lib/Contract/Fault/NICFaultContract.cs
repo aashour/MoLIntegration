@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
+using Mol.Integration.Lib.Common;
 
 namespace Mol.Integration.Lib.Contract.Fault
 {
-    [DataContract(Name = "NICFaultContract")]
+    [DataContract(Name = "NICFaultContract", Namespace = Constants.Namespace)]
     public class NICFaultContract
     {
         public NICFaultContract()
