@@ -1,6 +1,5 @@
 ﻿using Mol.Integration.Lib.Common;
 using Mol.Integration.Lib.Contract.Data;
-using Mol.Integration.Lib.Contracts.Data;
 using Mol.Integration.Lib.Proxies;
 using System;
 using System.Collections.Generic;
@@ -18,10 +17,6 @@ namespace Mol.Integration.Lib
                 entryDateHegira = int.Parse(data.EntryDateHegira);
             if (!string.IsNullOrEmpty(data.EntryDateHegira) && Dates.HijriToGreg(data.EntryDateHegira).HasValue && Dates.GregToHijri(Dates.HijriToGreg(data.EntryDateHegira).Value, "MM/dd/yyyy").HasValue)
                 entryDateHegira = int.Parse(Dates.GregToHijri(Dates.HijriToGreg(data.EntryDateHegira).Value, "MM/dd/yyyy").Value.ToString("yyyyMMdd"));
-
-            DateTime visaExpiryDateGreg = new DateTime();
-            if (!string.IsNullOrEmpty(data.VisaExpiryDateGreg))
-                DateTime.TryParse(data.VisaExpiryDateGreg, out visaExpiryDateGreg);
 
             Mol.Integration.Lib.Service.NICService srv = new Mol.Integration.Lib.Service.NICService();
 
@@ -142,7 +137,7 @@ namespace Mol.Integration.Lib
                     VisaType = data.VisaType,
                     VisaExpiryDate = new DateStructure
                     {
-                        GregorianDate = visaExpiryDateGreg,
+                        GregorianDate = data.VisaExpiryDateGreg,
                         HijriDate = data.VisaExpiryDateHegira
                     },
                     FinalExitVisaIssued = data.FinalExitViasaIssued

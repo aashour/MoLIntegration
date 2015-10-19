@@ -164,8 +164,8 @@
           <Property Name="MessageBody" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="Contract" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="Operation" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="TransactionDate" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Authorized" Type="Boolean" Nullable="false" />
+          <Property Name="TransactionDate" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -206,8 +206,8 @@
           <EntitySetMapping Name="MOL_IntegrationServiceLogging">
             <EntityTypeMapping TypeName="Mol.Integration.Lib.Data.MOL_IntegrationServiceLogging">
               <MappingFragment StoreEntitySet="MOL_IntegrationServiceLogging">
-                <ScalarProperty Name="Authorized" ColumnName="Authorized" />
                 <ScalarProperty Name="TransactionDate" ColumnName="TransactionDate" />
+                <ScalarProperty Name="Authorized" ColumnName="Authorized" />
                 <ScalarProperty Name="Operation" ColumnName="Operation" />
                 <ScalarProperty Name="Contract" ColumnName="Contract" />
                 <ScalarProperty Name="MessageBody" ColumnName="MessageBody" />

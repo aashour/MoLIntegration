@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Mol.Integration.IntegrationProxy.NicWebService
+namespace Mol.Integration.Lib.Proxies
 {
     using System.Runtime.Serialization;
 
@@ -16,7 +16,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "NICHeader", Namespace = "http://NicWebServiceHeader")]
-    internal partial class NICHeader : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class NICHeader : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -38,7 +38,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string password
+        public string password
         {
             get
             {
@@ -51,7 +51,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string username
+        public string username
         {
             get
             {
@@ -67,14 +67,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "IstiqdamFull", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class IstiqdamFull : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class IstiqdamFull : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.IstiqdamRequestCategoryFull> IstiqdamRequestCategoryFullField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.IstiqdamRequestCategoryFull> IstiqdamRequestCategoryFullField;
 
-        private Mol.Integration.IntegrationProxy.NicWebService.IstiqdamSummaryFull IstiqdamSummaryFullField;
+        private Mol.Integration.Lib.Proxies.IstiqdamSummaryFull IstiqdamSummaryFullField;
 
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData
         {
@@ -89,7 +89,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.IstiqdamRequestCategoryFull> IstiqdamRequestCategoryFull
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.IstiqdamRequestCategoryFull> IstiqdamRequestCategoryFull
         {
             get
             {
@@ -102,7 +102,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal Mol.Integration.IntegrationProxy.NicWebService.IstiqdamSummaryFull IstiqdamSummaryFull
+        public Mol.Integration.Lib.Proxies.IstiqdamSummaryFull IstiqdamSummaryFull
         {
             get
             {
@@ -118,7 +118,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "IstiqdamSummaryFull", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class IstiqdamSummaryFull : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class IstiqdamSummaryFull : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -148,7 +148,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestDateG
+        public System.DateTime RequestDateG
         {
             get
             {
@@ -161,7 +161,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequestDateH
+        public string RequestDateH
         {
             get
             {
@@ -174,7 +174,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequestIssueLocation
+        public string RequestIssueLocation
         {
             get
             {
@@ -187,7 +187,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double RequestNumber
+        public double RequestNumber
         {
             get
             {
@@ -200,7 +200,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double RquestsponsorId
+        public double RquestsponsorId
         {
             get
             {
@@ -213,7 +213,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int TotalVisaRequested
+        public int TotalVisaRequested
         {
             get
             {
@@ -229,12 +229,12 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "IstiqdamRequestCategoryFull", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class IstiqdamRequestCategoryFull : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class IstiqdamRequestCategoryFull : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.IstiqdamRequestMemberFull> MembersListFullField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.IstiqdamRequestMemberFull> MembersListFullField;
 
         private double NationalityCodeField;
 
@@ -267,7 +267,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.IstiqdamRequestMemberFull> MembersListFull
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.IstiqdamRequestMemberFull> MembersListFull
         {
             get
             {
@@ -280,7 +280,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double NationalityCode
+        public double NationalityCode
         {
             get
             {
@@ -293,7 +293,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string NationalityRequested
+        public string NationalityRequested
         {
             get
             {
@@ -306,7 +306,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OccupationCode
+        public double OccupationCode
         {
             get
             {
@@ -319,7 +319,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string OccupationRequested
+        public string OccupationRequested
         {
             get
             {
@@ -332,7 +332,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double RequestNumber
+        public double RequestNumber
         {
             get
             {
@@ -345,7 +345,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int RequestNumberOfVisas
+        public int RequestNumberOfVisas
         {
             get
             {
@@ -358,7 +358,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequestReason
+        public string RequestReason
         {
             get
             {
@@ -371,7 +371,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Sex
+        public string Sex
         {
             get
             {
@@ -384,7 +384,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double SexCode
+        public double SexCode
         {
             get
             {
@@ -400,7 +400,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "IstiqdamRequestMemberFull", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class IstiqdamRequestMemberFull : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class IstiqdamRequestMemberFull : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -440,7 +440,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ActualFees
+        public int ActualFees
         {
             get
             {
@@ -453,7 +453,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ArrivalDateG
+        public System.DateTime ArrivalDateG
         {
             get
             {
@@ -466,7 +466,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ArrivalDateH
+        public string ArrivalDateH
         {
             get
             {
@@ -479,7 +479,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ArrivalPlace
+        public string ArrivalPlace
         {
             get
             {
@@ -492,7 +492,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double BorderNumber
+        public double BorderNumber
         {
             get
             {
@@ -505,7 +505,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Name
+        public string Name
         {
             get
             {
@@ -518,7 +518,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequestStatus
+        public string RequestStatus
         {
             get
             {
@@ -531,7 +531,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime VisaDateG
+        public System.DateTime VisaDateG
         {
             get
             {
@@ -544,7 +544,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string VisaDateH
+        public string VisaDateH
         {
             get
             {
@@ -557,7 +557,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string VisaIssuePlace
+        public string VisaIssuePlace
         {
             get
             {
@@ -570,7 +570,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double VisaNumber
+        public double VisaNumber
         {
             get
             {
@@ -586,7 +586,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "RegisterIstiqdamRequest", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class RegisterIstiqdamRequest : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class RegisterIstiqdamRequest : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -605,7 +605,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
 
         private double MolRefNumberField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamCategory> RegisterIstiqdamCategoryField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.RegisterIstiqdamCategory> RegisterIstiqdamCategoryField;
 
         private System.DateTime RequestDateGField;
 
@@ -634,7 +634,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double FollowUpNumber
+        public double FollowUpNumber
         {
             get
             {
@@ -647,7 +647,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string IstikdamCategiory
+        public string IstikdamCategiory
         {
             get
             {
@@ -660,7 +660,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short IstikdamCategioryCode
+        public short IstikdamCategioryCode
         {
             get
             {
@@ -673,7 +673,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short IstikdamOffice
+        public short IstikdamOffice
         {
             get
             {
@@ -686,7 +686,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short MolFileLocation
+        public short MolFileLocation
         {
             get
             {
@@ -699,7 +699,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double MolFileNumber
+        public double MolFileNumber
         {
             get
             {
@@ -712,7 +712,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double MolRefNumber
+        public double MolRefNumber
         {
             get
             {
@@ -725,7 +725,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamCategory> RegisterIstiqdamCategory
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.RegisterIstiqdamCategory> RegisterIstiqdamCategory
         {
             get
             {
@@ -738,7 +738,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestDateG
+        public System.DateTime RequestDateG
         {
             get
             {
@@ -751,7 +751,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequestDateH
+        public string RequestDateH
         {
             get
             {
@@ -764,7 +764,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequesterName
+        public string RequesterName
         {
             get
             {
@@ -777,7 +777,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequesterStatus
+        public string RequesterStatus
         {
             get
             {
@@ -790,7 +790,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int RequiredAmount
+        public int RequiredAmount
         {
             get
             {
@@ -803,7 +803,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short RowError
+        public short RowError
         {
             get
             {
@@ -816,7 +816,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short TotalVisaReuqested
+        public short TotalVisaReuqested
         {
             get
             {
@@ -832,7 +832,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "RegisterIstiqdamCategory", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class RegisterIstiqdamCategory : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class RegisterIstiqdamCategory : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -843,7 +843,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
 
         private double OccupationCodeField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequestMember> RegisterIstiqdamRequestMemberField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.RegisterIstiqdamRequestMember> RegisterIstiqdamRequestMemberField;
 
         private int RequestNumberOfVisasField;
 
@@ -864,7 +864,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double ArrivalLocationCode
+        public double ArrivalLocationCode
         {
             get
             {
@@ -877,7 +877,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double NationalityCode
+        public double NationalityCode
         {
             get
             {
@@ -890,7 +890,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OccupationCode
+        public double OccupationCode
         {
             get
             {
@@ -903,7 +903,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequestMember> RegisterIstiqdamRequestMember
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.RegisterIstiqdamRequestMember> RegisterIstiqdamRequestMember
         {
             get
             {
@@ -916,7 +916,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int RequestNumberOfVisas
+        public int RequestNumberOfVisas
         {
             get
             {
@@ -929,7 +929,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double RquestRerasonCode
+        public double RquestRerasonCode
         {
             get
             {
@@ -942,7 +942,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double SexCode
+        public double SexCode
         {
             get
             {
@@ -958,7 +958,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "RegisterIstiqdamRequestMember", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class RegisterIstiqdamRequestMember : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class RegisterIstiqdamRequestMember : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -978,7 +978,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double BorderNumber
+        public double BorderNumber
         {
             get
             {
@@ -994,7 +994,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "RegisterIstiqdamFile", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class RegisterIstiqdamFile : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class RegisterIstiqdamFile : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -1098,7 +1098,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ActionType
+        public string ActionType
         {
             get
             {
@@ -1111,7 +1111,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Area
+        public string Area
         {
             get
             {
@@ -1124,7 +1124,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string BusienssMainName
+        public string BusienssMainName
         {
             get
             {
@@ -1137,7 +1137,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short BusinessStatus
+        public short BusinessStatus
         {
             get
             {
@@ -1150,7 +1150,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string BusinessbranchName
+        public string BusinessbranchName
         {
             get
             {
@@ -1163,7 +1163,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short CityCode
+        public short CityCode
         {
             get
             {
@@ -1176,7 +1176,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short CompnayNationality
+        public short CompnayNationality
         {
             get
             {
@@ -1189,7 +1189,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int CreateDate
+        public int CreateDate
         {
             get
             {
@@ -1202,7 +1202,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string CreatedSponsorId
+        public string CreatedSponsorId
         {
             get
             {
@@ -1215,7 +1215,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string EstablishmentName
+        public string EstablishmentName
         {
             get
             {
@@ -1228,7 +1228,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ExecutionReasonCode
+        public int ExecutionReasonCode
         {
             get
             {
@@ -1241,7 +1241,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ExecutionReturnCode
+        public int ExecutionReturnCode
         {
             get
             {
@@ -1254,7 +1254,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double Fax
+        public double Fax
         {
             get
             {
@@ -1267,7 +1267,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double FileNmber
+        public double FileNmber
         {
             get
             {
@@ -1280,7 +1280,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short FileType
+        public short FileType
         {
             get
             {
@@ -1293,7 +1293,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double MOC
+        public double MOC
         {
             get
             {
@@ -1306,7 +1306,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short MianBranchFlag
+        public short MianBranchFlag
         {
             get
             {
@@ -1319,7 +1319,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string MocIssuePlace
+        public string MocIssuePlace
         {
             get
             {
@@ -1332,7 +1332,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short MolFileLocation
+        public short MolFileLocation
         {
             get
             {
@@ -1345,7 +1345,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double MolFileNumber
+        public double MolFileNumber
         {
             get
             {
@@ -1358,7 +1358,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short MolMianActivity
+        public short MolMianActivity
         {
             get
             {
@@ -1371,7 +1371,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short MolSubActivity
+        public short MolSubActivity
         {
             get
             {
@@ -1384,7 +1384,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string MpNumber
+        public string MpNumber
         {
             get
             {
@@ -1397,7 +1397,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short NcnCentralFileLocation
+        public short NcnCentralFileLocation
         {
             get
             {
@@ -1410,7 +1410,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double NcnCentralFileNumber
+        public double NcnCentralFileNumber
         {
             get
             {
@@ -1423,7 +1423,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string OtherLiceNumber
+        public string OtherLiceNumber
         {
             get
             {
@@ -1436,7 +1436,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short OtherLiceType
+        public short OtherLiceType
         {
             get
             {
@@ -1449,7 +1449,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double POBOX
+        public double POBOX
         {
             get
             {
@@ -1462,7 +1462,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequestedSponsorFirstName
+        public string RequestedSponsorFirstName
         {
             get
             {
@@ -1475,7 +1475,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double RequestedSponsorID
+        public double RequestedSponsorID
         {
             get
             {
@@ -1488,7 +1488,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequestedSponsorSecondName
+        public string RequestedSponsorSecondName
         {
             get
             {
@@ -1501,7 +1501,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequestedSponsorThirdName
+        public string RequestedSponsorThirdName
         {
             get
             {
@@ -1514,7 +1514,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SponsorActivity1
+        public string SponsorActivity1
         {
             get
             {
@@ -1527,7 +1527,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SponsorActivity2
+        public string SponsorActivity2
         {
             get
             {
@@ -1540,7 +1540,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double SponsorMoc
+        public double SponsorMoc
         {
             get
             {
@@ -1553,7 +1553,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short SponsorType
+        public short SponsorType
         {
             get
             {
@@ -1566,7 +1566,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Sponsoraddress
+        public string Sponsoraddress
         {
             get
             {
@@ -1579,7 +1579,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Sponsorbranch
+        public string Sponsorbranch
         {
             get
             {
@@ -1592,7 +1592,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Street
+        public string Street
         {
             get
             {
@@ -1605,7 +1605,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double Telephone1
+        public double Telephone1
         {
             get
             {
@@ -1618,7 +1618,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double Telephone2
+        public double Telephone2
         {
             get
             {
@@ -1631,7 +1631,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double ZipCode
+        public double ZipCode
         {
             get
             {
@@ -1644,7 +1644,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string requestedSponsorFamilyName
+        public string requestedSponsorFamilyName
         {
             get
             {
@@ -1660,14 +1660,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "MolSponsorInfo", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class MolSponsorInfo : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class MolSponsorInfo : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.MOLBusinessList> MolBusinessListField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.MOLBusinessList> MolBusinessListField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.MOLSponsoreesList> MolSponsoreeListField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.MOLSponsoreesList> MolSponsoreeListField;
 
         private double SponsorIdField;
 
@@ -1686,7 +1686,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.MOLBusinessList> MolBusinessList
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.MOLBusinessList> MolBusinessList
         {
             get
             {
@@ -1699,7 +1699,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.MOLSponsoreesList> MolSponsoreeList
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.MOLSponsoreesList> MolSponsoreeList
         {
             get
             {
@@ -1712,7 +1712,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double SponsorId
+        public double SponsorId
         {
             get
             {
@@ -1725,7 +1725,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SponsorName
+        public string SponsorName
         {
             get
             {
@@ -1741,7 +1741,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "MOLBusinessList", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class MOLBusinessList : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class MOLBusinessList : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -1769,7 +1769,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string BusinessName
+        public string BusinessName
         {
             get
             {
@@ -1782,7 +1782,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short BusinessStatus
+        public short BusinessStatus
         {
             get
             {
@@ -1795,7 +1795,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short MoLFileLocation
+        public short MoLFileLocation
         {
             get
             {
@@ -1808,7 +1808,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double MoLFileNumber
+        public double MoLFileNumber
         {
             get
             {
@@ -1821,7 +1821,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short SequesnceNumber
+        public short SequesnceNumber
         {
             get
             {
@@ -1837,7 +1837,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "MOLSponsoreesList", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class MOLSponsoreesList : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class MOLSponsoreesList : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -1859,7 +1859,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double SponsoreeId
+        public double SponsoreeId
         {
             get
             {
@@ -1872,7 +1872,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SponsoreeName
+        public string SponsoreeName
         {
             get
             {
@@ -1888,7 +1888,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "RunAway", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class RunAway : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class RunAway : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -1940,7 +1940,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ReporterInfoName
+        public string ReporterInfoName
         {
             get
             {
@@ -1953,7 +1953,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double RequesterID
+        public double RequesterID
         {
             get
             {
@@ -1966,7 +1966,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequesterInfoName
+        public string RequesterInfoName
         {
             get
             {
@@ -1979,7 +1979,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReturnCode
+        public int ReturnCode
         {
             get
             {
@@ -1992,7 +1992,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ReturnMessage
+        public string ReturnMessage
         {
             get
             {
@@ -2005,7 +2005,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RunawayDate
+        public string RunawayDate
         {
             get
             {
@@ -2018,7 +2018,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double RunawayID
+        public double RunawayID
         {
             get
             {
@@ -2031,7 +2031,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RunawayInfoFirstEntryDate
+        public string RunawayInfoFirstEntryDate
         {
             get
             {
@@ -2044,7 +2044,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RunawayInfoNationalityDescription
+        public string RunawayInfoNationalityDescription
         {
             get
             {
@@ -2057,7 +2057,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RunawayInfoOccupationDescription
+        public string RunawayInfoOccupationDescription
         {
             get
             {
@@ -2070,7 +2070,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RunawayInfoPassportNo
+        public string RunawayInfoPassportNo
         {
             get
             {
@@ -2083,7 +2083,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RunawayInfoPersonName
+        public string RunawayInfoPersonName
         {
             get
             {
@@ -2096,7 +2096,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RunawayInfoResExpDate
+        public string RunawayInfoResExpDate
         {
             get
             {
@@ -2109,7 +2109,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double RunawayInfoSponsorId
+        public double RunawayInfoSponsorId
         {
             get
             {
@@ -2122,7 +2122,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RunawayInfoSponsorName
+        public string RunawayInfoSponsorName
         {
             get
             {
@@ -2135,7 +2135,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double SeqNo
+        public double SeqNo
         {
             get
             {
@@ -2148,7 +2148,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int TotalRunawayRecords
+        public int TotalRunawayRecords
         {
             get
             {
@@ -2164,7 +2164,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "ServiceAuthentication", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class ServiceAuthentication : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class ServiceAuthentication : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -2198,7 +2198,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double AgencyId
+        public double AgencyId
         {
             get
             {
@@ -2211,7 +2211,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string AgencyPasspword
+        public string AgencyPasspword
         {
             get
             {
@@ -2224,7 +2224,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ClientIpAddress
+        public string ClientIpAddress
         {
             get
             {
@@ -2237,7 +2237,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Lang
+        public string Lang
         {
             get
             {
@@ -2250,7 +2250,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int LocationId
+        public int LocationId
         {
             get
             {
@@ -2263,7 +2263,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OperatorID
+        public double OperatorID
         {
             get
             {
@@ -2276,7 +2276,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ServiceID
+        public int ServiceID
         {
             get
             {
@@ -2289,7 +2289,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double SeviceProviderID
+        public double SeviceProviderID
         {
             get
             {
@@ -2305,7 +2305,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "QueryDependentsByID_NSMol", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class QueryDependentsByID_NSMol : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class QueryDependentsByID_NSMol : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -2431,7 +2431,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime BirthDateGreg
+        public System.DateTime BirthDateGreg
         {
             get
             {
@@ -2444,7 +2444,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int BirthDateHegira
+        public int BirthDateHegira
         {
             get
             {
@@ -2457,7 +2457,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime EntryDateGreg
+        public System.DateTime EntryDateGreg
         {
             get
             {
@@ -2470,7 +2470,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string EntryDateHegira
+        public string EntryDateHegira
         {
             get
             {
@@ -2483,7 +2483,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal bool FinalExitViasaIssued
+        public bool FinalExitViasaIssued
         {
             get
             {
@@ -2496,7 +2496,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal bool FingerPrintStatus
+        public bool FingerPrintStatus
         {
             get
             {
@@ -2509,7 +2509,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string FirstName
+        public string FirstName
         {
             get
             {
@@ -2522,7 +2522,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string FirstNameT
+        public string FirstNameT
         {
             get
             {
@@ -2535,7 +2535,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double Id
+        public double Id
         {
             get
             {
@@ -2548,7 +2548,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string IdType
+        public string IdType
         {
             get
             {
@@ -2561,7 +2561,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime LastEntryDateGreg
+        public System.DateTime LastEntryDateGreg
         {
             get
             {
@@ -2574,7 +2574,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string LastEntryDateHegira
+        public string LastEntryDateHegira
         {
             get
             {
@@ -2587,7 +2587,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime LastExitDateGreg
+        public System.DateTime LastExitDateGreg
         {
             get
             {
@@ -2600,7 +2600,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string LastExitDateHegira
+        public string LastExitDateHegira
         {
             get
             {
@@ -2613,7 +2613,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string LastName
+        public string LastName
         {
             get
             {
@@ -2626,7 +2626,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string LastNameT
+        public string LastNameT
         {
             get
             {
@@ -2639,7 +2639,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string MaritalStatus
+        public string MaritalStatus
         {
             get
             {
@@ -2652,7 +2652,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int MaritalStatusCode
+        public int MaritalStatusCode
         {
             get
             {
@@ -2665,7 +2665,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Name
+        public string Name
         {
             get
             {
@@ -2678,7 +2678,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Nationality
+        public string Nationality
         {
             get
             {
@@ -2691,7 +2691,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short NationalityCode
+        public short NationalityCode
         {
             get
             {
@@ -2704,7 +2704,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Occupation
+        public string Occupation
         {
             get
             {
@@ -2717,7 +2717,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int OccupationCode
+        public int OccupationCode
         {
             get
             {
@@ -2730,7 +2730,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime PassportExpiryDateGreg
+        public System.DateTime PassportExpiryDateGreg
         {
             get
             {
@@ -2743,7 +2743,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string PassportExpiryDateHegira
+        public string PassportExpiryDateHegira
         {
             get
             {
@@ -2756,7 +2756,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Relationship
+        public string Relationship
         {
             get
             {
@@ -2769,7 +2769,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int RelationshipCode
+        public int RelationshipCode
         {
             get
             {
@@ -2782,7 +2782,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Religion
+        public string Religion
         {
             get
             {
@@ -2795,7 +2795,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReligionCode
+        public int ReligionCode
         {
             get
             {
@@ -2808,7 +2808,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -2821,7 +2821,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResidencyExpiryDateGreg
+        public System.DateTime ResidencyExpiryDateGreg
         {
             get
             {
@@ -2834,7 +2834,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ResidencyExpiryDateHegira
+        public int ResidencyExpiryDateHegira
         {
             get
             {
@@ -2847,7 +2847,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResidencyIssueDateGreg
+        public System.DateTime ResidencyIssueDateGreg
         {
             get
             {
@@ -2860,7 +2860,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ResidencyIssueDateHegira
+        public int ResidencyIssueDateHegira
         {
             get
             {
@@ -2873,7 +2873,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ResidencyIssuePlace
+        public string ResidencyIssuePlace
         {
             get
             {
@@ -2886,7 +2886,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -2899,7 +2899,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SecondName
+        public string SecondName
         {
             get
             {
@@ -2912,7 +2912,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SecondNameT
+        public string SecondNameT
         {
             get
             {
@@ -2925,7 +2925,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Sex
+        public string Sex
         {
             get
             {
@@ -2938,7 +2938,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double SponsorId
+        public double SponsorId
         {
             get
             {
@@ -2951,7 +2951,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SponsorName
+        public string SponsorName
         {
             get
             {
@@ -2964,7 +2964,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SponsorOccupation
+        public string SponsorOccupation
         {
             get
             {
@@ -2977,7 +2977,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SponsorStatus
+        public string SponsorStatus
         {
             get
             {
@@ -2990,7 +2990,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SponsorType
+        public string SponsorType
         {
             get
             {
@@ -3003,7 +3003,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int SponsorTypeCode
+        public int SponsorTypeCode
         {
             get
             {
@@ -3016,7 +3016,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Status
+        public string Status
         {
             get
             {
@@ -3029,7 +3029,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short StatusCode
+        public short StatusCode
         {
             get
             {
@@ -3042,7 +3042,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ThirdName
+        public string ThirdName
         {
             get
             {
@@ -3055,7 +3055,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ThirdNameT
+        public string ThirdNameT
         {
             get
             {
@@ -3068,7 +3068,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string TranslatedName
+        public string TranslatedName
         {
             get
             {
@@ -3081,7 +3081,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime VisaExpiryDateGreg
+        public System.DateTime VisaExpiryDateGreg
         {
             get
             {
@@ -3094,7 +3094,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string VisaExpiryDateHegira
+        public string VisaExpiryDateHegira
         {
             get
             {
@@ -3107,7 +3107,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string VisaType
+        public string VisaType
         {
             get
             {
@@ -3120,7 +3120,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string travelStatus
+        public string travelStatus
         {
             get
             {
@@ -3136,7 +3136,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "CheckVehicleOwner", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class CheckVehicleOwner : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class CheckVehicleOwner : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -3166,7 +3166,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ClientIpAddress
+        public string ClientIpAddress
         {
             get
             {
@@ -3179,7 +3179,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double CoOwnerID
+        public double CoOwnerID
         {
             get
             {
@@ -3192,7 +3192,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OperatorId
+        public double OperatorId
         {
             get
             {
@@ -3205,7 +3205,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OwnerID
+        public double OwnerID
         {
             get
             {
@@ -3218,7 +3218,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double PreviousOwnerID
+        public double PreviousOwnerID
         {
             get
             {
@@ -3231,7 +3231,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double VehicleSequenceNo
+        public double VehicleSequenceNo
         {
             get
             {
@@ -3247,7 +3247,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "QueryWorkPermitReq", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class QueryWorkPermitReq : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class QueryWorkPermitReq : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -3277,7 +3277,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ClientIpAddress
+        public string ClientIpAddress
         {
             get
             {
@@ -3290,7 +3290,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double IDNumber
+        public double IDNumber
         {
             get
             {
@@ -3303,7 +3303,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Lang
+        public string Lang
         {
             get
             {
@@ -3316,7 +3316,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OperatorId
+        public double OperatorId
         {
             get
             {
@@ -3329,7 +3329,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double WorkpermitLabourOfficeCode
+        public double WorkpermitLabourOfficeCode
         {
             get
             {
@@ -3342,7 +3342,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double WorkpermitLicenseNumber
+        public double WorkpermitLicenseNumber
         {
             get
             {
@@ -3358,7 +3358,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "QueryWorkPermitRes", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class QueryWorkPermitRes : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class QueryWorkPermitRes : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -3367,7 +3367,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
 
         private System.DateTime ResponseTimeStampField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitResList> WorkPermitListField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.QueryWorkPermitResList> WorkPermitListField;
 
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData
         {
@@ -3382,7 +3382,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -3395,7 +3395,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -3408,7 +3408,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitResList> WorkPermitList
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.QueryWorkPermitResList> WorkPermitList
         {
             get
             {
@@ -3424,7 +3424,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "QueryWorkPermitResList", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class QueryWorkPermitResList : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class QueryWorkPermitResList : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -3462,7 +3462,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int Duration
+        public int Duration
         {
             get
             {
@@ -3475,7 +3475,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime EndDateG
+        public System.DateTime EndDateG
         {
             get
             {
@@ -3488,7 +3488,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double IDNumber
+        public double IDNumber
         {
             get
             {
@@ -3501,7 +3501,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime StartDateG
+        public System.DateTime StartDateG
         {
             get
             {
@@ -3514,7 +3514,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int Status
+        public int Status
         {
             get
             {
@@ -3527,7 +3527,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string StatusDesc
+        public string StatusDesc
         {
             get
             {
@@ -3540,7 +3540,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Timestamp
+        public string Timestamp
         {
             get
             {
@@ -3553,7 +3553,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double WorkpermitLabourOfficeCode
+        public double WorkpermitLabourOfficeCode
         {
             get
             {
@@ -3566,7 +3566,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double WorkpermitLicenseNumber
+        public double WorkpermitLicenseNumber
         {
             get
             {
@@ -3579,7 +3579,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int WorkpermitTypeCode
+        public int WorkpermitTypeCode
         {
             get
             {
@@ -3595,7 +3595,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "IssueWorkPermitReq", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class IssueWorkPermitReq : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class IssueWorkPermitReq : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -3631,7 +3631,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ClientIpAddress
+        public string ClientIpAddress
         {
             get
             {
@@ -3644,7 +3644,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int EndDate
+        public int EndDate
         {
             get
             {
@@ -3657,7 +3657,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double ID
+        public double ID
         {
             get
             {
@@ -3670,7 +3670,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OperatorId
+        public double OperatorId
         {
             get
             {
@@ -3683,7 +3683,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int StartDate
+        public int StartDate
         {
             get
             {
@@ -3696,7 +3696,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int WpDuration
+        public int WpDuration
         {
             get
             {
@@ -3709,7 +3709,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int WpLabOff
+        public int WpLabOff
         {
             get
             {
@@ -3722,7 +3722,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int WpLicenceNo
+        public int WpLicenceNo
         {
             get
             {
@@ -3735,7 +3735,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int WpType
+        public int WpType
         {
             get
             {
@@ -3751,7 +3751,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "IssueWorkPermitRes", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class IssueWorkPermitRes : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class IssueWorkPermitRes : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -3793,7 +3793,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime EndDate
+        public System.DateTime EndDate
         {
             get
             {
@@ -3806,7 +3806,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double ID
+        public double ID
         {
             get
             {
@@ -3819,7 +3819,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Message
+        public string Message
         {
             get
             {
@@ -3832,7 +3832,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -3845,7 +3845,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -3858,7 +3858,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime StartDate
+        public System.DateTime StartDate
         {
             get
             {
@@ -3871,7 +3871,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int Status
+        public int Status
         {
             get
             {
@@ -3884,7 +3884,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime Timestamp
+        public System.DateTime Timestamp
         {
             get
             {
@@ -3897,7 +3897,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int WpDuration
+        public int WpDuration
         {
             get
             {
@@ -3910,7 +3910,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int WpLabOff
+        public int WpLabOff
         {
             get
             {
@@ -3923,7 +3923,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int WpLicenceNo
+        public int WpLicenceNo
         {
             get
             {
@@ -3936,7 +3936,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int WpType
+        public int WpType
         {
             get
             {
@@ -3952,7 +3952,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "MOLLaborBySponsorID", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class MOLLaborBySponsorID : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class MOLLaborBySponsorID : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -3976,7 +3976,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<double> ID
+        public System.Collections.Generic.List<double> ID
         {
             get
             {
@@ -3989,7 +3989,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -4002,7 +4002,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -4018,12 +4018,12 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "MOL_Business_Info", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class MOL_Business_Info : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class MOL_Business_Info : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.MOL_Business_list> BusinessInfoField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.MOL_Business_list> BusinessInfoField;
 
         private System.DateTime RequestTimeStampField;
 
@@ -4042,7 +4042,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.MOL_Business_list> BusinessInfo
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.MOL_Business_list> BusinessInfo
         {
             get
             {
@@ -4055,7 +4055,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -4068,7 +4068,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -4084,7 +4084,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "MOL_Business_list", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class MOL_Business_list : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class MOL_Business_list : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -4132,7 +4132,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int CommercialRegistryNo
+        public int CommercialRegistryNo
         {
             get
             {
@@ -4145,7 +4145,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double CompanyEstablishmentID
+        public double CompanyEstablishmentID
         {
             get
             {
@@ -4158,7 +4158,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string CompanyEstablishmentName
+        public string CompanyEstablishmentName
         {
             get
             {
@@ -4171,7 +4171,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int MOLfileLocation
+        public int MOLfileLocation
         {
             get
             {
@@ -4184,7 +4184,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double MOLfileNumber
+        public double MOLfileNumber
         {
             get
             {
@@ -4197,7 +4197,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int MainActivityCode
+        public int MainActivityCode
         {
             get
             {
@@ -4210,7 +4210,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string MainActivityDescription
+        public string MainActivityDescription
         {
             get
             {
@@ -4223,7 +4223,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string MunicipalityPermissionNo
+        public string MunicipalityPermissionNo
         {
             get
             {
@@ -4236,7 +4236,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string OtherLicenseNo
+        public string OtherLicenseNo
         {
             get
             {
@@ -4249,7 +4249,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int OtherLicenseTypeCode
+        public int OtherLicenseTypeCode
         {
             get
             {
@@ -4262,7 +4262,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string OtherLicenseTypeDescription
+        public string OtherLicenseTypeDescription
         {
             get
             {
@@ -4275,7 +4275,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int StatusCode
+        public int StatusCode
         {
             get
             {
@@ -4288,7 +4288,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string StatusDescription
+        public string StatusDescription
         {
             get
             {
@@ -4301,7 +4301,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int SubActivityCode
+        public int SubActivityCode
         {
             get
             {
@@ -4314,7 +4314,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SubActivityDescription
+        public string SubActivityDescription
         {
             get
             {
@@ -4330,12 +4330,12 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "MOLLaborVisa", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class MOLLaborVisa : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class MOLLaborVisa : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.MOLLaborVisaList> LaborVisaField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.MOLLaborVisaList> LaborVisaField;
 
         private System.DateTime RequestTimeStampField;
 
@@ -4354,7 +4354,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.MOLLaborVisaList> LaborVisa
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.MOLLaborVisaList> LaborVisa
         {
             get
             {
@@ -4367,7 +4367,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -4380,7 +4380,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -4396,7 +4396,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "MOLLaborVisaList", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class MOLLaborVisaList : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class MOLLaborVisaList : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -4444,7 +4444,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double BorderID
+        public double BorderID
         {
             get
             {
@@ -4457,7 +4457,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double CompanyID
+        public double CompanyID
         {
             get
             {
@@ -4470,7 +4470,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Nationality
+        public string Nationality
         {
             get
             {
@@ -4483,7 +4483,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int NationalityCode
+        public int NationalityCode
         {
             get
             {
@@ -4496,7 +4496,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Occupation
+        public string Occupation
         {
             get
             {
@@ -4509,7 +4509,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int OccupationCode
+        public int OccupationCode
         {
             get
             {
@@ -4522,7 +4522,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Religion
+        public string Religion
         {
             get
             {
@@ -4535,7 +4535,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReligionCode
+        public int ReligionCode
         {
             get
             {
@@ -4548,7 +4548,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Sex
+        public string Sex
         {
             get
             {
@@ -4561,7 +4561,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SexCode
+        public string SexCode
         {
             get
             {
@@ -4574,7 +4574,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string VisaIssuePlace
+        public string VisaIssuePlace
         {
             get
             {
@@ -4587,7 +4587,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int VisaIssuePlaceCode
+        public int VisaIssuePlaceCode
         {
             get
             {
@@ -4600,7 +4600,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double VisaNo
+        public double VisaNo
         {
             get
             {
@@ -4613,7 +4613,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string VisaStatus
+        public string VisaStatus
         {
             get
             {
@@ -4626,7 +4626,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int VisaStatusCode
+        public int VisaStatusCode
         {
             get
             {
@@ -4642,7 +4642,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "AddMolApprovalForChangeSponsorReq", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class AddMolApprovalForChangeSponsorReq : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class AddMolApprovalForChangeSponsorReq : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -4684,7 +4684,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ClientIpAddress
+        public string ClientIpAddress
         {
             get
             {
@@ -4697,7 +4697,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int CompanyNumber
+        public int CompanyNumber
         {
             get
             {
@@ -4710,7 +4710,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int EffectiveDate
+        public int EffectiveDate
         {
             get
             {
@@ -4723,7 +4723,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double EstablishmentOrCompanyID
+        public double EstablishmentOrCompanyID
         {
             get
             {
@@ -4736,7 +4736,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ExpirationDate
+        public int ExpirationDate
         {
             get
             {
@@ -4749,7 +4749,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double IDNumber
+        public double IDNumber
         {
             get
             {
@@ -4762,7 +4762,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int LabourOfficeCode
+        public int LabourOfficeCode
         {
             get
             {
@@ -4775,7 +4775,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int LabourOfficeCompany
+        public int LabourOfficeCompany
         {
             get
             {
@@ -4788,7 +4788,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime MolTimestamp
+        public System.DateTime MolTimestamp
         {
             get
             {
@@ -4801,7 +4801,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OperatorId
+        public double OperatorId
         {
             get
             {
@@ -4814,7 +4814,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int SerialNumber
+        public int SerialNumber
         {
             get
             {
@@ -4827,7 +4827,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int SerialYear
+        public int SerialYear
         {
             get
             {
@@ -4843,7 +4843,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "AddMolApprovalForChangeSponsorRes", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class AddMolApprovalForChangeSponsorRes : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class AddMolApprovalForChangeSponsorRes : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -4883,7 +4883,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int CompanyNumber
+        public int CompanyNumber
         {
             get
             {
@@ -4896,7 +4896,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double EstablishmentOrCompanyID
+        public double EstablishmentOrCompanyID
         {
             get
             {
@@ -4909,7 +4909,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double IDNumber
+        public double IDNumber
         {
             get
             {
@@ -4922,7 +4922,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int LabourOfficeCode
+        public int LabourOfficeCode
         {
             get
             {
@@ -4935,7 +4935,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int LabourOfficeCompany
+        public int LabourOfficeCompany
         {
             get
             {
@@ -4948,7 +4948,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Message
+        public string Message
         {
             get
             {
@@ -4961,7 +4961,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimestamp
+        public System.DateTime RequestTimestamp
         {
             get
             {
@@ -4974,7 +4974,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimestamp
+        public System.DateTime ResponseTimestamp
         {
             get
             {
@@ -4987,7 +4987,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int SerialNumber
+        public int SerialNumber
         {
             get
             {
@@ -5000,7 +5000,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int SerialYear
+        public int SerialYear
         {
             get
             {
@@ -5013,7 +5013,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime Timestamp
+        public System.DateTime Timestamp
         {
             get
             {
@@ -5029,7 +5029,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "AddMolApprovalForChangeOccupationReq", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class AddMolApprovalForChangeOccupationReq : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class AddMolApprovalForChangeOccupationReq : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -5067,7 +5067,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ClientIpAddress
+        public string ClientIpAddress
         {
             get
             {
@@ -5080,7 +5080,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int EffectiveDate
+        public int EffectiveDate
         {
             get
             {
@@ -5093,7 +5093,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ExpirationDate
+        public int ExpirationDate
         {
             get
             {
@@ -5106,7 +5106,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double IDNumber
+        public double IDNumber
         {
             get
             {
@@ -5119,7 +5119,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int JobCode
+        public int JobCode
         {
             get
             {
@@ -5132,7 +5132,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int LabourOfficeCode
+        public int LabourOfficeCode
         {
             get
             {
@@ -5145,7 +5145,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime MolTimestamp
+        public System.DateTime MolTimestamp
         {
             get
             {
@@ -5158,7 +5158,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OperatorId
+        public double OperatorId
         {
             get
             {
@@ -5171,7 +5171,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int SerialNumber
+        public int SerialNumber
         {
             get
             {
@@ -5184,7 +5184,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int SerialYear
+        public int SerialYear
         {
             get
             {
@@ -5200,7 +5200,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "AddMolApprovalForChangeOccupationRes", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class AddMolApprovalForChangeOccupationRes : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class AddMolApprovalForChangeOccupationRes : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -5234,7 +5234,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double IDNumber
+        public double IDNumber
         {
             get
             {
@@ -5247,7 +5247,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int LabourOfficeCode
+        public int LabourOfficeCode
         {
             get
             {
@@ -5260,7 +5260,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Message
+        public string Message
         {
             get
             {
@@ -5273,7 +5273,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimestamp
+        public System.DateTime RequestTimestamp
         {
             get
             {
@@ -5286,7 +5286,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimestamp
+        public System.DateTime ResponseTimestamp
         {
             get
             {
@@ -5299,7 +5299,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int SerialNumber
+        public int SerialNumber
         {
             get
             {
@@ -5312,7 +5312,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int SerialYear
+        public int SerialYear
         {
             get
             {
@@ -5325,7 +5325,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime Timestamp
+        public System.DateTime Timestamp
         {
             get
             {
@@ -5341,7 +5341,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "IssueVisaReq", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class IssueVisaReq : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class IssueVisaReq : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -5354,7 +5354,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
 
         private double EstablishmentOrCompanyIDField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.IssueVisaReqDetails> IssueVisaReqDetailsField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.IssueVisaReqDetails> IssueVisaReqDetailsField;
 
         private int LabourOfficeCodeField;
 
@@ -5401,7 +5401,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ApprovedByIDNumber
+        public int ApprovedByIDNumber
         {
             get
             {
@@ -5414,7 +5414,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string ClientIpAddress
+        public string ClientIpAddress
         {
             get
             {
@@ -5427,7 +5427,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int CompanyNumber
+        public int CompanyNumber
         {
             get
             {
@@ -5440,7 +5440,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double EstablishmentOrCompanyID
+        public double EstablishmentOrCompanyID
         {
             get
             {
@@ -5453,7 +5453,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.IssueVisaReqDetails> IssueVisaReqDetails
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.IssueVisaReqDetails> IssueVisaReqDetails
         {
             get
             {
@@ -5466,7 +5466,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int LabourOfficeCode
+        public int LabourOfficeCode
         {
             get
             {
@@ -5479,7 +5479,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int LabourOfficeCompany
+        public int LabourOfficeCompany
         {
             get
             {
@@ -5492,7 +5492,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int LocationCode
+        public int LocationCode
         {
             get
             {
@@ -5505,7 +5505,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OperatorId
+        public double OperatorId
         {
             get
             {
@@ -5518,7 +5518,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int OrderDate
+        public int OrderDate
         {
             get
             {
@@ -5531,7 +5531,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int OrderNumber
+        public int OrderNumber
         {
             get
             {
@@ -5544,7 +5544,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int OrderYear
+        public int OrderYear
         {
             get
             {
@@ -5557,7 +5557,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReasonAddActivity
+        public int ReasonAddActivity
         {
             get
             {
@@ -5570,7 +5570,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReasonExtendedActivity
+        public int ReasonExtendedActivity
         {
             get
             {
@@ -5583,7 +5583,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReasonFinalExit
+        public int ReasonFinalExit
         {
             get
             {
@@ -5596,7 +5596,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReasonGovernmentContract
+        public int ReasonGovernmentContract
         {
             get
             {
@@ -5609,7 +5609,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReasonNewCompany
+        public int ReasonNewCompany
         {
             get
             {
@@ -5622,7 +5622,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReasonPrivateContract
+        public int ReasonPrivateContract
         {
             get
             {
@@ -5635,7 +5635,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReasonSeasonalEmployee
+        public int ReasonSeasonalEmployee
         {
             get
             {
@@ -5648,7 +5648,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReasonVisaNotUsed
+        public int ReasonVisaNotUsed
         {
             get
             {
@@ -5661,7 +5661,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int VisaType
+        public int VisaType
         {
             get
             {
@@ -5677,7 +5677,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "IssueVisaReqDetails", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class IssueVisaReqDetails : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class IssueVisaReqDetails : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -5707,7 +5707,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int JobCode
+        public int JobCode
         {
             get
             {
@@ -5720,7 +5720,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int NationalityCode
+        public int NationalityCode
         {
             get
             {
@@ -5733,7 +5733,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReligionCode
+        public int ReligionCode
         {
             get
             {
@@ -5746,7 +5746,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int Sex
+        public int Sex
         {
             get
             {
@@ -5759,7 +5759,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int VisaIssuePlace
+        public int VisaIssuePlace
         {
             get
             {
@@ -5772,7 +5772,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int VisasRequested
+        public int VisasRequested
         {
             get
             {
@@ -5788,12 +5788,12 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "IssueVisaRes", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class IssueVisaRes : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class IssueVisaRes : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.IssueVisaResBorders> IssueVisaResBordersField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.IssueVisaResBorders> IssueVisaResBordersField;
 
         private int LabourOfficeCodeField;
 
@@ -5822,7 +5822,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.IssueVisaResBorders> IssueVisaResBorders
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.IssueVisaResBorders> IssueVisaResBorders
         {
             get
             {
@@ -5835,7 +5835,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int LabourOfficeCode
+        public int LabourOfficeCode
         {
             get
             {
@@ -5848,7 +5848,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string NICVisaDate
+        public string NICVisaDate
         {
             get
             {
@@ -5861,7 +5861,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double NICVisaNumber
+        public double NICVisaNumber
         {
             get
             {
@@ -5874,7 +5874,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int OrderNumber
+        public int OrderNumber
         {
             get
             {
@@ -5887,7 +5887,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int OrderYear
+        public int OrderYear
         {
             get
             {
@@ -5900,7 +5900,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimestamp
+        public System.DateTime RequestTimestamp
         {
             get
             {
@@ -5913,7 +5913,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimestamp
+        public System.DateTime ResponseTimestamp
         {
             get
             {
@@ -5929,7 +5929,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "IssueVisaResBorders", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class IssueVisaResBorders : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class IssueVisaResBorders : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -5959,7 +5959,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double BorderNumber
+        public double BorderNumber
         {
             get
             {
@@ -5972,7 +5972,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int JobCode
+        public int JobCode
         {
             get
             {
@@ -5985,7 +5985,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int NationalityCode
+        public int NationalityCode
         {
             get
             {
@@ -5998,7 +5998,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ReligionCode
+        public int ReligionCode
         {
             get
             {
@@ -6011,7 +6011,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int Sex
+        public int Sex
         {
             get
             {
@@ -6024,7 +6024,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int VisaIssuePlace
+        public int VisaIssuePlace
         {
             get
             {
@@ -6040,14 +6040,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-    internal partial class SamisWSFault : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class SamisWSFault : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
 
         private int ErrorCodeField;
 
-        private Mol.Integration.IntegrationProxy.NicWebService.SamisWSFaultType ErrorTypeField;
+        private Mol.Integration.Lib.Proxies.SamisWSFaultType ErrorTypeField;
 
         private string MessageField;
 
@@ -6064,7 +6064,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int ErrorCode
+        public int ErrorCode
         {
             get
             {
@@ -6077,7 +6077,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal Mol.Integration.IntegrationProxy.NicWebService.SamisWSFaultType ErrorType
+        public Mol.Integration.Lib.Proxies.SamisWSFaultType ErrorType
         {
             get
             {
@@ -6090,7 +6090,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Message
+        public string Message
         {
             get
             {
@@ -6105,7 +6105,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "SamisWSFaultType", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal enum SamisWSFaultType : int
+    public enum SamisWSFaultType : int
     {
 
         [System.Runtime.Serialization.EnumMemberAttribute()]
@@ -6118,14 +6118,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "RequestIstiqdam_NSMOL", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class RequestIstiqdam_NSMOL : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class RequestIstiqdam_NSMOL : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
 
         private double ReferenceNumberField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamCategory_NSMOL> RegisterIstiqdamCategoryField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.RegisterIstiqdamCategory_NSMOL> RegisterIstiqdamCategoryField;
 
         private double RequesterIDField;
 
@@ -6144,7 +6144,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double ReferenceNumber
+        public double ReferenceNumber
         {
             get
             {
@@ -6157,7 +6157,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamCategory_NSMOL> RegisterIstiqdamCategory
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.RegisterIstiqdamCategory_NSMOL> RegisterIstiqdamCategory
         {
             get
             {
@@ -6170,7 +6170,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double RequesterID
+        public double RequesterID
         {
             get
             {
@@ -6183,7 +6183,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short TotalVisaReuqested
+        public short TotalVisaReuqested
         {
             get
             {
@@ -6199,7 +6199,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "RegisterIstiqdamCategory_NSMOL", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class RegisterIstiqdamCategory_NSMOL : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class RegisterIstiqdamCategory_NSMOL : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -6210,7 +6210,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
 
         private double OccupationCodeField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequestMember> RegisterIstiqdamRequestMemberField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.RegisterIstiqdamRequestMember> RegisterIstiqdamRequestMemberField;
 
         private int RequestNumberOfVisasField;
 
@@ -6231,7 +6231,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double ArrivalLocationCode
+        public double ArrivalLocationCode
         {
             get
             {
@@ -6244,7 +6244,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double NationalityCode
+        public double NationalityCode
         {
             get
             {
@@ -6257,7 +6257,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OccupationCode
+        public double OccupationCode
         {
             get
             {
@@ -6270,7 +6270,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequestMember> RegisterIstiqdamRequestMember
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.RegisterIstiqdamRequestMember> RegisterIstiqdamRequestMember
         {
             get
             {
@@ -6283,7 +6283,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int RequestNumberOfVisas
+        public int RequestNumberOfVisas
         {
             get
             {
@@ -6296,7 +6296,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double RquestRerasonCode
+        public double RquestRerasonCode
         {
             get
             {
@@ -6309,7 +6309,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SexCode
+        public string SexCode
         {
             get
             {
@@ -6325,7 +6325,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "ResponseValidateIssueLaborVisaforIndividual_NSMol", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class ResponseValidateIssueLaborVisaforIndividual_NSMol : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class ResponseValidateIssueLaborVisaforIndividual_NSMol : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -6353,7 +6353,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -6366,7 +6366,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequesterName
+        public string RequesterName
         {
             get
             {
@@ -6379,7 +6379,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequesterStatus
+        public string RequesterStatus
         {
             get
             {
@@ -6392,7 +6392,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int RequiredAmount
+        public int RequiredAmount
         {
             get
             {
@@ -6405,7 +6405,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -6421,7 +6421,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "ResponseIstiqdamRequest_NSMOL", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class ResponseIstiqdamRequest_NSMOL : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class ResponseIstiqdamRequest_NSMOL : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -6434,7 +6434,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
 
         private double ReferenceNumberField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamCategory_NSMOL> RegisterIstiqdamCategoryField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.RegisterIstiqdamCategory_NSMOL> RegisterIstiqdamCategoryField;
 
         private System.DateTime RequestDateGField;
 
@@ -6467,7 +6467,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double FollowUpNumber
+        public double FollowUpNumber
         {
             get
             {
@@ -6480,7 +6480,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short MolFileLocation
+        public short MolFileLocation
         {
             get
             {
@@ -6493,7 +6493,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double MolFileNumber
+        public double MolFileNumber
         {
             get
             {
@@ -6506,7 +6506,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double ReferenceNumber
+        public double ReferenceNumber
         {
             get
             {
@@ -6519,7 +6519,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamCategory_NSMOL> RegisterIstiqdamCategory
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.RegisterIstiqdamCategory_NSMOL> RegisterIstiqdamCategory
         {
             get
             {
@@ -6532,7 +6532,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestDateG
+        public System.DateTime RequestDateG
         {
             get
             {
@@ -6545,7 +6545,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequestDateH
+        public string RequestDateH
         {
             get
             {
@@ -6558,7 +6558,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -6571,7 +6571,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double RequesterID
+        public double RequesterID
         {
             get
             {
@@ -6584,7 +6584,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequesterName
+        public string RequesterName
         {
             get
             {
@@ -6597,7 +6597,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string RequesterStatus
+        public string RequesterStatus
         {
             get
             {
@@ -6610,7 +6610,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int RequiredAmount
+        public int RequiredAmount
         {
             get
             {
@@ -6623,7 +6623,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -6636,7 +6636,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal short TotalVisaReuqested
+        public short TotalVisaReuqested
         {
             get
             {
@@ -6652,7 +6652,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "RequestupdateLaborVisa", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class RequestupdateLaborVisa : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class RequestupdateLaborVisa : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -6674,7 +6674,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double FollowUpNumber
+        public double FollowUpNumber
         {
             get
             {
@@ -6687,7 +6687,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double borderNumber
+        public double borderNumber
         {
             get
             {
@@ -6703,7 +6703,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "ResponseupdateLaborVisa", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class ResponseupdateLaborVisa : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class ResponseupdateLaborVisa : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -6731,7 +6731,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double FollowUpNumber
+        public double FollowUpNumber
         {
             get
             {
@@ -6744,7 +6744,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -6757,7 +6757,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -6770,7 +6770,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal bool Result
+        public bool Result
         {
             get
             {
@@ -6783,7 +6783,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double borderNumber
+        public double borderNumber
         {
             get
             {
@@ -6799,7 +6799,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "VerifyCompensationForVisaReq", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class VerifyCompensationForVisaReq : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class VerifyCompensationForVisaReq : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -6823,7 +6823,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double alienID
+        public double alienID
         {
             get
             {
@@ -6836,7 +6836,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double followUpNo
+        public double followUpNo
         {
             get
             {
@@ -6849,7 +6849,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double sponsorID
+        public double sponsorID
         {
             get
             {
@@ -6865,7 +6865,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "VerifyCompensationForVisaRes", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class VerifyCompensationForVisaRes : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class VerifyCompensationForVisaRes : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -6895,7 +6895,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -6908,7 +6908,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -6921,7 +6921,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double alienID
+        public double alienID
         {
             get
             {
@@ -6934,7 +6934,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double followUpNo
+        public double followUpNo
         {
             get
             {
@@ -6947,7 +6947,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double sponsorID
+        public double sponsorID
         {
             get
             {
@@ -6960,7 +6960,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string sponsorName
+        public string sponsorName
         {
             get
             {
@@ -6976,7 +6976,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "ConfirmCompensationForVisaReq", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class ConfirmCompensationForVisaReq : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class ConfirmCompensationForVisaReq : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -7008,7 +7008,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OccupationCode
+        public double OccupationCode
         {
             get
             {
@@ -7021,7 +7021,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double alienID
+        public double alienID
         {
             get
             {
@@ -7034,7 +7034,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double followUpNo
+        public double followUpNo
         {
             get
             {
@@ -7047,7 +7047,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double nationalityCode
+        public double nationalityCode
         {
             get
             {
@@ -7060,7 +7060,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string sexCode
+        public string sexCode
         {
             get
             {
@@ -7073,7 +7073,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double sponsorID
+        public double sponsorID
         {
             get
             {
@@ -7086,7 +7086,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double visaIssuePlace
+        public double visaIssuePlace
         {
             get
             {
@@ -7102,7 +7102,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "ConfirmCompesationForVisaRes", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class ConfirmCompesationForVisaRes : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class ConfirmCompesationForVisaRes : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -7134,7 +7134,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double NEWfollowUpNo
+        public double NEWfollowUpNo
         {
             get
             {
@@ -7147,7 +7147,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -7160,7 +7160,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -7173,7 +7173,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double alienID
+        public double alienID
         {
             get
             {
@@ -7186,7 +7186,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double followUpNo
+        public double followUpNo
         {
             get
             {
@@ -7199,7 +7199,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string followUpNoDate
+        public string followUpNoDate
         {
             get
             {
@@ -7212,7 +7212,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double sponsorID
+        public double sponsorID
         {
             get
             {
@@ -7228,7 +7228,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "RequstSponsorFileForIndividual_NSMol", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class RequstSponsorFileForIndividual_NSMol : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class RequstSponsorFileForIndividual_NSMol : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -7250,7 +7250,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double FileNumber
+        public double FileNumber
         {
             get
             {
@@ -7263,7 +7263,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double ID
+        public double ID
         {
             get
             {
@@ -7279,7 +7279,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "ResponsSponsorFileForIndividual_NSMol", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class ResponsSponsorFileForIndividual_NSMol : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class ResponsSponsorFileForIndividual_NSMol : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -7303,7 +7303,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -7316,7 +7316,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -7329,7 +7329,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Result
+        public string Result
         {
             get
             {
@@ -7345,7 +7345,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "PersonInfoForDLV", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class PersonInfoForDLV : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class PersonInfoForDLV : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -7399,7 +7399,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string BirthDateH
+        public string BirthDateH
         {
             get
             {
@@ -7412,7 +7412,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string FamilyName
+        public string FamilyName
         {
             get
             {
@@ -7425,7 +7425,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string FamilyNameT
+        public string FamilyNameT
         {
             get
             {
@@ -7438,7 +7438,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string FatherName
+        public string FatherName
         {
             get
             {
@@ -7451,7 +7451,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string FatherNameT
+        public string FatherNameT
         {
             get
             {
@@ -7464,7 +7464,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string FirstName
+        public string FirstName
         {
             get
             {
@@ -7477,7 +7477,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string FirstNameT
+        public string FirstNameT
         {
             get
             {
@@ -7490,7 +7490,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string GrandfatherName
+        public string GrandfatherName
         {
             get
             {
@@ -7503,7 +7503,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string GrandfatherNameT
+        public string GrandfatherNameT
         {
             get
             {
@@ -7516,7 +7516,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string HasSaudiDependents
+        public string HasSaudiDependents
         {
             get
             {
@@ -7529,7 +7529,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double ID
+        public double ID
         {
             get
             {
@@ -7542,7 +7542,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string MaritalStatus
+        public string MaritalStatus
         {
             get
             {
@@ -7555,7 +7555,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Nationality
+        public string Nationality
         {
             get
             {
@@ -7568,7 +7568,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Occupation
+        public string Occupation
         {
             get
             {
@@ -7581,7 +7581,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -7594,7 +7594,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -7607,7 +7607,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Sex
+        public string Sex
         {
             get
             {
@@ -7620,7 +7620,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Status
+        public string Status
         {
             get
             {
@@ -7636,12 +7636,12 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "DisableSponsorForDLV", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class DisableSponsorForDLV : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class DisableSponsorForDLV : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.DisableSponsorForDLVList> DisableSponsorListField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.DisableSponsorForDLVList> DisableSponsorListField;
 
         private System.DateTime RequestTimeStampField;
 
@@ -7660,7 +7660,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.DisableSponsorForDLVList> DisableSponsorList
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.DisableSponsorForDLVList> DisableSponsorList
         {
             get
             {
@@ -7673,7 +7673,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -7686,7 +7686,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -7702,7 +7702,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "DisableSponsorForDLVList", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class DisableSponsorForDLVList : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class DisableSponsorForDLVList : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -7730,7 +7730,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Occupation
+        public string Occupation
         {
             get
             {
@@ -7743,7 +7743,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int OccupationCode
+        public int OccupationCode
         {
             get
             {
@@ -7756,7 +7756,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Sex
+        public string Sex
         {
             get
             {
@@ -7769,7 +7769,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SexCode
+        public string SexCode
         {
             get
             {
@@ -7782,7 +7782,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double SponsorID
+        public double SponsorID
         {
             get
             {
@@ -7798,12 +7798,12 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "DomesticSponsereeInfoForDLV", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class DomesticSponsereeInfoForDLV : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class DomesticSponsereeInfoForDLV : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.SponsereeList> DomesticSponsereeField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.SponsereeList> DomesticSponsereeField;
 
         private System.DateTime RequestTimeStampField;
 
@@ -7822,7 +7822,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.SponsereeList> DomesticSponseree
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.SponsereeList> DomesticSponseree
         {
             get
             {
@@ -7835,7 +7835,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -7848,7 +7848,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -7864,7 +7864,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "SponsereeList", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class SponsereeList : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class SponsereeList : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -7902,7 +7902,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime AlienFirstArrivalDateG
+        public System.DateTime AlienFirstArrivalDateG
         {
             get
             {
@@ -7915,7 +7915,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string AlienFirstArrivalDateH
+        public string AlienFirstArrivalDateH
         {
             get
             {
@@ -7928,7 +7928,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double ID
+        public double ID
         {
             get
             {
@@ -7941,7 +7941,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Nationality
+        public string Nationality
         {
             get
             {
@@ -7954,7 +7954,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double OccupationCode
+        public double OccupationCode
         {
             get
             {
@@ -7967,7 +7967,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string OccupationDesc
+        public string OccupationDesc
         {
             get
             {
@@ -7980,7 +7980,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double SexCode
+        public double SexCode
         {
             get
             {
@@ -7993,7 +7993,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string SexDesc
+        public string SexDesc
         {
             get
             {
@@ -8006,7 +8006,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Status
+        public string Status
         {
             get
             {
@@ -8019,7 +8019,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string TravelStatus
+        public string TravelStatus
         {
             get
             {
@@ -8035,7 +8035,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "CountingDomesticSponsereeForDLV", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class CountingDomesticSponsereeForDLV : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class CountingDomesticSponsereeForDLV : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -8061,7 +8061,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -8074,7 +8074,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -8087,7 +8087,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int TotalSponsoreeCount
+        public int TotalSponsoreeCount
         {
             get
             {
@@ -8100,7 +8100,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal int TotalVisaRequestedCount
+        public int TotalVisaRequestedCount
         {
             get
             {
@@ -8116,7 +8116,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "VisaInfoForDLV", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class VisaInfoForDLV : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class VisaInfoForDLV : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -8125,7 +8125,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
 
         private System.DateTime ResponseTimeStampField;
 
-        private System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.VisaInfoForDLVList> VisaInfoListField;
+        private System.Collections.Generic.List<Mol.Integration.Lib.Proxies.VisaInfoForDLVList> VisaInfoListField;
 
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData
         {
@@ -8140,7 +8140,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime RequestTimeStamp
+        public System.DateTime RequestTimeStamp
         {
             get
             {
@@ -8153,7 +8153,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime ResponseTimeStamp
+        public System.DateTime ResponseTimeStamp
         {
             get
             {
@@ -8166,7 +8166,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.Collections.Generic.List<Mol.Integration.IntegrationProxy.NicWebService.VisaInfoForDLVList> VisaInfoList
+        public System.Collections.Generic.List<Mol.Integration.Lib.Proxies.VisaInfoForDLVList> VisaInfoList
         {
             get
             {
@@ -8182,7 +8182,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name = "VisaInfoForDLVList", Namespace = "http://schemas.datacontract.org/2004/07/SamisObjectModel")]
-    internal partial class VisaInfoForDLVList : object, System.Runtime.Serialization.IExtensibleDataObject
+    public partial class VisaInfoForDLVList : object, System.Runtime.Serialization.IExtensibleDataObject
     {
 
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -8214,7 +8214,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double BorderNo
+        public double BorderNo
         {
             get
             {
@@ -8227,7 +8227,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Nationality
+        public string Nationality
         {
             get
             {
@@ -8240,7 +8240,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Occupation
+        public string Occupation
         {
             get
             {
@@ -8253,7 +8253,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string Sex
+        public string Sex
         {
             get
             {
@@ -8266,7 +8266,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal System.DateTime VisaIssueDate
+        public System.DateTime VisaIssueDate
         {
             get
             {
@@ -8279,7 +8279,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal double VisaNo
+        public double VisaNo
         {
             get
             {
@@ -8292,7 +8292,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.Runtime.Serialization.DataMemberAttribute()]
-        internal string VisaStatus
+        public string VisaStatus
         {
             get
             {
@@ -8306,88 +8306,88 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     }
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace = "urn:MOI.NIC.eServices-V1", ConfigurationName = "Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service")]
-    internal interface IDLV_Service
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "urn:MOI.NIC.eServices-V1", ConfigurationName = "Mol.Integration.Lib.Proxies.IDLV_Service")]
+    public interface IDLV_Service
     {
 
         // CODEGEN: Generating message contract since message ValidateIssueLaborVisaforIndividualRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/ValidateIssueLaborVisaforIndividual", ReplyAction = "urn:MOI.NIC.eServices-V1/IDLV_Service/ValidateIssueLaborVisaforIndividualResponse" +
             "")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/ValidateIssueLaborVisaforIndividualSamisWSF" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/ValidateIssueLaborVisaforIndividualSamisWSF" +
             "aultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.ValidateIssueLaborVisaforIndividualResponse ValidateIssueLaborVisaforIndividual(Mol.Integration.IntegrationProxy.NicWebService.ValidateIssueLaborVisaforIndividualRequest request);
+        Mol.Integration.Lib.Proxies.ValidateIssueLaborVisaforIndividualResponse ValidateIssueLaborVisaforIndividual(Mol.Integration.Lib.Proxies.ValidateIssueLaborVisaforIndividualRequest request);
 
         // CODEGEN: Generating message contract since message IssueLaborVisaforIndividualRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/IssueLaborVisaforIndividual", ReplyAction = "urn:MOI.NIC.eServices-V1/IDLV_Service/IssueLaborVisaforIndividualResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/IssueLaborVisaforIndividualSamisWSFaultFaul" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/IssueLaborVisaforIndividualSamisWSFaultFaul" +
             "t", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaforIndividualResponse IssueLaborVisaforIndividual(Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaforIndividualRequest request);
+        Mol.Integration.Lib.Proxies.IssueLaborVisaforIndividualResponse IssueLaborVisaforIndividual(Mol.Integration.Lib.Proxies.IssueLaborVisaforIndividualRequest request);
 
         // CODEGEN: Generating message contract since message UpdatelaborVisaforIndividualRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/UpdatelaborVisaforIndividual", ReplyAction = "urn:MOI.NIC.eServices-V1/IDLV_Service/UpdatelaborVisaforIndividualResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/UpdatelaborVisaforIndividualSamisWSFaultFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/UpdatelaborVisaforIndividualSamisWSFaultFau" +
             "lt", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.UpdatelaborVisaforIndividualResponse UpdatelaborVisaforIndividual(Mol.Integration.IntegrationProxy.NicWebService.UpdatelaborVisaforIndividualRequest request);
+        Mol.Integration.Lib.Proxies.UpdatelaborVisaforIndividualResponse UpdatelaborVisaforIndividual(Mol.Integration.Lib.Proxies.UpdatelaborVisaforIndividualRequest request);
 
         // CODEGEN: Generating message contract since message VerifyCompensationForVisaRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/VerifyCompensationForVisa", ReplyAction = "urn:MOI.NIC.eServices-V1/IDLV_Service/VerifyCompensationForVisaResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/VerifyCompensationForVisaSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaResponse VerifyCompensationForVisa(Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/VerifyCompensationForVisaSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.VerifyCompensationForVisaResponse VerifyCompensationForVisa(Mol.Integration.Lib.Proxies.VerifyCompensationForVisaRequest request);
 
         // CODEGEN: Generating message contract since message ConfirmCompensationForVisaRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/ConfirmCompensationForVisa", ReplyAction = "urn:MOI.NIC.eServices-V1/IDLV_Service/ConfirmCompensationForVisaResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/ConfirmCompensationForVisaSamisWSFaultFault" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/ConfirmCompensationForVisaSamisWSFaultFault" +
             "", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompensationForVisaResponse ConfirmCompensationForVisa(Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompensationForVisaRequest request);
+        Mol.Integration.Lib.Proxies.ConfirmCompensationForVisaResponse ConfirmCompensationForVisa(Mol.Integration.Lib.Proxies.ConfirmCompensationForVisaRequest request);
 
         // CODEGEN: Generating message contract since message OpenSponsorFileForIndividualRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/OpenSponsorFileForIndividual", ReplyAction = "urn:MOI.NIC.eServices-V1/IDLV_Service/OpenSponsorFileForIndividualResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/OpenSponsorFileForIndividualSamisWSFaultFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/OpenSponsorFileForIndividualSamisWSFaultFau" +
             "lt", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileForIndividualResponse OpenSponsorFileForIndividual(Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileForIndividualRequest request);
+        Mol.Integration.Lib.Proxies.OpenSponsorFileForIndividualResponse OpenSponsorFileForIndividual(Mol.Integration.Lib.Proxies.OpenSponsorFileForIndividualRequest request);
 
         // CODEGEN: Generating message contract since message GetPersonInfoForDLVRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetPersonInfoForDLV", ReplyAction = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetPersonInfoForDLVResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetPersonInfoForDLVSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.GetPersonInfoForDLVResponse GetPersonInfoForDLV(Mol.Integration.IntegrationProxy.NicWebService.GetPersonInfoForDLVRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetPersonInfoForDLVSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.GetPersonInfoForDLVResponse GetPersonInfoForDLV(Mol.Integration.Lib.Proxies.GetPersonInfoForDLVRequest request);
 
         // CODEGEN: Generating message contract since message ListDisableSponsorReqForDLVRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/ListDisableSponsorReqForDLV", ReplyAction = "urn:MOI.NIC.eServices-V1/IDLV_Service/ListDisableSponsorReqForDLVResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/ListDisableSponsorReqForDLVSamisWSFaultFaul" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/ListDisableSponsorReqForDLVSamisWSFaultFaul" +
             "t", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.ListDisableSponsorReqForDLVResponse ListDisableSponsorReqForDLV(Mol.Integration.IntegrationProxy.NicWebService.ListDisableSponsorReqForDLVRequest request);
+        Mol.Integration.Lib.Proxies.ListDisableSponsorReqForDLVResponse ListDisableSponsorReqForDLV(Mol.Integration.Lib.Proxies.ListDisableSponsorReqForDLVRequest request);
 
         // CODEGEN: Generating message contract since message GetCurrentDomesticSponsereeInfoForDLVRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetCurrentDomesticSponsereeInfoForDLV", ReplyAction = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetCurrentDomesticSponsereeInfoForDLVRespon" +
             "se")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetCurrentDomesticSponsereeInfoForDLVSamisW" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetCurrentDomesticSponsereeInfoForDLVSamisW" +
             "SFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.GetCurrentDomesticSponsereeInfoForDLVResponse GetCurrentDomesticSponsereeInfoForDLV(Mol.Integration.IntegrationProxy.NicWebService.GetCurrentDomesticSponsereeInfoForDLVRequest request);
+        Mol.Integration.Lib.Proxies.GetCurrentDomesticSponsereeInfoForDLVResponse GetCurrentDomesticSponsereeInfoForDLV(Mol.Integration.Lib.Proxies.GetCurrentDomesticSponsereeInfoForDLVRequest request);
 
         // CODEGEN: Generating message contract since message CountDomesticSponsereeForDLVRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/CountDomesticSponsereeForDLV", ReplyAction = "urn:MOI.NIC.eServices-V1/IDLV_Service/CountDomesticSponsereeForDLVResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/CountDomesticSponsereeForDLVSamisWSFaultFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/CountDomesticSponsereeForDLVSamisWSFaultFau" +
             "lt", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.CountDomesticSponsereeForDLVResponse CountDomesticSponsereeForDLV(Mol.Integration.IntegrationProxy.NicWebService.CountDomesticSponsereeForDLVRequest request);
+        Mol.Integration.Lib.Proxies.CountDomesticSponsereeForDLVResponse CountDomesticSponsereeForDLV(Mol.Integration.Lib.Proxies.CountDomesticSponsereeForDLVRequest request);
 
         // CODEGEN: Generating message contract since message GetVisaInfoForDLVRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetVisaInfoForDLV", ReplyAction = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetVisaInfoForDLVResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetVisaInfoForDLVSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.GetVisaInfoForDLVResponse GetVisaInfoForDLV(Mol.Integration.IntegrationProxy.NicWebService.GetVisaInfoForDLVRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IDLV_Service/GetVisaInfoForDLVSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.GetVisaInfoForDLVResponse GetVisaInfoForDLV(Mol.Integration.Lib.Proxies.GetVisaInfoForDLVRequest request);
     }
 
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ValidateIssueLaborVisaforIndividual", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ValidateIssueLaborVisaforIndividualRequest
+    public partial class ValidateIssueLaborVisaforIndividualRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RequestIstiqdam_NSMOL _IstiqdamData;
+        public Mol.Integration.Lib.Proxies.RequestIstiqdam_NSMOL _IstiqdamData;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
         public bool isDisable;
@@ -8405,7 +8405,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public ValidateIssueLaborVisaforIndividualRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.RequestIstiqdam_NSMOL _IstiqdamData, bool isDisable, double OperatorId, string ClientIpAddress, string lang)
+        public ValidateIssueLaborVisaforIndividualRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.RequestIstiqdam_NSMOL _IstiqdamData, bool isDisable, double OperatorId, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this._IstiqdamData = _IstiqdamData;
@@ -8420,17 +8420,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ValidateIssueLaborVisaforIndividualResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ValidateIssueLaborVisaforIndividualResponse
+    public partial class ValidateIssueLaborVisaforIndividualResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.ResponseValidateIssueLaborVisaforIndividual_NSMol ValidateIssueLaborVisaforIndividualResult;
+        public Mol.Integration.Lib.Proxies.ResponseValidateIssueLaborVisaforIndividual_NSMol ValidateIssueLaborVisaforIndividualResult;
 
         public ValidateIssueLaborVisaforIndividualResponse()
         {
         }
 
-        public ValidateIssueLaborVisaforIndividualResponse(Mol.Integration.IntegrationProxy.NicWebService.ResponseValidateIssueLaborVisaforIndividual_NSMol ValidateIssueLaborVisaforIndividualResult)
+        public ValidateIssueLaborVisaforIndividualResponse(Mol.Integration.Lib.Proxies.ResponseValidateIssueLaborVisaforIndividual_NSMol ValidateIssueLaborVisaforIndividualResult)
         {
             this.ValidateIssueLaborVisaforIndividualResult = ValidateIssueLaborVisaforIndividualResult;
         }
@@ -8440,14 +8440,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "IssueLaborVisaforIndividual", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class IssueLaborVisaforIndividualRequest
+    public partial class IssueLaborVisaforIndividualRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RequestIstiqdam_NSMOL _IstiqdamData;
+        public Mol.Integration.Lib.Proxies.RequestIstiqdam_NSMOL _IstiqdamData;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
         public bool isDisable;
@@ -8465,7 +8465,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public IssueLaborVisaforIndividualRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.RequestIstiqdam_NSMOL _IstiqdamData, bool isDisable, double OperatorId, string ClientIpAddress, string lang)
+        public IssueLaborVisaforIndividualRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.RequestIstiqdam_NSMOL _IstiqdamData, bool isDisable, double OperatorId, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this._IstiqdamData = _IstiqdamData;
@@ -8480,17 +8480,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "IssueLaborVisaforIndividualResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class IssueLaborVisaforIndividualResponse
+    public partial class IssueLaborVisaforIndividualResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.ResponseIstiqdamRequest_NSMOL IssueLaborVisaforIndividualResult;
+        public Mol.Integration.Lib.Proxies.ResponseIstiqdamRequest_NSMOL IssueLaborVisaforIndividualResult;
 
         public IssueLaborVisaforIndividualResponse()
         {
         }
 
-        public IssueLaborVisaforIndividualResponse(Mol.Integration.IntegrationProxy.NicWebService.ResponseIstiqdamRequest_NSMOL IssueLaborVisaforIndividualResult)
+        public IssueLaborVisaforIndividualResponse(Mol.Integration.Lib.Proxies.ResponseIstiqdamRequest_NSMOL IssueLaborVisaforIndividualResult)
         {
             this.IssueLaborVisaforIndividualResult = IssueLaborVisaforIndividualResult;
         }
@@ -8500,14 +8500,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "UpdatelaborVisaforIndividual", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class UpdatelaborVisaforIndividualRequest
+    public partial class UpdatelaborVisaforIndividualRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RequestupdateLaborVisa Request;
+        public Mol.Integration.Lib.Proxies.RequestupdateLaborVisa Request;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
         public double OperatorId;
@@ -8522,7 +8522,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public UpdatelaborVisaforIndividualRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.RequestupdateLaborVisa Request, double OperatorId, string ClientIpAddress, string lang)
+        public UpdatelaborVisaforIndividualRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.RequestupdateLaborVisa Request, double OperatorId, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.Request = Request;
@@ -8536,17 +8536,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "UpdatelaborVisaforIndividualResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class UpdatelaborVisaforIndividualResponse
+    public partial class UpdatelaborVisaforIndividualResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.ResponseupdateLaborVisa UpdatelaborVisaforIndividualResult;
+        public Mol.Integration.Lib.Proxies.ResponseupdateLaborVisa UpdatelaborVisaforIndividualResult;
 
         public UpdatelaborVisaforIndividualResponse()
         {
         }
 
-        public UpdatelaborVisaforIndividualResponse(Mol.Integration.IntegrationProxy.NicWebService.ResponseupdateLaborVisa UpdatelaborVisaforIndividualResult)
+        public UpdatelaborVisaforIndividualResponse(Mol.Integration.Lib.Proxies.ResponseupdateLaborVisa UpdatelaborVisaforIndividualResult)
         {
             this.UpdatelaborVisaforIndividualResult = UpdatelaborVisaforIndividualResult;
         }
@@ -8556,14 +8556,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "VerifyCompensationForVisa", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class VerifyCompensationForVisaRequest
+    public partial class VerifyCompensationForVisaRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaReq input;
+        public Mol.Integration.Lib.Proxies.VerifyCompensationForVisaReq input;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
         public double OperatorId;
@@ -8578,7 +8578,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public VerifyCompensationForVisaRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaReq input, double OperatorId, string ClientIpAddress, string lang)
+        public VerifyCompensationForVisaRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.VerifyCompensationForVisaReq input, double OperatorId, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.input = input;
@@ -8592,17 +8592,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "VerifyCompensationForVisaResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class VerifyCompensationForVisaResponse
+    public partial class VerifyCompensationForVisaResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaRes VerifyCompensationForVisaResult;
+        public Mol.Integration.Lib.Proxies.VerifyCompensationForVisaRes VerifyCompensationForVisaResult;
 
         public VerifyCompensationForVisaResponse()
         {
         }
 
-        public VerifyCompensationForVisaResponse(Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaRes VerifyCompensationForVisaResult)
+        public VerifyCompensationForVisaResponse(Mol.Integration.Lib.Proxies.VerifyCompensationForVisaRes VerifyCompensationForVisaResult)
         {
             this.VerifyCompensationForVisaResult = VerifyCompensationForVisaResult;
         }
@@ -8612,14 +8612,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ConfirmCompensationForVisa", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ConfirmCompensationForVisaRequest
+    public partial class ConfirmCompensationForVisaRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompensationForVisaReq input;
+        public Mol.Integration.Lib.Proxies.ConfirmCompensationForVisaReq input;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
         public double OperatorId;
@@ -8634,7 +8634,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public ConfirmCompensationForVisaRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompensationForVisaReq input, double OperatorId, string ClientIpAddress, string lang)
+        public ConfirmCompensationForVisaRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.ConfirmCompensationForVisaReq input, double OperatorId, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.input = input;
@@ -8648,17 +8648,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ConfirmCompensationForVisaResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ConfirmCompensationForVisaResponse
+    public partial class ConfirmCompensationForVisaResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompesationForVisaRes ConfirmCompensationForVisaResult;
+        public Mol.Integration.Lib.Proxies.ConfirmCompesationForVisaRes ConfirmCompensationForVisaResult;
 
         public ConfirmCompensationForVisaResponse()
         {
         }
 
-        public ConfirmCompensationForVisaResponse(Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompesationForVisaRes ConfirmCompensationForVisaResult)
+        public ConfirmCompensationForVisaResponse(Mol.Integration.Lib.Proxies.ConfirmCompesationForVisaRes ConfirmCompensationForVisaResult)
         {
             this.ConfirmCompensationForVisaResult = ConfirmCompensationForVisaResult;
         }
@@ -8668,14 +8668,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "OpenSponsorFileForIndividual", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class OpenSponsorFileForIndividualRequest
+    public partial class OpenSponsorFileForIndividualRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RequstSponsorFileForIndividual_NSMol _RequestFile;
+        public Mol.Integration.Lib.Proxies.RequstSponsorFileForIndividual_NSMol _RequestFile;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
         public double OperatorId;
@@ -8690,7 +8690,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public OpenSponsorFileForIndividualRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.RequstSponsorFileForIndividual_NSMol _RequestFile, double OperatorId, string ClientIpAddress, string lang)
+        public OpenSponsorFileForIndividualRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.RequstSponsorFileForIndividual_NSMol _RequestFile, double OperatorId, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this._RequestFile = _RequestFile;
@@ -8704,17 +8704,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "OpenSponsorFileForIndividualResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class OpenSponsorFileForIndividualResponse
+    public partial class OpenSponsorFileForIndividualResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.ResponsSponsorFileForIndividual_NSMol OpenSponsorFileForIndividualResult;
+        public Mol.Integration.Lib.Proxies.ResponsSponsorFileForIndividual_NSMol OpenSponsorFileForIndividualResult;
 
         public OpenSponsorFileForIndividualResponse()
         {
         }
 
-        public OpenSponsorFileForIndividualResponse(Mol.Integration.IntegrationProxy.NicWebService.ResponsSponsorFileForIndividual_NSMol OpenSponsorFileForIndividualResult)
+        public OpenSponsorFileForIndividualResponse(Mol.Integration.Lib.Proxies.ResponsSponsorFileForIndividual_NSMol OpenSponsorFileForIndividualResult)
         {
             this.OpenSponsorFileForIndividualResult = OpenSponsorFileForIndividualResult;
         }
@@ -8724,11 +8724,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPersonInfoForDLV", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetPersonInfoForDLVRequest
+    public partial class GetPersonInfoForDLVRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double Id;
@@ -8752,7 +8752,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public GetPersonInfoForDLVRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpDateH, double OperatorId, string ClientIpAddress, string lang)
+        public GetPersonInfoForDLVRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpDateH, double OperatorId, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.Id = Id;
@@ -8768,17 +8768,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetPersonInfoForDLVResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetPersonInfoForDLVResponse
+    public partial class GetPersonInfoForDLVResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.PersonInfoForDLV GetPersonInfoForDLVResult;
+        public Mol.Integration.Lib.Proxies.PersonInfoForDLV GetPersonInfoForDLVResult;
 
         public GetPersonInfoForDLVResponse()
         {
         }
 
-        public GetPersonInfoForDLVResponse(Mol.Integration.IntegrationProxy.NicWebService.PersonInfoForDLV GetPersonInfoForDLVResult)
+        public GetPersonInfoForDLVResponse(Mol.Integration.Lib.Proxies.PersonInfoForDLV GetPersonInfoForDLVResult)
         {
             this.GetPersonInfoForDLVResult = GetPersonInfoForDLVResult;
         }
@@ -8788,11 +8788,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ListDisableSponsorReqForDLV", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ListDisableSponsorReqForDLVRequest
+    public partial class ListDisableSponsorReqForDLVRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double Id;
@@ -8816,7 +8816,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public ListDisableSponsorReqForDLVRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpDateH, double OperatorId, string ClientIpAddress, string lang)
+        public ListDisableSponsorReqForDLVRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpDateH, double OperatorId, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.Id = Id;
@@ -8832,17 +8832,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ListDisableSponsorReqForDLVResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ListDisableSponsorReqForDLVResponse
+    public partial class ListDisableSponsorReqForDLVResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.DisableSponsorForDLV ListDisableSponsorReqForDLVResult;
+        public Mol.Integration.Lib.Proxies.DisableSponsorForDLV ListDisableSponsorReqForDLVResult;
 
         public ListDisableSponsorReqForDLVResponse()
         {
         }
 
-        public ListDisableSponsorReqForDLVResponse(Mol.Integration.IntegrationProxy.NicWebService.DisableSponsorForDLV ListDisableSponsorReqForDLVResult)
+        public ListDisableSponsorReqForDLVResponse(Mol.Integration.Lib.Proxies.DisableSponsorForDLV ListDisableSponsorReqForDLVResult)
         {
             this.ListDisableSponsorReqForDLVResult = ListDisableSponsorReqForDLVResult;
         }
@@ -8852,11 +8852,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCurrentDomesticSponsereeInfoForDLV", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetCurrentDomesticSponsereeInfoForDLVRequest
+    public partial class GetCurrentDomesticSponsereeInfoForDLVRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double Id;
@@ -8883,7 +8883,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public GetCurrentDomesticSponsereeInfoForDLVRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, short RowID, double OperatorId, string ClientIpAddress, string lang)
+        public GetCurrentDomesticSponsereeInfoForDLVRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, short RowID, double OperatorId, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.Id = Id;
@@ -8900,17 +8900,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetCurrentDomesticSponsereeInfoForDLVResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetCurrentDomesticSponsereeInfoForDLVResponse
+    public partial class GetCurrentDomesticSponsereeInfoForDLVResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.DomesticSponsereeInfoForDLV GetCurrentDomesticSponsereeInfoForDLVResult;
+        public Mol.Integration.Lib.Proxies.DomesticSponsereeInfoForDLV GetCurrentDomesticSponsereeInfoForDLVResult;
 
         public GetCurrentDomesticSponsereeInfoForDLVResponse()
         {
         }
 
-        public GetCurrentDomesticSponsereeInfoForDLVResponse(Mol.Integration.IntegrationProxy.NicWebService.DomesticSponsereeInfoForDLV GetCurrentDomesticSponsereeInfoForDLVResult)
+        public GetCurrentDomesticSponsereeInfoForDLVResponse(Mol.Integration.Lib.Proxies.DomesticSponsereeInfoForDLV GetCurrentDomesticSponsereeInfoForDLVResult)
         {
             this.GetCurrentDomesticSponsereeInfoForDLVResult = GetCurrentDomesticSponsereeInfoForDLVResult;
         }
@@ -8920,11 +8920,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "CountDomesticSponsereeForDLV", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class CountDomesticSponsereeForDLVRequest
+    public partial class CountDomesticSponsereeForDLVRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double Id;
@@ -8948,7 +8948,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public CountDomesticSponsereeForDLVRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, double OperatorId, string ClientIpAddress, string lang)
+        public CountDomesticSponsereeForDLVRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, double OperatorId, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.Id = Id;
@@ -8964,17 +8964,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "CountDomesticSponsereeForDLVResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class CountDomesticSponsereeForDLVResponse
+    public partial class CountDomesticSponsereeForDLVResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.CountingDomesticSponsereeForDLV CountDomesticSponsereeForDLVResult;
+        public Mol.Integration.Lib.Proxies.CountingDomesticSponsereeForDLV CountDomesticSponsereeForDLVResult;
 
         public CountDomesticSponsereeForDLVResponse()
         {
         }
 
-        public CountDomesticSponsereeForDLVResponse(Mol.Integration.IntegrationProxy.NicWebService.CountingDomesticSponsereeForDLV CountDomesticSponsereeForDLVResult)
+        public CountDomesticSponsereeForDLVResponse(Mol.Integration.Lib.Proxies.CountingDomesticSponsereeForDLV CountDomesticSponsereeForDLVResult)
         {
             this.CountDomesticSponsereeForDLVResult = CountDomesticSponsereeForDLVResult;
         }
@@ -8984,11 +8984,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVisaInfoForDLV", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetVisaInfoForDLVRequest
+    public partial class GetVisaInfoForDLVRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double Id;
@@ -9012,7 +9012,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public GetVisaInfoForDLVRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, double OperatorId, string ClientIpAddress, string lang)
+        public GetVisaInfoForDLVRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, double OperatorId, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.Id = Id;
@@ -9028,30 +9028,30 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetVisaInfoForDLVResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetVisaInfoForDLVResponse
+    public partial class GetVisaInfoForDLVResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.VisaInfoForDLV GetVisaInfoForDLVResult;
+        public Mol.Integration.Lib.Proxies.VisaInfoForDLV GetVisaInfoForDLVResult;
 
         public GetVisaInfoForDLVResponse()
         {
         }
 
-        public GetVisaInfoForDLVResponse(Mol.Integration.IntegrationProxy.NicWebService.VisaInfoForDLV GetVisaInfoForDLVResult)
+        public GetVisaInfoForDLVResponse(Mol.Integration.Lib.Proxies.VisaInfoForDLV GetVisaInfoForDLVResult)
         {
             this.GetVisaInfoForDLVResult = GetVisaInfoForDLVResult;
         }
     }
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    internal interface IDLV_ServiceChannel : Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service, System.ServiceModel.IClientChannel
+    public interface IDLV_ServiceChannel : Mol.Integration.Lib.Proxies.IDLV_Service, System.ServiceModel.IClientChannel
     {
     }
 
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    internal partial class DLV_ServiceClient : System.ServiceModel.ClientBase<Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service>, Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service
+    public partial class DLV_ServiceClient : System.ServiceModel.ClientBase<Mol.Integration.Lib.Proxies.IDLV_Service>, Mol.Integration.Lib.Proxies.IDLV_Service
     {
 
         public DLV_ServiceClient()
@@ -9079,124 +9079,124 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.ValidateIssueLaborVisaforIndividualResponse Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service.ValidateIssueLaborVisaforIndividual(Mol.Integration.IntegrationProxy.NicWebService.ValidateIssueLaborVisaforIndividualRequest request)
+        Mol.Integration.Lib.Proxies.ValidateIssueLaborVisaforIndividualResponse Mol.Integration.Lib.Proxies.IDLV_Service.ValidateIssueLaborVisaforIndividual(Mol.Integration.Lib.Proxies.ValidateIssueLaborVisaforIndividualRequest request)
         {
             return base.Channel.ValidateIssueLaborVisaforIndividual(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.ResponseValidateIssueLaborVisaforIndividual_NSMol ValidateIssueLaborVisaforIndividual(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.RequestIstiqdam_NSMOL _IstiqdamData, bool isDisable, double OperatorId, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.ResponseValidateIssueLaborVisaforIndividual_NSMol ValidateIssueLaborVisaforIndividual(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.RequestIstiqdam_NSMOL _IstiqdamData, bool isDisable, double OperatorId, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.ValidateIssueLaborVisaforIndividualRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.ValidateIssueLaborVisaforIndividualRequest();
+            Mol.Integration.Lib.Proxies.ValidateIssueLaborVisaforIndividualRequest inValue = new Mol.Integration.Lib.Proxies.ValidateIssueLaborVisaforIndividualRequest();
             inValue.NICHeader = NICHeader;
             inValue._IstiqdamData = _IstiqdamData;
             inValue.isDisable = isDisable;
             inValue.OperatorId = OperatorId;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.ValidateIssueLaborVisaforIndividualResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service)(this)).ValidateIssueLaborVisaforIndividual(inValue);
+            Mol.Integration.Lib.Proxies.ValidateIssueLaborVisaforIndividualResponse retVal = ((Mol.Integration.Lib.Proxies.IDLV_Service)(this)).ValidateIssueLaborVisaforIndividual(inValue);
             return retVal.ValidateIssueLaborVisaforIndividualResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaforIndividualResponse Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service.IssueLaborVisaforIndividual(Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaforIndividualRequest request)
+        Mol.Integration.Lib.Proxies.IssueLaborVisaforIndividualResponse Mol.Integration.Lib.Proxies.IDLV_Service.IssueLaborVisaforIndividual(Mol.Integration.Lib.Proxies.IssueLaborVisaforIndividualRequest request)
         {
             return base.Channel.IssueLaborVisaforIndividual(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.ResponseIstiqdamRequest_NSMOL IssueLaborVisaforIndividual(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.RequestIstiqdam_NSMOL _IstiqdamData, bool isDisable, double OperatorId, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.ResponseIstiqdamRequest_NSMOL IssueLaborVisaforIndividual(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.RequestIstiqdam_NSMOL _IstiqdamData, bool isDisable, double OperatorId, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaforIndividualRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaforIndividualRequest();
+            Mol.Integration.Lib.Proxies.IssueLaborVisaforIndividualRequest inValue = new Mol.Integration.Lib.Proxies.IssueLaborVisaforIndividualRequest();
             inValue.NICHeader = NICHeader;
             inValue._IstiqdamData = _IstiqdamData;
             inValue.isDisable = isDisable;
             inValue.OperatorId = OperatorId;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaforIndividualResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service)(this)).IssueLaborVisaforIndividual(inValue);
+            Mol.Integration.Lib.Proxies.IssueLaborVisaforIndividualResponse retVal = ((Mol.Integration.Lib.Proxies.IDLV_Service)(this)).IssueLaborVisaforIndividual(inValue);
             return retVal.IssueLaborVisaforIndividualResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.UpdatelaborVisaforIndividualResponse Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service.UpdatelaborVisaforIndividual(Mol.Integration.IntegrationProxy.NicWebService.UpdatelaborVisaforIndividualRequest request)
+        Mol.Integration.Lib.Proxies.UpdatelaborVisaforIndividualResponse Mol.Integration.Lib.Proxies.IDLV_Service.UpdatelaborVisaforIndividual(Mol.Integration.Lib.Proxies.UpdatelaborVisaforIndividualRequest request)
         {
             return base.Channel.UpdatelaborVisaforIndividual(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.ResponseupdateLaborVisa UpdatelaborVisaforIndividual(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.RequestupdateLaborVisa Request, double OperatorId, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.ResponseupdateLaborVisa UpdatelaborVisaforIndividual(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.RequestupdateLaborVisa Request, double OperatorId, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.UpdatelaborVisaforIndividualRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.UpdatelaborVisaforIndividualRequest();
+            Mol.Integration.Lib.Proxies.UpdatelaborVisaforIndividualRequest inValue = new Mol.Integration.Lib.Proxies.UpdatelaborVisaforIndividualRequest();
             inValue.NICHeader = NICHeader;
             inValue.Request = Request;
             inValue.OperatorId = OperatorId;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.UpdatelaborVisaforIndividualResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service)(this)).UpdatelaborVisaforIndividual(inValue);
+            Mol.Integration.Lib.Proxies.UpdatelaborVisaforIndividualResponse retVal = ((Mol.Integration.Lib.Proxies.IDLV_Service)(this)).UpdatelaborVisaforIndividual(inValue);
             return retVal.UpdatelaborVisaforIndividualResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaResponse Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service.VerifyCompensationForVisa(Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaRequest request)
+        Mol.Integration.Lib.Proxies.VerifyCompensationForVisaResponse Mol.Integration.Lib.Proxies.IDLV_Service.VerifyCompensationForVisa(Mol.Integration.Lib.Proxies.VerifyCompensationForVisaRequest request)
         {
             return base.Channel.VerifyCompensationForVisa(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaRes VerifyCompensationForVisa(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaReq input, double OperatorId, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.VerifyCompensationForVisaRes VerifyCompensationForVisa(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.VerifyCompensationForVisaReq input, double OperatorId, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaRequest();
+            Mol.Integration.Lib.Proxies.VerifyCompensationForVisaRequest inValue = new Mol.Integration.Lib.Proxies.VerifyCompensationForVisaRequest();
             inValue.NICHeader = NICHeader;
             inValue.input = input;
             inValue.OperatorId = OperatorId;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.VerifyCompensationForVisaResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service)(this)).VerifyCompensationForVisa(inValue);
+            Mol.Integration.Lib.Proxies.VerifyCompensationForVisaResponse retVal = ((Mol.Integration.Lib.Proxies.IDLV_Service)(this)).VerifyCompensationForVisa(inValue);
             return retVal.VerifyCompensationForVisaResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompensationForVisaResponse Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service.ConfirmCompensationForVisa(Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompensationForVisaRequest request)
+        Mol.Integration.Lib.Proxies.ConfirmCompensationForVisaResponse Mol.Integration.Lib.Proxies.IDLV_Service.ConfirmCompensationForVisa(Mol.Integration.Lib.Proxies.ConfirmCompensationForVisaRequest request)
         {
             return base.Channel.ConfirmCompensationForVisa(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompesationForVisaRes ConfirmCompensationForVisa(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompensationForVisaReq input, double OperatorId, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.ConfirmCompesationForVisaRes ConfirmCompensationForVisa(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.ConfirmCompensationForVisaReq input, double OperatorId, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompensationForVisaRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompensationForVisaRequest();
+            Mol.Integration.Lib.Proxies.ConfirmCompensationForVisaRequest inValue = new Mol.Integration.Lib.Proxies.ConfirmCompensationForVisaRequest();
             inValue.NICHeader = NICHeader;
             inValue.input = input;
             inValue.OperatorId = OperatorId;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.ConfirmCompensationForVisaResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service)(this)).ConfirmCompensationForVisa(inValue);
+            Mol.Integration.Lib.Proxies.ConfirmCompensationForVisaResponse retVal = ((Mol.Integration.Lib.Proxies.IDLV_Service)(this)).ConfirmCompensationForVisa(inValue);
             return retVal.ConfirmCompensationForVisaResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileForIndividualResponse Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service.OpenSponsorFileForIndividual(Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileForIndividualRequest request)
+        Mol.Integration.Lib.Proxies.OpenSponsorFileForIndividualResponse Mol.Integration.Lib.Proxies.IDLV_Service.OpenSponsorFileForIndividual(Mol.Integration.Lib.Proxies.OpenSponsorFileForIndividualRequest request)
         {
             return base.Channel.OpenSponsorFileForIndividual(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.ResponsSponsorFileForIndividual_NSMol OpenSponsorFileForIndividual(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.RequstSponsorFileForIndividual_NSMol _RequestFile, double OperatorId, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.ResponsSponsorFileForIndividual_NSMol OpenSponsorFileForIndividual(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.RequstSponsorFileForIndividual_NSMol _RequestFile, double OperatorId, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileForIndividualRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileForIndividualRequest();
+            Mol.Integration.Lib.Proxies.OpenSponsorFileForIndividualRequest inValue = new Mol.Integration.Lib.Proxies.OpenSponsorFileForIndividualRequest();
             inValue.NICHeader = NICHeader;
             inValue._RequestFile = _RequestFile;
             inValue.OperatorId = OperatorId;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileForIndividualResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service)(this)).OpenSponsorFileForIndividual(inValue);
+            Mol.Integration.Lib.Proxies.OpenSponsorFileForIndividualResponse retVal = ((Mol.Integration.Lib.Proxies.IDLV_Service)(this)).OpenSponsorFileForIndividual(inValue);
             return retVal.OpenSponsorFileForIndividualResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.GetPersonInfoForDLVResponse Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service.GetPersonInfoForDLV(Mol.Integration.IntegrationProxy.NicWebService.GetPersonInfoForDLVRequest request)
+        Mol.Integration.Lib.Proxies.GetPersonInfoForDLVResponse Mol.Integration.Lib.Proxies.IDLV_Service.GetPersonInfoForDLV(Mol.Integration.Lib.Proxies.GetPersonInfoForDLVRequest request)
         {
             return base.Channel.GetPersonInfoForDLV(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.PersonInfoForDLV GetPersonInfoForDLV(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpDateH, double OperatorId, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.PersonInfoForDLV GetPersonInfoForDLV(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpDateH, double OperatorId, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.GetPersonInfoForDLVRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.GetPersonInfoForDLVRequest();
+            Mol.Integration.Lib.Proxies.GetPersonInfoForDLVRequest inValue = new Mol.Integration.Lib.Proxies.GetPersonInfoForDLVRequest();
             inValue.NICHeader = NICHeader;
             inValue.Id = Id;
             inValue.BirthDateH = BirthDateH;
@@ -9204,19 +9204,19 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.OperatorId = OperatorId;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.GetPersonInfoForDLVResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service)(this)).GetPersonInfoForDLV(inValue);
+            Mol.Integration.Lib.Proxies.GetPersonInfoForDLVResponse retVal = ((Mol.Integration.Lib.Proxies.IDLV_Service)(this)).GetPersonInfoForDLV(inValue);
             return retVal.GetPersonInfoForDLVResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.ListDisableSponsorReqForDLVResponse Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service.ListDisableSponsorReqForDLV(Mol.Integration.IntegrationProxy.NicWebService.ListDisableSponsorReqForDLVRequest request)
+        Mol.Integration.Lib.Proxies.ListDisableSponsorReqForDLVResponse Mol.Integration.Lib.Proxies.IDLV_Service.ListDisableSponsorReqForDLV(Mol.Integration.Lib.Proxies.ListDisableSponsorReqForDLVRequest request)
         {
             return base.Channel.ListDisableSponsorReqForDLV(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.DisableSponsorForDLV ListDisableSponsorReqForDLV(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpDateH, double OperatorId, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.DisableSponsorForDLV ListDisableSponsorReqForDLV(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpDateH, double OperatorId, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.ListDisableSponsorReqForDLVRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.ListDisableSponsorReqForDLVRequest();
+            Mol.Integration.Lib.Proxies.ListDisableSponsorReqForDLVRequest inValue = new Mol.Integration.Lib.Proxies.ListDisableSponsorReqForDLVRequest();
             inValue.NICHeader = NICHeader;
             inValue.Id = Id;
             inValue.BirthDateH = BirthDateH;
@@ -9224,19 +9224,19 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.OperatorId = OperatorId;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.ListDisableSponsorReqForDLVResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service)(this)).ListDisableSponsorReqForDLV(inValue);
+            Mol.Integration.Lib.Proxies.ListDisableSponsorReqForDLVResponse retVal = ((Mol.Integration.Lib.Proxies.IDLV_Service)(this)).ListDisableSponsorReqForDLV(inValue);
             return retVal.ListDisableSponsorReqForDLVResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.GetCurrentDomesticSponsereeInfoForDLVResponse Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service.GetCurrentDomesticSponsereeInfoForDLV(Mol.Integration.IntegrationProxy.NicWebService.GetCurrentDomesticSponsereeInfoForDLVRequest request)
+        Mol.Integration.Lib.Proxies.GetCurrentDomesticSponsereeInfoForDLVResponse Mol.Integration.Lib.Proxies.IDLV_Service.GetCurrentDomesticSponsereeInfoForDLV(Mol.Integration.Lib.Proxies.GetCurrentDomesticSponsereeInfoForDLVRequest request)
         {
             return base.Channel.GetCurrentDomesticSponsereeInfoForDLV(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.DomesticSponsereeInfoForDLV GetCurrentDomesticSponsereeInfoForDLV(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, short RowID, double OperatorId, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.DomesticSponsereeInfoForDLV GetCurrentDomesticSponsereeInfoForDLV(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, short RowID, double OperatorId, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.GetCurrentDomesticSponsereeInfoForDLVRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.GetCurrentDomesticSponsereeInfoForDLVRequest();
+            Mol.Integration.Lib.Proxies.GetCurrentDomesticSponsereeInfoForDLVRequest inValue = new Mol.Integration.Lib.Proxies.GetCurrentDomesticSponsereeInfoForDLVRequest();
             inValue.NICHeader = NICHeader;
             inValue.Id = Id;
             inValue.BirthDateH = BirthDateH;
@@ -9245,19 +9245,19 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.OperatorId = OperatorId;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.GetCurrentDomesticSponsereeInfoForDLVResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service)(this)).GetCurrentDomesticSponsereeInfoForDLV(inValue);
+            Mol.Integration.Lib.Proxies.GetCurrentDomesticSponsereeInfoForDLVResponse retVal = ((Mol.Integration.Lib.Proxies.IDLV_Service)(this)).GetCurrentDomesticSponsereeInfoForDLV(inValue);
             return retVal.GetCurrentDomesticSponsereeInfoForDLVResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.CountDomesticSponsereeForDLVResponse Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service.CountDomesticSponsereeForDLV(Mol.Integration.IntegrationProxy.NicWebService.CountDomesticSponsereeForDLVRequest request)
+        Mol.Integration.Lib.Proxies.CountDomesticSponsereeForDLVResponse Mol.Integration.Lib.Proxies.IDLV_Service.CountDomesticSponsereeForDLV(Mol.Integration.Lib.Proxies.CountDomesticSponsereeForDLVRequest request)
         {
             return base.Channel.CountDomesticSponsereeForDLV(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.CountingDomesticSponsereeForDLV CountDomesticSponsereeForDLV(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, double OperatorId, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.CountingDomesticSponsereeForDLV CountDomesticSponsereeForDLV(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, double OperatorId, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.CountDomesticSponsereeForDLVRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.CountDomesticSponsereeForDLVRequest();
+            Mol.Integration.Lib.Proxies.CountDomesticSponsereeForDLVRequest inValue = new Mol.Integration.Lib.Proxies.CountDomesticSponsereeForDLVRequest();
             inValue.NICHeader = NICHeader;
             inValue.Id = Id;
             inValue.BirthDateH = BirthDateH;
@@ -9265,19 +9265,19 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.OperatorId = OperatorId;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.CountDomesticSponsereeForDLVResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service)(this)).CountDomesticSponsereeForDLV(inValue);
+            Mol.Integration.Lib.Proxies.CountDomesticSponsereeForDLVResponse retVal = ((Mol.Integration.Lib.Proxies.IDLV_Service)(this)).CountDomesticSponsereeForDLV(inValue);
             return retVal.CountDomesticSponsereeForDLVResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.GetVisaInfoForDLVResponse Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service.GetVisaInfoForDLV(Mol.Integration.IntegrationProxy.NicWebService.GetVisaInfoForDLVRequest request)
+        Mol.Integration.Lib.Proxies.GetVisaInfoForDLVResponse Mol.Integration.Lib.Proxies.IDLV_Service.GetVisaInfoForDLV(Mol.Integration.Lib.Proxies.GetVisaInfoForDLVRequest request)
         {
             return base.Channel.GetVisaInfoForDLV(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.VisaInfoForDLV GetVisaInfoForDLV(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, double OperatorId, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.VisaInfoForDLV GetVisaInfoForDLV(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Id, string BirthDateH, string IqamaExpiryDateH, double OperatorId, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.GetVisaInfoForDLVRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.GetVisaInfoForDLVRequest();
+            Mol.Integration.Lib.Proxies.GetVisaInfoForDLVRequest inValue = new Mol.Integration.Lib.Proxies.GetVisaInfoForDLVRequest();
             inValue.NICHeader = NICHeader;
             inValue.Id = Id;
             inValue.BirthDateH = BirthDateH;
@@ -9285,171 +9285,171 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.OperatorId = OperatorId;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.GetVisaInfoForDLVResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IDLV_Service)(this)).GetVisaInfoForDLV(inValue);
+            Mol.Integration.Lib.Proxies.GetVisaInfoForDLVResponse retVal = ((Mol.Integration.Lib.Proxies.IDLV_Service)(this)).GetVisaInfoForDLV(inValue);
             return retVal.GetVisaInfoForDLVResult;
         }
     }
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace = "urn:MOI.NIC.eServices-V1", ConfigurationName = "Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE")]
-    internal interface IMOL_SERVICE
+    [System.ServiceModel.ServiceContractAttribute(Namespace = "urn:MOI.NIC.eServices-V1", ConfigurationName = "Mol.Integration.Lib.Proxies.IMOL_SERVICE")]
+    public interface IMOL_SERVICE
     {
 
         // CODEGEN: Generating message contract since message GetLabourFullRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLabourFull", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLabourFullResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLabourFullSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.GetLabourFullResponse GetLabourFull(Mol.Integration.IntegrationProxy.NicWebService.GetLabourFullRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLabourFullSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.GetLabourFullResponse GetLabourFull(Mol.Integration.Lib.Proxies.GetLabourFullRequest request);
 
         // CODEGEN: Generating message contract since message ReportEscapeSponsoreesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ReportEscapeSponsorees", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ReportEscapeSponsoreesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ReportEscapeSponsoreesSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.ReportEscapeSponsoreesResponse ReportEscapeSponsorees(Mol.Integration.IntegrationProxy.NicWebService.ReportEscapeSponsoreesRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ReportEscapeSponsoreesSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.ReportEscapeSponsoreesResponse ReportEscapeSponsorees(Mol.Integration.Lib.Proxies.ReportEscapeSponsoreesRequest request);
 
         // CODEGEN: Generating message contract since message IssueLaborVisaRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueLaborVisa", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueLaborVisaResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueLaborVisaSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaResponse IssueLaborVisa(Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueLaborVisaSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.IssueLaborVisaResponse IssueLaborVisa(Mol.Integration.Lib.Proxies.IssueLaborVisaRequest request);
 
         // CODEGEN: Generating message contract since message OpenSponsorFileRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/OpenSponsorFile", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/OpenSponsorFileResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/OpenSponsorFileSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileResponse OpenSponsorFile(Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/OpenSponsorFileSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.OpenSponsorFileResponse OpenSponsorFile(Mol.Integration.Lib.Proxies.OpenSponsorFileRequest request);
 
         // CODEGEN: Generating message contract since message UpdateSponsorFileRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateSponsorFile", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateSponsorFileResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateSponsorFileSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.UpdateSponsorFileResponse UpdateSponsorFile(Mol.Integration.IntegrationProxy.NicWebService.UpdateSponsorFileRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateSponsorFileSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.UpdateSponsorFileResponse UpdateSponsorFile(Mol.Integration.Lib.Proxies.UpdateSponsorFileRequest request);
 
         // CODEGEN: Generating message contract since message UpdateLaborVisaRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateLaborVisa", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateLaborVisaResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateLaborVisaSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.UpdateLaborVisaResponse UpdateLaborVisa(Mol.Integration.IntegrationProxy.NicWebService.UpdateLaborVisaRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateLaborVisaSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.UpdateLaborVisaResponse UpdateLaborVisa(Mol.Integration.Lib.Proxies.UpdateLaborVisaRequest request);
 
         // CODEGEN: Generating message contract since message ListSponsoreesForTransferRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ListSponsoreesForTransfer", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ListSponsoreesForTransferResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ListSponsoreesForTransferSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferResponse ListSponsoreesForTransfer(Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ListSponsoreesForTransferSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.ListSponsoreesForTransferResponse ListSponsoreesForTransfer(Mol.Integration.Lib.Proxies.ListSponsoreesForTransferRequest request);
 
         // CODEGEN: Generating message contract since message ListSponsoreesForTransferNextRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ListSponsoreesForTransferNext", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ListSponsoreesForTransferNextResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ListSponsoreesForTransferNextSamisWSFaultFa" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ListSponsoreesForTransferNextSamisWSFaultFa" +
             "ult", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferNextResponse ListSponsoreesForTransferNext(Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferNextRequest request);
+        Mol.Integration.Lib.Proxies.ListSponsoreesForTransferNextResponse ListSponsoreesForTransferNext(Mol.Integration.Lib.Proxies.ListSponsoreesForTransferNextRequest request);
 
         // CODEGEN: Generating message contract since message TransferSponsoreesRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/TransferSponsorees", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/TransferSponsoreesResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/TransferSponsoreesSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.TransferSponsoreesResponse TransferSponsorees(Mol.Integration.IntegrationProxy.NicWebService.TransferSponsoreesRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/TransferSponsoreesSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.TransferSponsoreesResponse TransferSponsorees(Mol.Integration.Lib.Proxies.TransferSponsoreesRequest request);
 
         // CODEGEN: Generating message contract since message ValidateAlienSponsorBusinessRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateAlienSponsorBusiness", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateAlienSponsorBusinessResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateAlienSponsorBusinessSamisWSFaultFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateAlienSponsorBusinessSamisWSFaultFau" +
             "lt", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.ValidateAlienSponsorBusinessResponse ValidateAlienSponsorBusiness(Mol.Integration.IntegrationProxy.NicWebService.ValidateAlienSponsorBusinessRequest request);
+        Mol.Integration.Lib.Proxies.ValidateAlienSponsorBusinessResponse ValidateAlienSponsorBusiness(Mol.Integration.Lib.Proxies.ValidateAlienSponsorBusinessRequest request);
 
         // CODEGEN: Generating message contract since message UpdateAlienSponsorBusinessRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateAlienSponsorBusiness", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateAlienSponsorBusinessResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateAlienSponsorBusinessSamisWSFaultFault" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/UpdateAlienSponsorBusinessSamisWSFaultFault" +
             "", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.UpdateAlienSponsorBusinessResponse UpdateAlienSponsorBusiness(Mol.Integration.IntegrationProxy.NicWebService.UpdateAlienSponsorBusinessRequest request);
+        Mol.Integration.Lib.Proxies.UpdateAlienSponsorBusinessResponse UpdateAlienSponsorBusiness(Mol.Integration.Lib.Proxies.UpdateAlienSponsorBusinessRequest request);
 
         // CODEGEN: Generating message contract since message ValidateCancelRunAWayReportRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateCancelRunAWayReport", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateCancelRunAWayReportResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateCancelRunAWayReportSamisWSFaultFaul" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateCancelRunAWayReportSamisWSFaultFaul" +
             "t", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.ValidateCancelRunAWayReportResponse ValidateCancelRunAWayReport(Mol.Integration.IntegrationProxy.NicWebService.ValidateCancelRunAWayReportRequest request);
+        Mol.Integration.Lib.Proxies.ValidateCancelRunAWayReportResponse ValidateCancelRunAWayReport(Mol.Integration.Lib.Proxies.ValidateCancelRunAWayReportRequest request);
 
         // CODEGEN: Generating message contract since message ConfirmCancelRunAwayReportRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ConfirmCancelRunAwayReport", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ConfirmCancelRunAwayReportResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ConfirmCancelRunAwayReportSamisWSFaultFault" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ConfirmCancelRunAwayReportSamisWSFaultFault" +
             "", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.ConfirmCancelRunAwayReportResponse ConfirmCancelRunAwayReport(Mol.Integration.IntegrationProxy.NicWebService.ConfirmCancelRunAwayReportRequest request);
+        Mol.Integration.Lib.Proxies.ConfirmCancelRunAwayReportResponse ConfirmCancelRunAwayReport(Mol.Integration.Lib.Proxies.ConfirmCancelRunAwayReportRequest request);
 
         // CODEGEN: Generating message contract since message ValidateCreateRunAwayReportRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateCreateRunAwayReport", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateCreateRunAwayReportResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateCreateRunAwayReportSamisWSFaultFaul" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ValidateCreateRunAwayReportSamisWSFaultFaul" +
             "t", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.ValidateCreateRunAwayReportResponse ValidateCreateRunAwayReport(Mol.Integration.IntegrationProxy.NicWebService.ValidateCreateRunAwayReportRequest request);
+        Mol.Integration.Lib.Proxies.ValidateCreateRunAwayReportResponse ValidateCreateRunAwayReport(Mol.Integration.Lib.Proxies.ValidateCreateRunAwayReportRequest request);
 
         // CODEGEN: Generating message contract since message ConfirmCreateRunAwayReportRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ConfirmCreateRunAwayReport", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ConfirmCreateRunAwayReportResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ConfirmCreateRunAwayReportSamisWSFaultFault" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/ConfirmCreateRunAwayReportSamisWSFaultFault" +
             "", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.ConfirmCreateRunAwayReportResponse ConfirmCreateRunAwayReport(Mol.Integration.IntegrationProxy.NicWebService.ConfirmCreateRunAwayReportRequest request);
+        Mol.Integration.Lib.Proxies.ConfirmCreateRunAwayReportResponse ConfirmCreateRunAwayReport(Mol.Integration.Lib.Proxies.ConfirmCreateRunAwayReportRequest request);
 
         // CODEGEN: Generating message contract since message GetAlienVisitorInfoRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetAlienVisitorInfo", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetAlienVisitorInfoResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetAlienVisitorInfoSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.GetAlienVisitorInfoResponse GetAlienVisitorInfo(Mol.Integration.IntegrationProxy.NicWebService.GetAlienVisitorInfoRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetAlienVisitorInfoSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.GetAlienVisitorInfoResponse GetAlienVisitorInfo(Mol.Integration.Lib.Proxies.GetAlienVisitorInfoRequest request);
 
         // CODEGEN: Generating message contract since message GetAlienPrisonStatusRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetAlienPrisonStatus", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetAlienPrisonStatusResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetAlienPrisonStatusSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.GetAlienPrisonStatusResponse GetAlienPrisonStatus(Mol.Integration.IntegrationProxy.NicWebService.GetAlienPrisonStatusRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetAlienPrisonStatusSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.GetAlienPrisonStatusResponse GetAlienPrisonStatus(Mol.Integration.Lib.Proxies.GetAlienPrisonStatusRequest request);
 
         // CODEGEN: Generating message contract since message CheckvehicleOwnerRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/CheckvehicleOwner", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/CheckvehicleOwnerResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/CheckvehicleOwnerSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.CheckvehicleOwnerResponse CheckvehicleOwner(Mol.Integration.IntegrationProxy.NicWebService.CheckvehicleOwnerRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/CheckvehicleOwnerSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.CheckvehicleOwnerResponse CheckvehicleOwner(Mol.Integration.Lib.Proxies.CheckvehicleOwnerRequest request);
 
         // CODEGEN: Generating message contract since message QueryWorkPermitRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/QueryWorkPermit", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/QueryWorkPermitResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/QueryWorkPermitSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitResponse QueryWorkPermit(Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/QueryWorkPermitSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.QueryWorkPermitResponse QueryWorkPermit(Mol.Integration.Lib.Proxies.QueryWorkPermitRequest request);
 
         // CODEGEN: Generating message contract since message AuthenticateUserByMobileRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AuthenticateUserByMobile", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AuthenticateUserByMobileResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AuthenticateUserByMobileSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.AuthenticateUserByMobileResponse AuthenticateUserByMobile(Mol.Integration.IntegrationProxy.NicWebService.AuthenticateUserByMobileRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AuthenticateUserByMobileSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.AuthenticateUserByMobileResponse AuthenticateUserByMobile(Mol.Integration.Lib.Proxies.AuthenticateUserByMobileRequest request);
 
         // CODEGEN: Generating message contract since message IssueWorkPermitRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueWorkPermit", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueWorkPermitResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueWorkPermitSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitResponse IssueWorkPermit(Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueWorkPermitSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.IssueWorkPermitResponse IssueWorkPermit(Mol.Integration.Lib.Proxies.IssueWorkPermitRequest request);
 
         // CODEGEN: Generating message contract since message GetLaborBySponsorIDRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLaborBySponsorID", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLaborBySponsorIDResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLaborBySponsorIDSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.GetLaborBySponsorIDResponse GetLaborBySponsorID(Mol.Integration.IntegrationProxy.NicWebService.GetLaborBySponsorIDRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLaborBySponsorIDSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.GetLaborBySponsorIDResponse GetLaborBySponsorID(Mol.Integration.Lib.Proxies.GetLaborBySponsorIDRequest request);
 
         // CODEGEN: Generating message contract since message GetEstablishmentCompanyInfoRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetEstablishmentCompanyInfo", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetEstablishmentCompanyInfoResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetEstablishmentCompanyInfoSamisWSFaultFaul" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetEstablishmentCompanyInfoSamisWSFaultFaul" +
             "t", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.GetEstablishmentCompanyInfoResponse GetEstablishmentCompanyInfo(Mol.Integration.IntegrationProxy.NicWebService.GetEstablishmentCompanyInfoRequest request);
+        Mol.Integration.Lib.Proxies.GetEstablishmentCompanyInfoResponse GetEstablishmentCompanyInfo(Mol.Integration.Lib.Proxies.GetEstablishmentCompanyInfoRequest request);
 
         // CODEGEN: Generating message contract since message GetLaborVisaListRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLaborVisaList", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLaborVisaListResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLaborVisaListSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.GetLaborVisaListResponse GetLaborVisaList(Mol.Integration.IntegrationProxy.NicWebService.GetLaborVisaListRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/GetLaborVisaListSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.GetLaborVisaListResponse GetLaborVisaList(Mol.Integration.Lib.Proxies.GetLaborVisaListRequest request);
 
         // CODEGEN: Generating message contract since message AddMolApprovalForChangeSponsorRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AddMolApprovalForChangeSponsor", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AddMolApprovalForChangeSponsorResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AddMolApprovalForChangeSponsorSamisWSFaultF" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AddMolApprovalForChangeSponsorSamisWSFaultF" +
             "ault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorResponse AddMolApprovalForChangeSponsor(Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorRequest request);
+        Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorResponse AddMolApprovalForChangeSponsor(Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorRequest request);
 
         // CODEGEN: Generating message contract since message AddMolApprovalForChangeOccupationRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AddMolApprovalForChangeOccupation", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AddMolApprovalForChangeOccupationResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AddMolApprovalForChangeOccupationSamisWSFau" +
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/AddMolApprovalForChangeOccupationSamisWSFau" +
             "ltFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationResponse AddMolApprovalForChangeOccupation(Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationRequest request);
+        Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationResponse AddMolApprovalForChangeOccupation(Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationRequest request);
 
         // CODEGEN: Generating message contract since message IssueVisaRequest has headers
         [System.ServiceModel.OperationContractAttribute(Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueVisa", ReplyAction = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueVisaResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.IntegrationProxy.NicWebService.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueVisaSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
-        Mol.Integration.IntegrationProxy.NicWebService.IssueVisaResponse IssueVisa(Mol.Integration.IntegrationProxy.NicWebService.IssueVisaRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(Mol.Integration.Lib.Proxies.SamisWSFault), Action = "urn:MOI.NIC.eServices-V1/IMOL_SERVICE/IssueVisaSamisWSFaultFault", Name = "SamisWSFault", Namespace = "http://schemas.datacontract.org/2004/07/SamisFullServiceLibrary")]
+        Mol.Integration.Lib.Proxies.IssueVisaResponse IssueVisa(Mol.Integration.Lib.Proxies.IssueVisaRequest request);
     }
 
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetLabourFull", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetLabourFullRequest
+    public partial class GetLabourFullRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double RquestsponsorId;
@@ -9467,7 +9467,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public GetLabourFullRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double RquestsponsorId, double RequestNumber, string ClientIpAddress, string lang)
+        public GetLabourFullRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double RquestsponsorId, double RequestNumber, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.RquestsponsorId = RquestsponsorId;
@@ -9481,17 +9481,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetLabourFullResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetLabourFullResponse
+    public partial class GetLabourFullResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.IstiqdamFull GetLabourFullResult;
+        public Mol.Integration.Lib.Proxies.IstiqdamFull GetLabourFullResult;
 
         public GetLabourFullResponse()
         {
         }
 
-        public GetLabourFullResponse(Mol.Integration.IntegrationProxy.NicWebService.IstiqdamFull GetLabourFullResult)
+        public GetLabourFullResponse(Mol.Integration.Lib.Proxies.IstiqdamFull GetLabourFullResult)
         {
             this.GetLabourFullResult = GetLabourFullResult;
         }
@@ -9501,11 +9501,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ReportEscapeSponsorees", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ReportEscapeSponsoreesRequest
+    public partial class ReportEscapeSponsoreesRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double EscapeID;
@@ -9526,7 +9526,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public ReportEscapeSponsoreesRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double EscapeID, double createdBy, System.DateTime ReportDate, string ClientIpAddress, string lang)
+        public ReportEscapeSponsoreesRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double EscapeID, double createdBy, System.DateTime ReportDate, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.EscapeID = EscapeID;
@@ -9541,7 +9541,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ReportEscapeSponsoreesResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ReportEscapeSponsoreesResponse
+    public partial class ReportEscapeSponsoreesResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
@@ -9561,14 +9561,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "IssueLaborVisa", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class IssueLaborVisaRequest
+    public partial class IssueLaborVisaRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequest _IstiqdamData;
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamRequest _IstiqdamData;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
         public double RequesterID;
@@ -9586,7 +9586,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public IssueLaborVisaRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequest _IstiqdamData, double RequesterID, string CallingMode, string ClientIpAddress, string lang)
+        public IssueLaborVisaRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.RegisterIstiqdamRequest _IstiqdamData, double RequesterID, string CallingMode, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this._IstiqdamData = _IstiqdamData;
@@ -9601,20 +9601,20 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "IssueLaborVisaResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class IssueLaborVisaResponse
+    public partial class IssueLaborVisaResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequest IssueLaborVisaResult;
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamRequest IssueLaborVisaResult;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequest _IstiqdamData;
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamRequest _IstiqdamData;
 
         public IssueLaborVisaResponse()
         {
         }
 
-        public IssueLaborVisaResponse(Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequest IssueLaborVisaResult, Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequest _IstiqdamData)
+        public IssueLaborVisaResponse(Mol.Integration.Lib.Proxies.RegisterIstiqdamRequest IssueLaborVisaResult, Mol.Integration.Lib.Proxies.RegisterIstiqdamRequest _IstiqdamData)
         {
             this.IssueLaborVisaResult = IssueLaborVisaResult;
             this._IstiqdamData = _IstiqdamData;
@@ -9625,14 +9625,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "OpenSponsorFile", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class OpenSponsorFileRequest
+    public partial class OpenSponsorFileRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile _FileData;
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamFile _FileData;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
         public string ClientIpAddress;
@@ -9644,7 +9644,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public OpenSponsorFileRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile _FileData, string ClientIpAddress, string lang)
+        public OpenSponsorFileRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.RegisterIstiqdamFile _FileData, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this._FileData = _FileData;
@@ -9657,20 +9657,20 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "OpenSponsorFileResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class OpenSponsorFileResponse
+    public partial class OpenSponsorFileResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile OpenSponsorFileResult;
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamFile OpenSponsorFileResult;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile _FileData;
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamFile _FileData;
 
         public OpenSponsorFileResponse()
         {
         }
 
-        public OpenSponsorFileResponse(Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile OpenSponsorFileResult, Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile _FileData)
+        public OpenSponsorFileResponse(Mol.Integration.Lib.Proxies.RegisterIstiqdamFile OpenSponsorFileResult, Mol.Integration.Lib.Proxies.RegisterIstiqdamFile _FileData)
         {
             this.OpenSponsorFileResult = OpenSponsorFileResult;
             this._FileData = _FileData;
@@ -9681,14 +9681,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateSponsorFile", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class UpdateSponsorFileRequest
+    public partial class UpdateSponsorFileRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile _FileData;
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamFile _FileData;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
         public string ClientIpAddress;
@@ -9700,7 +9700,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public UpdateSponsorFileRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile _FileData, string ClientIpAddress, string lang)
+        public UpdateSponsorFileRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.RegisterIstiqdamFile _FileData, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this._FileData = _FileData;
@@ -9713,20 +9713,20 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateSponsorFileResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class UpdateSponsorFileResponse
+    public partial class UpdateSponsorFileResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile UpdateSponsorFileResult;
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamFile UpdateSponsorFileResult;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile _FileData;
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamFile _FileData;
 
         public UpdateSponsorFileResponse()
         {
         }
 
-        public UpdateSponsorFileResponse(Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile UpdateSponsorFileResult, Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile _FileData)
+        public UpdateSponsorFileResponse(Mol.Integration.Lib.Proxies.RegisterIstiqdamFile UpdateSponsorFileResult, Mol.Integration.Lib.Proxies.RegisterIstiqdamFile _FileData)
         {
             this.UpdateSponsorFileResult = UpdateSponsorFileResult;
             this._FileData = _FileData;
@@ -9737,11 +9737,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateLaborVisa", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class UpdateLaborVisaRequest
+    public partial class UpdateLaborVisaRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double requestNumber;
@@ -9759,7 +9759,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public UpdateLaborVisaRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double requestNumber, double borderNumber, string ClientIpAddress, string lang)
+        public UpdateLaborVisaRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double requestNumber, double borderNumber, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.requestNumber = requestNumber;
@@ -9773,7 +9773,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateLaborVisaResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class UpdateLaborVisaResponse
+    public partial class UpdateLaborVisaResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
@@ -9793,11 +9793,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ListSponsoreesForTransfer", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ListSponsoreesForTransferRequest
+    public partial class ListSponsoreesForTransferRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double SponsorID;
@@ -9818,7 +9818,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public ListSponsoreesForTransferRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double SponsorID, double MolFileNumber, short MolFileLocation, string ClientIpAddress, string lang)
+        public ListSponsoreesForTransferRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double SponsorID, double MolFileNumber, short MolFileLocation, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.SponsorID = SponsorID;
@@ -9833,17 +9833,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ListSponsoreesForTransferResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ListSponsoreesForTransferResponse
+    public partial class ListSponsoreesForTransferResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.MolSponsorInfo ListSponsoreesForTransferResult;
+        public Mol.Integration.Lib.Proxies.MolSponsorInfo ListSponsoreesForTransferResult;
 
         public ListSponsoreesForTransferResponse()
         {
         }
 
-        public ListSponsoreesForTransferResponse(Mol.Integration.IntegrationProxy.NicWebService.MolSponsorInfo ListSponsoreesForTransferResult)
+        public ListSponsoreesForTransferResponse(Mol.Integration.Lib.Proxies.MolSponsorInfo ListSponsoreesForTransferResult)
         {
             this.ListSponsoreesForTransferResult = ListSponsoreesForTransferResult;
         }
@@ -9853,11 +9853,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ListSponsoreesForTransferNext", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ListSponsoreesForTransferNextRequest
+    public partial class ListSponsoreesForTransferNextRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double SponsorID;
@@ -9881,7 +9881,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public ListSponsoreesForTransferNextRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double SponsorID, double MolFileNumber, short MolFileLocation, double NextSponsorID, string ClientIpAddress, string lang)
+        public ListSponsoreesForTransferNextRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double SponsorID, double MolFileNumber, short MolFileLocation, double NextSponsorID, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.SponsorID = SponsorID;
@@ -9897,17 +9897,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ListSponsoreesForTransferNextResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ListSponsoreesForTransferNextResponse
+    public partial class ListSponsoreesForTransferNextResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.MolSponsorInfo ListSponsoreesForTransferNextResult;
+        public Mol.Integration.Lib.Proxies.MolSponsorInfo ListSponsoreesForTransferNextResult;
 
         public ListSponsoreesForTransferNextResponse()
         {
         }
 
-        public ListSponsoreesForTransferNextResponse(Mol.Integration.IntegrationProxy.NicWebService.MolSponsorInfo ListSponsoreesForTransferNextResult)
+        public ListSponsoreesForTransferNextResponse(Mol.Integration.Lib.Proxies.MolSponsorInfo ListSponsoreesForTransferNextResult)
         {
             this.ListSponsoreesForTransferNextResult = ListSponsoreesForTransferNextResult;
         }
@@ -9917,14 +9917,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "TransferSponsorees", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class TransferSponsoreesRequest
+    public partial class TransferSponsoreesRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.MolSponsorInfo _TransferList;
+        public Mol.Integration.Lib.Proxies.MolSponsorInfo _TransferList;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
         public double CrrBusinessFileNumber;
@@ -9954,7 +9954,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public TransferSponsoreesRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.MolSponsorInfo _TransferList, double CrrBusinessFileNumber, short CrrBusinessFileLocation, double SponsorID, double MolFileNumber, short MolFileLocation, string TransferAll, string ClientIpAddress, string lang)
+        public TransferSponsoreesRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.MolSponsorInfo _TransferList, double CrrBusinessFileNumber, short CrrBusinessFileLocation, double SponsorID, double MolFileNumber, short MolFileLocation, string TransferAll, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this._TransferList = _TransferList;
@@ -9973,20 +9973,20 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "TransferSponsoreesResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class TransferSponsoreesResponse
+    public partial class TransferSponsoreesResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public bool TransferSponsoreesResult;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
-        public Mol.Integration.IntegrationProxy.NicWebService.MolSponsorInfo _TransferList;
+        public Mol.Integration.Lib.Proxies.MolSponsorInfo _TransferList;
 
         public TransferSponsoreesResponse()
         {
         }
 
-        public TransferSponsoreesResponse(bool TransferSponsoreesResult, Mol.Integration.IntegrationProxy.NicWebService.MolSponsorInfo _TransferList)
+        public TransferSponsoreesResponse(bool TransferSponsoreesResult, Mol.Integration.Lib.Proxies.MolSponsorInfo _TransferList)
         {
             this.TransferSponsoreesResult = TransferSponsoreesResult;
             this._TransferList = _TransferList;
@@ -9997,11 +9997,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ValidateAlienSponsorBusiness", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ValidateAlienSponsorBusinessRequest
+    public partial class ValidateAlienSponsorBusinessRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double AlienID;
@@ -10028,7 +10028,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public ValidateAlienSponsorBusinessRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double AlienID, double SponsorID, double MOlFileNumber, short MOLFileNumberLoc, short privateFlag, string ClientIpAddress, string Lang)
+        public ValidateAlienSponsorBusinessRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double AlienID, double SponsorID, double MOlFileNumber, short MOLFileNumberLoc, short privateFlag, string ClientIpAddress, string Lang)
         {
             this.NICHeader = NICHeader;
             this.AlienID = AlienID;
@@ -10045,7 +10045,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ValidateAlienSponsorBusinessResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ValidateAlienSponsorBusinessResponse
+    public partial class ValidateAlienSponsorBusinessResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
@@ -10065,11 +10065,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateAlienSponsorBusiness", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class UpdateAlienSponsorBusinessRequest
+    public partial class UpdateAlienSponsorBusinessRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double AlienID;
@@ -10096,7 +10096,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public UpdateAlienSponsorBusinessRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double AlienID, double SponsorID, double MOlFileNumber, short MOLFileNumberLoc, short privateFlag, string ClientIpAddress, string Lang)
+        public UpdateAlienSponsorBusinessRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double AlienID, double SponsorID, double MOlFileNumber, short MOLFileNumberLoc, short privateFlag, string ClientIpAddress, string Lang)
         {
             this.NICHeader = NICHeader;
             this.AlienID = AlienID;
@@ -10113,7 +10113,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateAlienSponsorBusinessResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class UpdateAlienSponsorBusinessResponse
+    public partial class UpdateAlienSponsorBusinessResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
@@ -10133,11 +10133,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ValidateCancelRunAWayReport", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ValidateCancelRunAWayReportRequest
+    public partial class ValidateCancelRunAWayReportRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double OPREATOR_ID;
@@ -10161,7 +10161,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public ValidateCancelRunAWayReportRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double RequesterID, string CancelRemarks, string lang)
+        public ValidateCancelRunAWayReportRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double RequesterID, string CancelRemarks, string lang)
         {
             this.NICHeader = NICHeader;
             this.OPREATOR_ID = OPREATOR_ID;
@@ -10177,17 +10177,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ValidateCancelRunAWayReportResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ValidateCancelRunAWayReportResponse
+    public partial class ValidateCancelRunAWayReportResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RunAway ValidateCancelRunAWayReportResult;
+        public Mol.Integration.Lib.Proxies.RunAway ValidateCancelRunAWayReportResult;
 
         public ValidateCancelRunAWayReportResponse()
         {
         }
 
-        public ValidateCancelRunAWayReportResponse(Mol.Integration.IntegrationProxy.NicWebService.RunAway ValidateCancelRunAWayReportResult)
+        public ValidateCancelRunAWayReportResponse(Mol.Integration.Lib.Proxies.RunAway ValidateCancelRunAWayReportResult)
         {
             this.ValidateCancelRunAWayReportResult = ValidateCancelRunAWayReportResult;
         }
@@ -10197,11 +10197,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ConfirmCancelRunAwayReport", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ConfirmCancelRunAwayReportRequest
+    public partial class ConfirmCancelRunAwayReportRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double OPREATOR_ID;
@@ -10225,7 +10225,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public ConfirmCancelRunAwayReportRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double RequesterID, string CancelRemarks, string lang)
+        public ConfirmCancelRunAwayReportRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double RequesterID, string CancelRemarks, string lang)
         {
             this.NICHeader = NICHeader;
             this.OPREATOR_ID = OPREATOR_ID;
@@ -10241,17 +10241,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ConfirmCancelRunAwayReportResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ConfirmCancelRunAwayReportResponse
+    public partial class ConfirmCancelRunAwayReportResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RunAway ConfirmCancelRunAwayReportResult;
+        public Mol.Integration.Lib.Proxies.RunAway ConfirmCancelRunAwayReportResult;
 
         public ConfirmCancelRunAwayReportResponse()
         {
         }
 
-        public ConfirmCancelRunAwayReportResponse(Mol.Integration.IntegrationProxy.NicWebService.RunAway ConfirmCancelRunAwayReportResult)
+        public ConfirmCancelRunAwayReportResponse(Mol.Integration.Lib.Proxies.RunAway ConfirmCancelRunAwayReportResult)
         {
             this.ConfirmCancelRunAwayReportResult = ConfirmCancelRunAwayReportResult;
         }
@@ -10261,11 +10261,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ValidateCreateRunAwayReport", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ValidateCreateRunAwayReportRequest
+    public partial class ValidateCreateRunAwayReportRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double OPREATOR_ID;
@@ -10289,7 +10289,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public ValidateCreateRunAwayReportRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double ReporterID, int RunAwayDate, string lang)
+        public ValidateCreateRunAwayReportRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double ReporterID, int RunAwayDate, string lang)
         {
             this.NICHeader = NICHeader;
             this.OPREATOR_ID = OPREATOR_ID;
@@ -10305,17 +10305,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ValidateCreateRunAwayReportResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ValidateCreateRunAwayReportResponse
+    public partial class ValidateCreateRunAwayReportResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RunAway ValidateCreateRunAwayReportResult;
+        public Mol.Integration.Lib.Proxies.RunAway ValidateCreateRunAwayReportResult;
 
         public ValidateCreateRunAwayReportResponse()
         {
         }
 
-        public ValidateCreateRunAwayReportResponse(Mol.Integration.IntegrationProxy.NicWebService.RunAway ValidateCreateRunAwayReportResult)
+        public ValidateCreateRunAwayReportResponse(Mol.Integration.Lib.Proxies.RunAway ValidateCreateRunAwayReportResult)
         {
             this.ValidateCreateRunAwayReportResult = ValidateCreateRunAwayReportResult;
         }
@@ -10325,11 +10325,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ConfirmCreateRunAwayReport", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ConfirmCreateRunAwayReportRequest
+    public partial class ConfirmCreateRunAwayReportRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double OPREATOR_ID;
@@ -10353,7 +10353,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public ConfirmCreateRunAwayReportRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double ReporterID, int RunAwayDate, string lang)
+        public ConfirmCreateRunAwayReportRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double ReporterID, int RunAwayDate, string lang)
         {
             this.NICHeader = NICHeader;
             this.OPREATOR_ID = OPREATOR_ID;
@@ -10369,17 +10369,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "ConfirmCreateRunAwayReportResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class ConfirmCreateRunAwayReportResponse
+    public partial class ConfirmCreateRunAwayReportResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.RunAway ConfirmCreateRunAwayReportResult;
+        public Mol.Integration.Lib.Proxies.RunAway ConfirmCreateRunAwayReportResult;
 
         public ConfirmCreateRunAwayReportResponse()
         {
         }
 
-        public ConfirmCreateRunAwayReportResponse(Mol.Integration.IntegrationProxy.NicWebService.RunAway ConfirmCreateRunAwayReportResult)
+        public ConfirmCreateRunAwayReportResponse(Mol.Integration.Lib.Proxies.RunAway ConfirmCreateRunAwayReportResult)
         {
             this.ConfirmCreateRunAwayReportResult = ConfirmCreateRunAwayReportResult;
         }
@@ -10389,23 +10389,23 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAlienVisitorInfo", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetAlienVisitorInfoRequest
+    public partial class GetAlienVisitorInfoRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double id;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
-        public Mol.Integration.IntegrationProxy.NicWebService.ServiceAuthentication AuthenticationInfo;
+        public Mol.Integration.Lib.Proxies.ServiceAuthentication AuthenticationInfo;
 
         public GetAlienVisitorInfoRequest()
         {
         }
 
-        public GetAlienVisitorInfoRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double id, Mol.Integration.IntegrationProxy.NicWebService.ServiceAuthentication AuthenticationInfo)
+        public GetAlienVisitorInfoRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double id, Mol.Integration.Lib.Proxies.ServiceAuthentication AuthenticationInfo)
         {
             this.NICHeader = NICHeader;
             this.id = id;
@@ -10417,17 +10417,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAlienVisitorInfoResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetAlienVisitorInfoResponse
+    public partial class GetAlienVisitorInfoResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.QueryDependentsByID_NSMol GetAlienVisitorInfoResult;
+        public Mol.Integration.Lib.Proxies.QueryDependentsByID_NSMol GetAlienVisitorInfoResult;
 
         public GetAlienVisitorInfoResponse()
         {
         }
 
-        public GetAlienVisitorInfoResponse(Mol.Integration.IntegrationProxy.NicWebService.QueryDependentsByID_NSMol GetAlienVisitorInfoResult)
+        public GetAlienVisitorInfoResponse(Mol.Integration.Lib.Proxies.QueryDependentsByID_NSMol GetAlienVisitorInfoResult)
         {
             this.GetAlienVisitorInfoResult = GetAlienVisitorInfoResult;
         }
@@ -10437,11 +10437,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAlienPrisonStatus", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetAlienPrisonStatusRequest
+    public partial class GetAlienPrisonStatusRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double Iqama_ID;
@@ -10456,7 +10456,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public GetAlienPrisonStatusRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Iqama_ID, string ClientIpAddress, double OPREATOR_ID)
+        public GetAlienPrisonStatusRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Iqama_ID, string ClientIpAddress, double OPREATOR_ID)
         {
             this.NICHeader = NICHeader;
             this.Iqama_ID = Iqama_ID;
@@ -10469,7 +10469,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetAlienPrisonStatusResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetAlienPrisonStatusResponse
+    public partial class GetAlienPrisonStatusResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
@@ -10489,20 +10489,20 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "CheckvehicleOwner", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class CheckvehicleOwnerRequest
+    public partial class CheckvehicleOwnerRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.CheckVehicleOwner req;
+        public Mol.Integration.Lib.Proxies.CheckVehicleOwner req;
 
         public CheckvehicleOwnerRequest()
         {
         }
 
-        public CheckvehicleOwnerRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.CheckVehicleOwner req)
+        public CheckvehicleOwnerRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.CheckVehicleOwner req)
         {
             this.NICHeader = NICHeader;
             this.req = req;
@@ -10513,7 +10513,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "CheckvehicleOwnerResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class CheckvehicleOwnerResponse
+    public partial class CheckvehicleOwnerResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
@@ -10533,20 +10533,20 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "QueryWorkPermit", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class QueryWorkPermitRequest
+    public partial class QueryWorkPermitRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitReq req;
+        public Mol.Integration.Lib.Proxies.QueryWorkPermitReq req;
 
         public QueryWorkPermitRequest()
         {
         }
 
-        public QueryWorkPermitRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitReq req)
+        public QueryWorkPermitRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.QueryWorkPermitReq req)
         {
             this.NICHeader = NICHeader;
             this.req = req;
@@ -10557,17 +10557,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "QueryWorkPermitResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class QueryWorkPermitResponse
+    public partial class QueryWorkPermitResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitRes QueryWorkPermitResult;
+        public Mol.Integration.Lib.Proxies.QueryWorkPermitRes QueryWorkPermitResult;
 
         public QueryWorkPermitResponse()
         {
         }
 
-        public QueryWorkPermitResponse(Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitRes QueryWorkPermitResult)
+        public QueryWorkPermitResponse(Mol.Integration.Lib.Proxies.QueryWorkPermitRes QueryWorkPermitResult)
         {
             this.QueryWorkPermitResult = QueryWorkPermitResult;
         }
@@ -10577,11 +10577,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "AuthenticateUserByMobile", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class AuthenticateUserByMobileRequest
+    public partial class AuthenticateUserByMobileRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double SamisID;
@@ -10599,7 +10599,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public AuthenticateUserByMobileRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double SamisID, string OneTimePAssword, string ClientIpAddress, string lang)
+        public AuthenticateUserByMobileRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double SamisID, string OneTimePAssword, string ClientIpAddress, string lang)
         {
             this.NICHeader = NICHeader;
             this.SamisID = SamisID;
@@ -10613,7 +10613,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "AuthenticateUserByMobileResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class AuthenticateUserByMobileResponse
+    public partial class AuthenticateUserByMobileResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
@@ -10633,20 +10633,20 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "IssueWorkPermit", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class IssueWorkPermitRequest
+    public partial class IssueWorkPermitRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitReq req;
+        public Mol.Integration.Lib.Proxies.IssueWorkPermitReq req;
 
         public IssueWorkPermitRequest()
         {
         }
 
-        public IssueWorkPermitRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitReq req)
+        public IssueWorkPermitRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.IssueWorkPermitReq req)
         {
             this.NICHeader = NICHeader;
             this.req = req;
@@ -10657,17 +10657,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "IssueWorkPermitResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class IssueWorkPermitResponse
+    public partial class IssueWorkPermitResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitRes IssueWorkPermitResult;
+        public Mol.Integration.Lib.Proxies.IssueWorkPermitRes IssueWorkPermitResult;
 
         public IssueWorkPermitResponse()
         {
         }
 
-        public IssueWorkPermitResponse(Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitRes IssueWorkPermitResult)
+        public IssueWorkPermitResponse(Mol.Integration.Lib.Proxies.IssueWorkPermitRes IssueWorkPermitResult)
         {
             this.IssueWorkPermitResult = IssueWorkPermitResult;
         }
@@ -10677,11 +10677,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetLaborBySponsorID", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetLaborBySponsorIDRequest
+    public partial class GetLaborBySponsorIDRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double id;
@@ -10699,7 +10699,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public GetLaborBySponsorIDRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double id, double lastID, string ClientIpAddress, double Operator_ID)
+        public GetLaborBySponsorIDRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double id, double lastID, string ClientIpAddress, double Operator_ID)
         {
             this.NICHeader = NICHeader;
             this.id = id;
@@ -10713,17 +10713,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetLaborBySponsorIDResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetLaborBySponsorIDResponse
+    public partial class GetLaborBySponsorIDResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.MOLLaborBySponsorID GetLaborBySponsorIDResult;
+        public Mol.Integration.Lib.Proxies.MOLLaborBySponsorID GetLaborBySponsorIDResult;
 
         public GetLaborBySponsorIDResponse()
         {
         }
 
-        public GetLaborBySponsorIDResponse(Mol.Integration.IntegrationProxy.NicWebService.MOLLaborBySponsorID GetLaborBySponsorIDResult)
+        public GetLaborBySponsorIDResponse(Mol.Integration.Lib.Proxies.MOLLaborBySponsorID GetLaborBySponsorIDResult)
         {
             this.GetLaborBySponsorIDResult = GetLaborBySponsorIDResult;
         }
@@ -10733,11 +10733,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetEstablishmentCompanyInfo", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetEstablishmentCompanyInfoRequest
+    public partial class GetEstablishmentCompanyInfoRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double CompID;
@@ -10752,7 +10752,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public GetEstablishmentCompanyInfoRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double CompID, string ClientIpAddress, double Operator_ID)
+        public GetEstablishmentCompanyInfoRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double CompID, string ClientIpAddress, double Operator_ID)
         {
             this.NICHeader = NICHeader;
             this.CompID = CompID;
@@ -10765,17 +10765,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetEstablishmentCompanyInfoResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetEstablishmentCompanyInfoResponse
+    public partial class GetEstablishmentCompanyInfoResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.MOL_Business_Info GetEstablishmentCompanyInfoResult;
+        public Mol.Integration.Lib.Proxies.MOL_Business_Info GetEstablishmentCompanyInfoResult;
 
         public GetEstablishmentCompanyInfoResponse()
         {
         }
 
-        public GetEstablishmentCompanyInfoResponse(Mol.Integration.IntegrationProxy.NicWebService.MOL_Business_Info GetEstablishmentCompanyInfoResult)
+        public GetEstablishmentCompanyInfoResponse(Mol.Integration.Lib.Proxies.MOL_Business_Info GetEstablishmentCompanyInfoResult)
         {
             this.GetEstablishmentCompanyInfoResult = GetEstablishmentCompanyInfoResult;
         }
@@ -10785,11 +10785,11 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetLaborVisaList", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetLaborVisaListRequest
+    public partial class GetLaborVisaListRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
         public double BorderID;
@@ -10810,7 +10810,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public GetLaborVisaListRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double BorderID, double VisaNo, double LastBorderID, string ClientIpAddress, double Operator_ID)
+        public GetLaborVisaListRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double BorderID, double VisaNo, double LastBorderID, string ClientIpAddress, double Operator_ID)
         {
             this.NICHeader = NICHeader;
             this.BorderID = BorderID;
@@ -10825,17 +10825,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "GetLaborVisaListResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class GetLaborVisaListResponse
+    public partial class GetLaborVisaListResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.MOLLaborVisa GetLaborVisaListResult;
+        public Mol.Integration.Lib.Proxies.MOLLaborVisa GetLaborVisaListResult;
 
         public GetLaborVisaListResponse()
         {
         }
 
-        public GetLaborVisaListResponse(Mol.Integration.IntegrationProxy.NicWebService.MOLLaborVisa GetLaborVisaListResult)
+        public GetLaborVisaListResponse(Mol.Integration.Lib.Proxies.MOLLaborVisa GetLaborVisaListResult)
         {
             this.GetLaborVisaListResult = GetLaborVisaListResult;
         }
@@ -10845,20 +10845,20 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "AddMolApprovalForChangeSponsor", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class AddMolApprovalForChangeSponsorRequest
+    public partial class AddMolApprovalForChangeSponsorRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorReq req;
+        public Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorReq req;
 
         public AddMolApprovalForChangeSponsorRequest()
         {
         }
 
-        public AddMolApprovalForChangeSponsorRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorReq req)
+        public AddMolApprovalForChangeSponsorRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorReq req)
         {
             this.NICHeader = NICHeader;
             this.req = req;
@@ -10869,17 +10869,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "AddMolApprovalForChangeSponsorResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class AddMolApprovalForChangeSponsorResponse
+    public partial class AddMolApprovalForChangeSponsorResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorRes AddMolApprovalForChangeSponsorResult;
+        public Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorRes AddMolApprovalForChangeSponsorResult;
 
         public AddMolApprovalForChangeSponsorResponse()
         {
         }
 
-        public AddMolApprovalForChangeSponsorResponse(Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorRes AddMolApprovalForChangeSponsorResult)
+        public AddMolApprovalForChangeSponsorResponse(Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorRes AddMolApprovalForChangeSponsorResult)
         {
             this.AddMolApprovalForChangeSponsorResult = AddMolApprovalForChangeSponsorResult;
         }
@@ -10889,20 +10889,20 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "AddMolApprovalForChangeOccupation", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class AddMolApprovalForChangeOccupationRequest
+    public partial class AddMolApprovalForChangeOccupationRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationReq req;
+        public Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationReq req;
 
         public AddMolApprovalForChangeOccupationRequest()
         {
         }
 
-        public AddMolApprovalForChangeOccupationRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationReq req)
+        public AddMolApprovalForChangeOccupationRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationReq req)
         {
             this.NICHeader = NICHeader;
             this.req = req;
@@ -10913,17 +10913,17 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "AddMolApprovalForChangeOccupationResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class AddMolApprovalForChangeOccupationResponse
+    public partial class AddMolApprovalForChangeOccupationResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationRes AddMolApprovalForChangeOccupationResult;
+        public Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationRes AddMolApprovalForChangeOccupationResult;
 
         public AddMolApprovalForChangeOccupationResponse()
         {
         }
 
-        public AddMolApprovalForChangeOccupationResponse(Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationRes AddMolApprovalForChangeOccupationResult)
+        public AddMolApprovalForChangeOccupationResponse(Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationRes AddMolApprovalForChangeOccupationResult)
         {
             this.AddMolApprovalForChangeOccupationResult = AddMolApprovalForChangeOccupationResult;
         }
@@ -10933,14 +10933,14 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "IssueVisa", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class IssueVisaRequest
+    public partial class IssueVisaRequest
     {
 
         [System.ServiceModel.MessageHeaderAttribute(Namespace = "http://NicWebServiceHeader")]
-        public Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader;
+        public Mol.Integration.Lib.Proxies.NICHeader NICHeader;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.IssueVisaReq req;
+        public Mol.Integration.Lib.Proxies.IssueVisaReq req;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
         public string CallingMode;
@@ -10952,7 +10952,7 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         {
         }
 
-        public IssueVisaRequest(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.IssueVisaReq req, string CallingMode, string lang)
+        public IssueVisaRequest(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.IssueVisaReq req, string CallingMode, string lang)
         {
             this.NICHeader = NICHeader;
             this.req = req;
@@ -10965,20 +10965,20 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName = "IssueVisaResponse", WrapperNamespace = "urn:MOI.NIC.eServices-V1", IsWrapped = true)]
-    internal partial class IssueVisaResponse
+    public partial class IssueVisaResponse
     {
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 0)]
-        public Mol.Integration.IntegrationProxy.NicWebService.IssueVisaRes IssueVisaResult;
+        public Mol.Integration.Lib.Proxies.IssueVisaRes IssueVisaResult;
 
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace = "urn:MOI.NIC.eServices-V1", Order = 1)]
-        public Mol.Integration.IntegrationProxy.NicWebService.IssueVisaReq req;
+        public Mol.Integration.Lib.Proxies.IssueVisaReq req;
 
         public IssueVisaResponse()
         {
         }
 
-        public IssueVisaResponse(Mol.Integration.IntegrationProxy.NicWebService.IssueVisaRes IssueVisaResult, Mol.Integration.IntegrationProxy.NicWebService.IssueVisaReq req)
+        public IssueVisaResponse(Mol.Integration.Lib.Proxies.IssueVisaRes IssueVisaResult, Mol.Integration.Lib.Proxies.IssueVisaReq req)
         {
             this.IssueVisaResult = IssueVisaResult;
             this.req = req;
@@ -10986,13 +10986,13 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
     }
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    internal interface IMOL_SERVICEChannel : Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE, System.ServiceModel.IClientChannel
+    public interface IMOL_SERVICEChannel : Mol.Integration.Lib.Proxies.IMOL_SERVICE, System.ServiceModel.IClientChannel
     {
     }
 
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    internal partial class MOL_SERVICEClient : System.ServiceModel.ClientBase<Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE>, Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE
+    public partial class MOL_SERVICEClient : System.ServiceModel.ClientBase<Mol.Integration.Lib.Proxies.IMOL_SERVICE>, Mol.Integration.Lib.Proxies.IMOL_SERVICE
     {
 
         public MOL_SERVICEClient()
@@ -11020,144 +11020,144 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.GetLabourFullResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.GetLabourFull(Mol.Integration.IntegrationProxy.NicWebService.GetLabourFullRequest request)
+        Mol.Integration.Lib.Proxies.GetLabourFullResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.GetLabourFull(Mol.Integration.Lib.Proxies.GetLabourFullRequest request)
         {
             return base.Channel.GetLabourFull(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.IstiqdamFull GetLabourFull(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double RquestsponsorId, double RequestNumber, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.IstiqdamFull GetLabourFull(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double RquestsponsorId, double RequestNumber, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.GetLabourFullRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.GetLabourFullRequest();
+            Mol.Integration.Lib.Proxies.GetLabourFullRequest inValue = new Mol.Integration.Lib.Proxies.GetLabourFullRequest();
             inValue.NICHeader = NICHeader;
             inValue.RquestsponsorId = RquestsponsorId;
             inValue.RequestNumber = RequestNumber;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.GetLabourFullResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).GetLabourFull(inValue);
+            Mol.Integration.Lib.Proxies.GetLabourFullResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).GetLabourFull(inValue);
             return retVal.GetLabourFullResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.ReportEscapeSponsoreesResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.ReportEscapeSponsorees(Mol.Integration.IntegrationProxy.NicWebService.ReportEscapeSponsoreesRequest request)
+        Mol.Integration.Lib.Proxies.ReportEscapeSponsoreesResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.ReportEscapeSponsorees(Mol.Integration.Lib.Proxies.ReportEscapeSponsoreesRequest request)
         {
             return base.Channel.ReportEscapeSponsorees(request);
         }
 
-        public double ReportEscapeSponsorees(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double EscapeID, double createdBy, System.DateTime ReportDate, string ClientIpAddress, string lang)
+        public double ReportEscapeSponsorees(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double EscapeID, double createdBy, System.DateTime ReportDate, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.ReportEscapeSponsoreesRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.ReportEscapeSponsoreesRequest();
+            Mol.Integration.Lib.Proxies.ReportEscapeSponsoreesRequest inValue = new Mol.Integration.Lib.Proxies.ReportEscapeSponsoreesRequest();
             inValue.NICHeader = NICHeader;
             inValue.EscapeID = EscapeID;
             inValue.createdBy = createdBy;
             inValue.ReportDate = ReportDate;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.ReportEscapeSponsoreesResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).ReportEscapeSponsorees(inValue);
+            Mol.Integration.Lib.Proxies.ReportEscapeSponsoreesResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).ReportEscapeSponsorees(inValue);
             return retVal.ReportEscapeSponsoreesResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.IssueLaborVisa(Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaRequest request)
+        Mol.Integration.Lib.Proxies.IssueLaborVisaResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.IssueLaborVisa(Mol.Integration.Lib.Proxies.IssueLaborVisaRequest request)
         {
             return base.Channel.IssueLaborVisa(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequest IssueLaborVisa(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, ref Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamRequest _IstiqdamData, double RequesterID, string CallingMode, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamRequest IssueLaborVisa(Mol.Integration.Lib.Proxies.NICHeader NICHeader, ref Mol.Integration.Lib.Proxies.RegisterIstiqdamRequest _IstiqdamData, double RequesterID, string CallingMode, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaRequest();
+            Mol.Integration.Lib.Proxies.IssueLaborVisaRequest inValue = new Mol.Integration.Lib.Proxies.IssueLaborVisaRequest();
             inValue.NICHeader = NICHeader;
             inValue._IstiqdamData = _IstiqdamData;
             inValue.RequesterID = RequesterID;
             inValue.CallingMode = CallingMode;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.IssueLaborVisaResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).IssueLaborVisa(inValue);
+            Mol.Integration.Lib.Proxies.IssueLaborVisaResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).IssueLaborVisa(inValue);
             _IstiqdamData = retVal._IstiqdamData;
             return retVal.IssueLaborVisaResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.OpenSponsorFile(Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileRequest request)
+        Mol.Integration.Lib.Proxies.OpenSponsorFileResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.OpenSponsorFile(Mol.Integration.Lib.Proxies.OpenSponsorFileRequest request)
         {
             return base.Channel.OpenSponsorFile(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile OpenSponsorFile(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, ref Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile _FileData, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamFile OpenSponsorFile(Mol.Integration.Lib.Proxies.NICHeader NICHeader, ref Mol.Integration.Lib.Proxies.RegisterIstiqdamFile _FileData, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileRequest();
+            Mol.Integration.Lib.Proxies.OpenSponsorFileRequest inValue = new Mol.Integration.Lib.Proxies.OpenSponsorFileRequest();
             inValue.NICHeader = NICHeader;
             inValue._FileData = _FileData;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.OpenSponsorFileResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).OpenSponsorFile(inValue);
+            Mol.Integration.Lib.Proxies.OpenSponsorFileResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).OpenSponsorFile(inValue);
             _FileData = retVal._FileData;
             return retVal.OpenSponsorFileResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.UpdateSponsorFileResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.UpdateSponsorFile(Mol.Integration.IntegrationProxy.NicWebService.UpdateSponsorFileRequest request)
+        Mol.Integration.Lib.Proxies.UpdateSponsorFileResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.UpdateSponsorFile(Mol.Integration.Lib.Proxies.UpdateSponsorFileRequest request)
         {
             return base.Channel.UpdateSponsorFile(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile UpdateSponsorFile(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, ref Mol.Integration.IntegrationProxy.NicWebService.RegisterIstiqdamFile _FileData, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.RegisterIstiqdamFile UpdateSponsorFile(Mol.Integration.Lib.Proxies.NICHeader NICHeader, ref Mol.Integration.Lib.Proxies.RegisterIstiqdamFile _FileData, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.UpdateSponsorFileRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.UpdateSponsorFileRequest();
+            Mol.Integration.Lib.Proxies.UpdateSponsorFileRequest inValue = new Mol.Integration.Lib.Proxies.UpdateSponsorFileRequest();
             inValue.NICHeader = NICHeader;
             inValue._FileData = _FileData;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.UpdateSponsorFileResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).UpdateSponsorFile(inValue);
+            Mol.Integration.Lib.Proxies.UpdateSponsorFileResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).UpdateSponsorFile(inValue);
             _FileData = retVal._FileData;
             return retVal.UpdateSponsorFileResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.UpdateLaborVisaResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.UpdateLaborVisa(Mol.Integration.IntegrationProxy.NicWebService.UpdateLaborVisaRequest request)
+        Mol.Integration.Lib.Proxies.UpdateLaborVisaResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.UpdateLaborVisa(Mol.Integration.Lib.Proxies.UpdateLaborVisaRequest request)
         {
             return base.Channel.UpdateLaborVisa(request);
         }
 
-        public bool UpdateLaborVisa(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double requestNumber, double borderNumber, string ClientIpAddress, string lang)
+        public bool UpdateLaborVisa(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double requestNumber, double borderNumber, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.UpdateLaborVisaRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.UpdateLaborVisaRequest();
+            Mol.Integration.Lib.Proxies.UpdateLaborVisaRequest inValue = new Mol.Integration.Lib.Proxies.UpdateLaborVisaRequest();
             inValue.NICHeader = NICHeader;
             inValue.requestNumber = requestNumber;
             inValue.borderNumber = borderNumber;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.UpdateLaborVisaResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).UpdateLaborVisa(inValue);
+            Mol.Integration.Lib.Proxies.UpdateLaborVisaResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).UpdateLaborVisa(inValue);
             return retVal.UpdateLaborVisaResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.ListSponsoreesForTransfer(Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferRequest request)
+        Mol.Integration.Lib.Proxies.ListSponsoreesForTransferResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.ListSponsoreesForTransfer(Mol.Integration.Lib.Proxies.ListSponsoreesForTransferRequest request)
         {
             return base.Channel.ListSponsoreesForTransfer(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.MolSponsorInfo ListSponsoreesForTransfer(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double SponsorID, double MolFileNumber, short MolFileLocation, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.MolSponsorInfo ListSponsoreesForTransfer(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double SponsorID, double MolFileNumber, short MolFileLocation, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferRequest();
+            Mol.Integration.Lib.Proxies.ListSponsoreesForTransferRequest inValue = new Mol.Integration.Lib.Proxies.ListSponsoreesForTransferRequest();
             inValue.NICHeader = NICHeader;
             inValue.SponsorID = SponsorID;
             inValue.MolFileNumber = MolFileNumber;
             inValue.MolFileLocation = MolFileLocation;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).ListSponsoreesForTransfer(inValue);
+            Mol.Integration.Lib.Proxies.ListSponsoreesForTransferResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).ListSponsoreesForTransfer(inValue);
             return retVal.ListSponsoreesForTransferResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferNextResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.ListSponsoreesForTransferNext(Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferNextRequest request)
+        Mol.Integration.Lib.Proxies.ListSponsoreesForTransferNextResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.ListSponsoreesForTransferNext(Mol.Integration.Lib.Proxies.ListSponsoreesForTransferNextRequest request)
         {
             return base.Channel.ListSponsoreesForTransferNext(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.MolSponsorInfo ListSponsoreesForTransferNext(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double SponsorID, double MolFileNumber, short MolFileLocation, double NextSponsorID, string ClientIpAddress, string lang)
+        public Mol.Integration.Lib.Proxies.MolSponsorInfo ListSponsoreesForTransferNext(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double SponsorID, double MolFileNumber, short MolFileLocation, double NextSponsorID, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferNextRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferNextRequest();
+            Mol.Integration.Lib.Proxies.ListSponsoreesForTransferNextRequest inValue = new Mol.Integration.Lib.Proxies.ListSponsoreesForTransferNextRequest();
             inValue.NICHeader = NICHeader;
             inValue.SponsorID = SponsorID;
             inValue.MolFileNumber = MolFileNumber;
@@ -11165,19 +11165,19 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.NextSponsorID = NextSponsorID;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.ListSponsoreesForTransferNextResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).ListSponsoreesForTransferNext(inValue);
+            Mol.Integration.Lib.Proxies.ListSponsoreesForTransferNextResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).ListSponsoreesForTransferNext(inValue);
             return retVal.ListSponsoreesForTransferNextResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.TransferSponsoreesResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.TransferSponsorees(Mol.Integration.IntegrationProxy.NicWebService.TransferSponsoreesRequest request)
+        Mol.Integration.Lib.Proxies.TransferSponsoreesResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.TransferSponsorees(Mol.Integration.Lib.Proxies.TransferSponsoreesRequest request)
         {
             return base.Channel.TransferSponsorees(request);
         }
 
-        public bool TransferSponsorees(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, ref Mol.Integration.IntegrationProxy.NicWebService.MolSponsorInfo _TransferList, double CrrBusinessFileNumber, short CrrBusinessFileLocation, double SponsorID, double MolFileNumber, short MolFileLocation, string TransferAll, string ClientIpAddress, string lang)
+        public bool TransferSponsorees(Mol.Integration.Lib.Proxies.NICHeader NICHeader, ref Mol.Integration.Lib.Proxies.MolSponsorInfo _TransferList, double CrrBusinessFileNumber, short CrrBusinessFileLocation, double SponsorID, double MolFileNumber, short MolFileLocation, string TransferAll, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.TransferSponsoreesRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.TransferSponsoreesRequest();
+            Mol.Integration.Lib.Proxies.TransferSponsoreesRequest inValue = new Mol.Integration.Lib.Proxies.TransferSponsoreesRequest();
             inValue.NICHeader = NICHeader;
             inValue._TransferList = _TransferList;
             inValue.CrrBusinessFileNumber = CrrBusinessFileNumber;
@@ -11188,20 +11188,20 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.TransferAll = TransferAll;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.TransferSponsoreesResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).TransferSponsorees(inValue);
+            Mol.Integration.Lib.Proxies.TransferSponsoreesResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).TransferSponsorees(inValue);
             _TransferList = retVal._TransferList;
             return retVal.TransferSponsoreesResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.ValidateAlienSponsorBusinessResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.ValidateAlienSponsorBusiness(Mol.Integration.IntegrationProxy.NicWebService.ValidateAlienSponsorBusinessRequest request)
+        Mol.Integration.Lib.Proxies.ValidateAlienSponsorBusinessResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.ValidateAlienSponsorBusiness(Mol.Integration.Lib.Proxies.ValidateAlienSponsorBusinessRequest request)
         {
             return base.Channel.ValidateAlienSponsorBusiness(request);
         }
 
-        public bool ValidateAlienSponsorBusiness(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double AlienID, double SponsorID, double MOlFileNumber, short MOLFileNumberLoc, short privateFlag, string ClientIpAddress, string Lang)
+        public bool ValidateAlienSponsorBusiness(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double AlienID, double SponsorID, double MOlFileNumber, short MOLFileNumberLoc, short privateFlag, string ClientIpAddress, string Lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.ValidateAlienSponsorBusinessRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.ValidateAlienSponsorBusinessRequest();
+            Mol.Integration.Lib.Proxies.ValidateAlienSponsorBusinessRequest inValue = new Mol.Integration.Lib.Proxies.ValidateAlienSponsorBusinessRequest();
             inValue.NICHeader = NICHeader;
             inValue.AlienID = AlienID;
             inValue.SponsorID = SponsorID;
@@ -11210,19 +11210,19 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.privateFlag = privateFlag;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.Lang = Lang;
-            Mol.Integration.IntegrationProxy.NicWebService.ValidateAlienSponsorBusinessResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).ValidateAlienSponsorBusiness(inValue);
+            Mol.Integration.Lib.Proxies.ValidateAlienSponsorBusinessResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).ValidateAlienSponsorBusiness(inValue);
             return retVal.ValidateAlienSponsorBusinessResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.UpdateAlienSponsorBusinessResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.UpdateAlienSponsorBusiness(Mol.Integration.IntegrationProxy.NicWebService.UpdateAlienSponsorBusinessRequest request)
+        Mol.Integration.Lib.Proxies.UpdateAlienSponsorBusinessResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.UpdateAlienSponsorBusiness(Mol.Integration.Lib.Proxies.UpdateAlienSponsorBusinessRequest request)
         {
             return base.Channel.UpdateAlienSponsorBusiness(request);
         }
 
-        public bool UpdateAlienSponsorBusiness(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double AlienID, double SponsorID, double MOlFileNumber, short MOLFileNumberLoc, short privateFlag, string ClientIpAddress, string Lang)
+        public bool UpdateAlienSponsorBusiness(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double AlienID, double SponsorID, double MOlFileNumber, short MOLFileNumberLoc, short privateFlag, string ClientIpAddress, string Lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.UpdateAlienSponsorBusinessRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.UpdateAlienSponsorBusinessRequest();
+            Mol.Integration.Lib.Proxies.UpdateAlienSponsorBusinessRequest inValue = new Mol.Integration.Lib.Proxies.UpdateAlienSponsorBusinessRequest();
             inValue.NICHeader = NICHeader;
             inValue.AlienID = AlienID;
             inValue.SponsorID = SponsorID;
@@ -11231,19 +11231,19 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.privateFlag = privateFlag;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.Lang = Lang;
-            Mol.Integration.IntegrationProxy.NicWebService.UpdateAlienSponsorBusinessResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).UpdateAlienSponsorBusiness(inValue);
+            Mol.Integration.Lib.Proxies.UpdateAlienSponsorBusinessResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).UpdateAlienSponsorBusiness(inValue);
             return retVal.UpdateAlienSponsorBusinessResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.ValidateCancelRunAWayReportResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.ValidateCancelRunAWayReport(Mol.Integration.IntegrationProxy.NicWebService.ValidateCancelRunAWayReportRequest request)
+        Mol.Integration.Lib.Proxies.ValidateCancelRunAWayReportResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.ValidateCancelRunAWayReport(Mol.Integration.Lib.Proxies.ValidateCancelRunAWayReportRequest request)
         {
             return base.Channel.ValidateCancelRunAWayReport(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.RunAway ValidateCancelRunAWayReport(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double RequesterID, string CancelRemarks, string lang)
+        public Mol.Integration.Lib.Proxies.RunAway ValidateCancelRunAWayReport(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double RequesterID, string CancelRemarks, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.ValidateCancelRunAWayReportRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.ValidateCancelRunAWayReportRequest();
+            Mol.Integration.Lib.Proxies.ValidateCancelRunAWayReportRequest inValue = new Mol.Integration.Lib.Proxies.ValidateCancelRunAWayReportRequest();
             inValue.NICHeader = NICHeader;
             inValue.OPREATOR_ID = OPREATOR_ID;
             inValue.ClientIpAddress = ClientIpAddress;
@@ -11251,19 +11251,19 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.RequesterID = RequesterID;
             inValue.CancelRemarks = CancelRemarks;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.ValidateCancelRunAWayReportResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).ValidateCancelRunAWayReport(inValue);
+            Mol.Integration.Lib.Proxies.ValidateCancelRunAWayReportResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).ValidateCancelRunAWayReport(inValue);
             return retVal.ValidateCancelRunAWayReportResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.ConfirmCancelRunAwayReportResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.ConfirmCancelRunAwayReport(Mol.Integration.IntegrationProxy.NicWebService.ConfirmCancelRunAwayReportRequest request)
+        Mol.Integration.Lib.Proxies.ConfirmCancelRunAwayReportResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.ConfirmCancelRunAwayReport(Mol.Integration.Lib.Proxies.ConfirmCancelRunAwayReportRequest request)
         {
             return base.Channel.ConfirmCancelRunAwayReport(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.RunAway ConfirmCancelRunAwayReport(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double RequesterID, string CancelRemarks, string lang)
+        public Mol.Integration.Lib.Proxies.RunAway ConfirmCancelRunAwayReport(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double RequesterID, string CancelRemarks, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.ConfirmCancelRunAwayReportRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.ConfirmCancelRunAwayReportRequest();
+            Mol.Integration.Lib.Proxies.ConfirmCancelRunAwayReportRequest inValue = new Mol.Integration.Lib.Proxies.ConfirmCancelRunAwayReportRequest();
             inValue.NICHeader = NICHeader;
             inValue.OPREATOR_ID = OPREATOR_ID;
             inValue.ClientIpAddress = ClientIpAddress;
@@ -11271,19 +11271,19 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.RequesterID = RequesterID;
             inValue.CancelRemarks = CancelRemarks;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.ConfirmCancelRunAwayReportResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).ConfirmCancelRunAwayReport(inValue);
+            Mol.Integration.Lib.Proxies.ConfirmCancelRunAwayReportResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).ConfirmCancelRunAwayReport(inValue);
             return retVal.ConfirmCancelRunAwayReportResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.ValidateCreateRunAwayReportResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.ValidateCreateRunAwayReport(Mol.Integration.IntegrationProxy.NicWebService.ValidateCreateRunAwayReportRequest request)
+        Mol.Integration.Lib.Proxies.ValidateCreateRunAwayReportResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.ValidateCreateRunAwayReport(Mol.Integration.Lib.Proxies.ValidateCreateRunAwayReportRequest request)
         {
             return base.Channel.ValidateCreateRunAwayReport(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.RunAway ValidateCreateRunAwayReport(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double ReporterID, int RunAwayDate, string lang)
+        public Mol.Integration.Lib.Proxies.RunAway ValidateCreateRunAwayReport(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double ReporterID, int RunAwayDate, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.ValidateCreateRunAwayReportRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.ValidateCreateRunAwayReportRequest();
+            Mol.Integration.Lib.Proxies.ValidateCreateRunAwayReportRequest inValue = new Mol.Integration.Lib.Proxies.ValidateCreateRunAwayReportRequest();
             inValue.NICHeader = NICHeader;
             inValue.OPREATOR_ID = OPREATOR_ID;
             inValue.ClientIpAddress = ClientIpAddress;
@@ -11291,19 +11291,19 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.ReporterID = ReporterID;
             inValue.RunAwayDate = RunAwayDate;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.ValidateCreateRunAwayReportResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).ValidateCreateRunAwayReport(inValue);
+            Mol.Integration.Lib.Proxies.ValidateCreateRunAwayReportResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).ValidateCreateRunAwayReport(inValue);
             return retVal.ValidateCreateRunAwayReportResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.ConfirmCreateRunAwayReportResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.ConfirmCreateRunAwayReport(Mol.Integration.IntegrationProxy.NicWebService.ConfirmCreateRunAwayReportRequest request)
+        Mol.Integration.Lib.Proxies.ConfirmCreateRunAwayReportResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.ConfirmCreateRunAwayReport(Mol.Integration.Lib.Proxies.ConfirmCreateRunAwayReportRequest request)
         {
             return base.Channel.ConfirmCreateRunAwayReport(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.RunAway ConfirmCreateRunAwayReport(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double ReporterID, int RunAwayDate, string lang)
+        public Mol.Integration.Lib.Proxies.RunAway ConfirmCreateRunAwayReport(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double OPREATOR_ID, string ClientIpAddress, double RunAwayID, double ReporterID, int RunAwayDate, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.ConfirmCreateRunAwayReportRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.ConfirmCreateRunAwayReportRequest();
+            Mol.Integration.Lib.Proxies.ConfirmCreateRunAwayReportRequest inValue = new Mol.Integration.Lib.Proxies.ConfirmCreateRunAwayReportRequest();
             inValue.NICHeader = NICHeader;
             inValue.OPREATOR_ID = OPREATOR_ID;
             inValue.ClientIpAddress = ClientIpAddress;
@@ -11311,204 +11311,204 @@ namespace Mol.Integration.IntegrationProxy.NicWebService
             inValue.ReporterID = ReporterID;
             inValue.RunAwayDate = RunAwayDate;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.ConfirmCreateRunAwayReportResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).ConfirmCreateRunAwayReport(inValue);
+            Mol.Integration.Lib.Proxies.ConfirmCreateRunAwayReportResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).ConfirmCreateRunAwayReport(inValue);
             return retVal.ConfirmCreateRunAwayReportResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.GetAlienVisitorInfoResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.GetAlienVisitorInfo(Mol.Integration.IntegrationProxy.NicWebService.GetAlienVisitorInfoRequest request)
+        Mol.Integration.Lib.Proxies.GetAlienVisitorInfoResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.GetAlienVisitorInfo(Mol.Integration.Lib.Proxies.GetAlienVisitorInfoRequest request)
         {
             return base.Channel.GetAlienVisitorInfo(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.QueryDependentsByID_NSMol GetAlienVisitorInfo(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double id, Mol.Integration.IntegrationProxy.NicWebService.ServiceAuthentication AuthenticationInfo)
+        public Mol.Integration.Lib.Proxies.QueryDependentsByID_NSMol GetAlienVisitorInfo(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double id, Mol.Integration.Lib.Proxies.ServiceAuthentication AuthenticationInfo)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.GetAlienVisitorInfoRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.GetAlienVisitorInfoRequest();
+            Mol.Integration.Lib.Proxies.GetAlienVisitorInfoRequest inValue = new Mol.Integration.Lib.Proxies.GetAlienVisitorInfoRequest();
             inValue.NICHeader = NICHeader;
             inValue.id = id;
             inValue.AuthenticationInfo = AuthenticationInfo;
-            Mol.Integration.IntegrationProxy.NicWebService.GetAlienVisitorInfoResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).GetAlienVisitorInfo(inValue);
+            Mol.Integration.Lib.Proxies.GetAlienVisitorInfoResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).GetAlienVisitorInfo(inValue);
             return retVal.GetAlienVisitorInfoResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.GetAlienPrisonStatusResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.GetAlienPrisonStatus(Mol.Integration.IntegrationProxy.NicWebService.GetAlienPrisonStatusRequest request)
+        Mol.Integration.Lib.Proxies.GetAlienPrisonStatusResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.GetAlienPrisonStatus(Mol.Integration.Lib.Proxies.GetAlienPrisonStatusRequest request)
         {
             return base.Channel.GetAlienPrisonStatus(request);
         }
 
-        public bool GetAlienPrisonStatus(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double Iqama_ID, string ClientIpAddress, double OPREATOR_ID)
+        public bool GetAlienPrisonStatus(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double Iqama_ID, string ClientIpAddress, double OPREATOR_ID)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.GetAlienPrisonStatusRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.GetAlienPrisonStatusRequest();
+            Mol.Integration.Lib.Proxies.GetAlienPrisonStatusRequest inValue = new Mol.Integration.Lib.Proxies.GetAlienPrisonStatusRequest();
             inValue.NICHeader = NICHeader;
             inValue.Iqama_ID = Iqama_ID;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.OPREATOR_ID = OPREATOR_ID;
-            Mol.Integration.IntegrationProxy.NicWebService.GetAlienPrisonStatusResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).GetAlienPrisonStatus(inValue);
+            Mol.Integration.Lib.Proxies.GetAlienPrisonStatusResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).GetAlienPrisonStatus(inValue);
             return retVal.GetAlienPrisonStatusResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.CheckvehicleOwnerResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.CheckvehicleOwner(Mol.Integration.IntegrationProxy.NicWebService.CheckvehicleOwnerRequest request)
+        Mol.Integration.Lib.Proxies.CheckvehicleOwnerResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.CheckvehicleOwner(Mol.Integration.Lib.Proxies.CheckvehicleOwnerRequest request)
         {
             return base.Channel.CheckvehicleOwner(request);
         }
 
-        public bool CheckvehicleOwner(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.CheckVehicleOwner req)
+        public bool CheckvehicleOwner(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.CheckVehicleOwner req)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.CheckvehicleOwnerRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.CheckvehicleOwnerRequest();
+            Mol.Integration.Lib.Proxies.CheckvehicleOwnerRequest inValue = new Mol.Integration.Lib.Proxies.CheckvehicleOwnerRequest();
             inValue.NICHeader = NICHeader;
             inValue.req = req;
-            Mol.Integration.IntegrationProxy.NicWebService.CheckvehicleOwnerResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).CheckvehicleOwner(inValue);
+            Mol.Integration.Lib.Proxies.CheckvehicleOwnerResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).CheckvehicleOwner(inValue);
             return retVal.CheckvehicleOwnerResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.QueryWorkPermit(Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitRequest request)
+        Mol.Integration.Lib.Proxies.QueryWorkPermitResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.QueryWorkPermit(Mol.Integration.Lib.Proxies.QueryWorkPermitRequest request)
         {
             return base.Channel.QueryWorkPermit(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitRes QueryWorkPermit(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitReq req)
+        public Mol.Integration.Lib.Proxies.QueryWorkPermitRes QueryWorkPermit(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.QueryWorkPermitReq req)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitRequest();
+            Mol.Integration.Lib.Proxies.QueryWorkPermitRequest inValue = new Mol.Integration.Lib.Proxies.QueryWorkPermitRequest();
             inValue.NICHeader = NICHeader;
             inValue.req = req;
-            Mol.Integration.IntegrationProxy.NicWebService.QueryWorkPermitResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).QueryWorkPermit(inValue);
+            Mol.Integration.Lib.Proxies.QueryWorkPermitResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).QueryWorkPermit(inValue);
             return retVal.QueryWorkPermitResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.AuthenticateUserByMobileResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.AuthenticateUserByMobile(Mol.Integration.IntegrationProxy.NicWebService.AuthenticateUserByMobileRequest request)
+        Mol.Integration.Lib.Proxies.AuthenticateUserByMobileResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.AuthenticateUserByMobile(Mol.Integration.Lib.Proxies.AuthenticateUserByMobileRequest request)
         {
             return base.Channel.AuthenticateUserByMobile(request);
         }
 
-        public bool AuthenticateUserByMobile(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double SamisID, string OneTimePAssword, string ClientIpAddress, string lang)
+        public bool AuthenticateUserByMobile(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double SamisID, string OneTimePAssword, string ClientIpAddress, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.AuthenticateUserByMobileRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.AuthenticateUserByMobileRequest();
+            Mol.Integration.Lib.Proxies.AuthenticateUserByMobileRequest inValue = new Mol.Integration.Lib.Proxies.AuthenticateUserByMobileRequest();
             inValue.NICHeader = NICHeader;
             inValue.SamisID = SamisID;
             inValue.OneTimePAssword = OneTimePAssword;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.AuthenticateUserByMobileResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).AuthenticateUserByMobile(inValue);
+            Mol.Integration.Lib.Proxies.AuthenticateUserByMobileResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).AuthenticateUserByMobile(inValue);
             return retVal.AuthenticateUserByMobileResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.IssueWorkPermit(Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitRequest request)
+        Mol.Integration.Lib.Proxies.IssueWorkPermitResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.IssueWorkPermit(Mol.Integration.Lib.Proxies.IssueWorkPermitRequest request)
         {
             return base.Channel.IssueWorkPermit(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitRes IssueWorkPermit(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitReq req)
+        public Mol.Integration.Lib.Proxies.IssueWorkPermitRes IssueWorkPermit(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.IssueWorkPermitReq req)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitRequest();
+            Mol.Integration.Lib.Proxies.IssueWorkPermitRequest inValue = new Mol.Integration.Lib.Proxies.IssueWorkPermitRequest();
             inValue.NICHeader = NICHeader;
             inValue.req = req;
-            Mol.Integration.IntegrationProxy.NicWebService.IssueWorkPermitResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).IssueWorkPermit(inValue);
+            Mol.Integration.Lib.Proxies.IssueWorkPermitResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).IssueWorkPermit(inValue);
             return retVal.IssueWorkPermitResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.GetLaborBySponsorIDResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.GetLaborBySponsorID(Mol.Integration.IntegrationProxy.NicWebService.GetLaborBySponsorIDRequest request)
+        Mol.Integration.Lib.Proxies.GetLaborBySponsorIDResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.GetLaborBySponsorID(Mol.Integration.Lib.Proxies.GetLaborBySponsorIDRequest request)
         {
             return base.Channel.GetLaborBySponsorID(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.MOLLaborBySponsorID GetLaborBySponsorID(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double id, double lastID, string ClientIpAddress, double Operator_ID)
+        public Mol.Integration.Lib.Proxies.MOLLaborBySponsorID GetLaborBySponsorID(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double id, double lastID, string ClientIpAddress, double Operator_ID)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.GetLaborBySponsorIDRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.GetLaborBySponsorIDRequest();
+            Mol.Integration.Lib.Proxies.GetLaborBySponsorIDRequest inValue = new Mol.Integration.Lib.Proxies.GetLaborBySponsorIDRequest();
             inValue.NICHeader = NICHeader;
             inValue.id = id;
             inValue.lastID = lastID;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.Operator_ID = Operator_ID;
-            Mol.Integration.IntegrationProxy.NicWebService.GetLaborBySponsorIDResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).GetLaborBySponsorID(inValue);
+            Mol.Integration.Lib.Proxies.GetLaborBySponsorIDResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).GetLaborBySponsorID(inValue);
             return retVal.GetLaborBySponsorIDResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.GetEstablishmentCompanyInfoResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.GetEstablishmentCompanyInfo(Mol.Integration.IntegrationProxy.NicWebService.GetEstablishmentCompanyInfoRequest request)
+        Mol.Integration.Lib.Proxies.GetEstablishmentCompanyInfoResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.GetEstablishmentCompanyInfo(Mol.Integration.Lib.Proxies.GetEstablishmentCompanyInfoRequest request)
         {
             return base.Channel.GetEstablishmentCompanyInfo(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.MOL_Business_Info GetEstablishmentCompanyInfo(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double CompID, string ClientIpAddress, double Operator_ID)
+        public Mol.Integration.Lib.Proxies.MOL_Business_Info GetEstablishmentCompanyInfo(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double CompID, string ClientIpAddress, double Operator_ID)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.GetEstablishmentCompanyInfoRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.GetEstablishmentCompanyInfoRequest();
+            Mol.Integration.Lib.Proxies.GetEstablishmentCompanyInfoRequest inValue = new Mol.Integration.Lib.Proxies.GetEstablishmentCompanyInfoRequest();
             inValue.NICHeader = NICHeader;
             inValue.CompID = CompID;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.Operator_ID = Operator_ID;
-            Mol.Integration.IntegrationProxy.NicWebService.GetEstablishmentCompanyInfoResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).GetEstablishmentCompanyInfo(inValue);
+            Mol.Integration.Lib.Proxies.GetEstablishmentCompanyInfoResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).GetEstablishmentCompanyInfo(inValue);
             return retVal.GetEstablishmentCompanyInfoResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.GetLaborVisaListResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.GetLaborVisaList(Mol.Integration.IntegrationProxy.NicWebService.GetLaborVisaListRequest request)
+        Mol.Integration.Lib.Proxies.GetLaborVisaListResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.GetLaborVisaList(Mol.Integration.Lib.Proxies.GetLaborVisaListRequest request)
         {
             return base.Channel.GetLaborVisaList(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.MOLLaborVisa GetLaborVisaList(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, double BorderID, double VisaNo, double LastBorderID, string ClientIpAddress, double Operator_ID)
+        public Mol.Integration.Lib.Proxies.MOLLaborVisa GetLaborVisaList(Mol.Integration.Lib.Proxies.NICHeader NICHeader, double BorderID, double VisaNo, double LastBorderID, string ClientIpAddress, double Operator_ID)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.GetLaborVisaListRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.GetLaborVisaListRequest();
+            Mol.Integration.Lib.Proxies.GetLaborVisaListRequest inValue = new Mol.Integration.Lib.Proxies.GetLaborVisaListRequest();
             inValue.NICHeader = NICHeader;
             inValue.BorderID = BorderID;
             inValue.VisaNo = VisaNo;
             inValue.LastBorderID = LastBorderID;
             inValue.ClientIpAddress = ClientIpAddress;
             inValue.Operator_ID = Operator_ID;
-            Mol.Integration.IntegrationProxy.NicWebService.GetLaborVisaListResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).GetLaborVisaList(inValue);
+            Mol.Integration.Lib.Proxies.GetLaborVisaListResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).GetLaborVisaList(inValue);
             return retVal.GetLaborVisaListResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.AddMolApprovalForChangeSponsor(Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorRequest request)
+        Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.AddMolApprovalForChangeSponsor(Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorRequest request)
         {
             return base.Channel.AddMolApprovalForChangeSponsor(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorRes AddMolApprovalForChangeSponsor(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorReq req)
+        public Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorRes AddMolApprovalForChangeSponsor(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorReq req)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorRequest();
+            Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorRequest inValue = new Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorRequest();
             inValue.NICHeader = NICHeader;
             inValue.req = req;
-            Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeSponsorResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).AddMolApprovalForChangeSponsor(inValue);
+            Mol.Integration.Lib.Proxies.AddMolApprovalForChangeSponsorResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).AddMolApprovalForChangeSponsor(inValue);
             return retVal.AddMolApprovalForChangeSponsorResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.AddMolApprovalForChangeOccupation(Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationRequest request)
+        Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.AddMolApprovalForChangeOccupation(Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationRequest request)
         {
             return base.Channel.AddMolApprovalForChangeOccupation(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationRes AddMolApprovalForChangeOccupation(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationReq req)
+        public Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationRes AddMolApprovalForChangeOccupation(Mol.Integration.Lib.Proxies.NICHeader NICHeader, Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationReq req)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationRequest();
+            Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationRequest inValue = new Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationRequest();
             inValue.NICHeader = NICHeader;
             inValue.req = req;
-            Mol.Integration.IntegrationProxy.NicWebService.AddMolApprovalForChangeOccupationResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).AddMolApprovalForChangeOccupation(inValue);
+            Mol.Integration.Lib.Proxies.AddMolApprovalForChangeOccupationResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).AddMolApprovalForChangeOccupation(inValue);
             return retVal.AddMolApprovalForChangeOccupationResult;
         }
 
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Mol.Integration.IntegrationProxy.NicWebService.IssueVisaResponse Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE.IssueVisa(Mol.Integration.IntegrationProxy.NicWebService.IssueVisaRequest request)
+        Mol.Integration.Lib.Proxies.IssueVisaResponse Mol.Integration.Lib.Proxies.IMOL_SERVICE.IssueVisa(Mol.Integration.Lib.Proxies.IssueVisaRequest request)
         {
             return base.Channel.IssueVisa(request);
         }
 
-        public Mol.Integration.IntegrationProxy.NicWebService.IssueVisaRes IssueVisa(Mol.Integration.IntegrationProxy.NicWebService.NICHeader NICHeader, ref Mol.Integration.IntegrationProxy.NicWebService.IssueVisaReq req, string CallingMode, string lang)
+        public Mol.Integration.Lib.Proxies.IssueVisaRes IssueVisa(Mol.Integration.Lib.Proxies.NICHeader NICHeader, ref Mol.Integration.Lib.Proxies.IssueVisaReq req, string CallingMode, string lang)
         {
-            Mol.Integration.IntegrationProxy.NicWebService.IssueVisaRequest inValue = new Mol.Integration.IntegrationProxy.NicWebService.IssueVisaRequest();
+            Mol.Integration.Lib.Proxies.IssueVisaRequest inValue = new Mol.Integration.Lib.Proxies.IssueVisaRequest();
             inValue.NICHeader = NICHeader;
             inValue.req = req;
             inValue.CallingMode = CallingMode;
             inValue.lang = lang;
-            Mol.Integration.IntegrationProxy.NicWebService.IssueVisaResponse retVal = ((Mol.Integration.IntegrationProxy.NicWebService.IMOL_SERVICE)(this)).IssueVisa(inValue);
+            Mol.Integration.Lib.Proxies.IssueVisaResponse retVal = ((Mol.Integration.Lib.Proxies.IMOL_SERVICE)(this)).IssueVisa(inValue);
             req = retVal.req;
             return retVal.IssueVisaResult;
         }

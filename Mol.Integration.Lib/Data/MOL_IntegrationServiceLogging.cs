@@ -19,7 +19,7 @@ namespace Mol.Integration.Lib.Data
         public string MessageBody { get; set; }
         public string Contract { get; set; }
         public string Operation { get; set; }
-        public System.DateTime TransactionDate { get; set; }
         public bool Authorized { get; set; }
+        public System.DateTime TransactionDate { get; set; }
     }
 }
